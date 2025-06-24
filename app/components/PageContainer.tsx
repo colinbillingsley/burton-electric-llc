@@ -1,0 +1,23 @@
+import React, { ReactNode } from "react";
+import { cn } from "@/lib/utils";
+
+const PageContainer = ({
+	children,
+	className,
+}: {
+	children: ReactNode;
+	className?: string;
+}) => {
+	return (
+		<div
+			className={cn(
+				`mt-30 min-h-screen w-full font-[family-name:var(--font-geist-sans)]`,
+				className
+			)}
+		>
+			{children}
+		</div>
+	);
+};
+
+export default PageContainer;
