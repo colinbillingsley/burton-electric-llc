@@ -4,9 +4,7 @@ import Section from "../components/Section";
 import Footer from "../components/Footer";
 import H1 from "../components/H1";
 import ContactForm from "../components/contact-page/ContactForm";
-import H2 from "../components/H2";
 import { Mail, MapIcon, Phone } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
 	FaCcDiscover,
 	FaCcMastercard,
@@ -19,6 +17,8 @@ import { FaMoneyCheckAlt } from "react-icons/fa";
 import PageContainer from "../components/PageContainer";
 import Important from "../components/Important";
 import { IoLogoVenmo } from "react-icons/io5";
+import { GrContactInfo } from "react-icons/gr";
+import { LuClock4 } from "react-icons/lu";
 
 const paymentMethods: { title: string; icon: ReactNode }[] = [
 	{
@@ -55,6 +55,8 @@ const paymentMethods: { title: string; icon: ReactNode }[] = [
 	},
 ];
 
+const STROKEWIDTH = 1.75;
+
 const page = () => {
 	return (
 		<PageContainer>
@@ -65,9 +67,18 @@ const page = () => {
 				</H1>
 
 				<Section className="grid grid-cols-1 gap-10">
-					<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
-						<div className="space-y-4 w-full">
-							<H2>Contact Information</H2>
+					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+						<div className="space-y-4 w-full p-4 sm:p-8 border border-primary/25 rounded-md text-sm md:text-base">
+							<GrContactInfo
+								size={32}
+								strokeWidth={STROKEWIDTH}
+								className="text-primary"
+							/>
+
+							<span className="block font-semibold text-2xl">
+								Contact Information
+							</span>
+
 							<div className="flex items-center gap-2">
 								<MapIcon size={18} />
 								<p>Nashville, Tennessee 37221</p>
@@ -93,8 +104,15 @@ const page = () => {
 							</p>
 						</div>
 
-						<div className="space-y-4 w-full">
-							<H2>Hours of Operation</H2>
+						<div className="space-y-4 w-full p-4 sm:p-8 border border-primary/25 rounded-md">
+							<LuClock4
+								size={32}
+								strokeWidth={STROKEWIDTH}
+								className="text-primary"
+							/>
+							<span className="block font-semibold text-2xl">
+								Hours of Operation
+							</span>
 							<p>
 								<span className="font-medium">Monday - Friday : </span>
 								8:00AM - 5:00PM
@@ -126,7 +144,13 @@ const page = () => {
 						</ul>
 					</div>
 
-					<span className="font-medium text-lg">We also accept invoices</span>
+					<span className="font-medium text-base sm:text-lg">
+						We also accept invoices
+					</span>
+				</Section>
+
+				<Section>
+					<ContactForm />
 				</Section>
 
 				<Section>

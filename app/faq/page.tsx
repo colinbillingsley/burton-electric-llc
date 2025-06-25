@@ -71,8 +71,11 @@ const FaqPage = () => {
 								<CardHeader>
 									<div className="flex justify-between items-center gap-2">
 										<div className="flex items-center gap-4">
-											<RiQuestionAnswerLine size={24} />
-											<CardTitle className="text-base">
+											<RiQuestionAnswerLine
+												size={24}
+												className="hidden sm:block"
+											/>
+											<CardTitle className="text-sm lg:text-base">
 												{faq.question}
 											</CardTitle>
 										</div>
@@ -89,14 +92,16 @@ const FaqPage = () => {
 										isOpen ? "block" : "hidden"
 									}`}
 								>
-									<p className="tracking-wide leading-relaxed">{faq.answer}</p>
+									<p className="tracking-wide leading-relaxed text-sm lg:text-base">
+										{faq.answer}
+									</p>
 								</CardContent>
 							</Card>
 						);
 					})}
 				</div>
 
-				<div className="mt-20 space-y-2">
+				<div className="p-10 sm:p-20 mt-10 space-y-2 bg-accent/30">
 					<H2>Contact Us Today</H2>
 					<p className="max-w-2xl text-muted-foreground">
 						Didn’t see your question answered here? Please feel free to call

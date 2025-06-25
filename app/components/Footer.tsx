@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="px-6 py-10 mt-20 bg-secondary text-secondary-foreground">
+		<footer className="px-6 py-10 mt-20 bg-secondary text-secondary-foreground font-[family-name:var(--font-montserrat)]">
 			<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* Column 1: Company Info */}
 				<div className="space-y-2">
