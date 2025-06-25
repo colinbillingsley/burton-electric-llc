@@ -52,7 +52,7 @@ const pages = () => {
 					<img
 						src="/gallery-images/img28.jpg"
 						alt="image of 2 burton electrical vans on a jobsite"
-						className="rounded-xl block w-full"
+						className="rounded-xl block w-full shadow-lg"
 					/>
 				</Section>
 

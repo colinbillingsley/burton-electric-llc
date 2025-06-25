@@ -38,7 +38,7 @@ const Hero = () => {
 							/>
 						</a>
 						<a
-							href="/about"
+							href="/about-us"
 							className="text-sm sm:text-base group flex items-center gap-2 text-white bg-primary px-4 py-2 font-medium rounded-lg transition-all w-fit text-nowrap"
 						>
 							<span>Learn More</span>

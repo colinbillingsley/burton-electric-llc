@@ -66,7 +66,7 @@ const page = () => {
 					<Important>Burton Electric LLC</Important>
 				</H1>
 
-				<Section className="grid grid-cols-1 gap-10">
+				<div className="grid grid-cols-1 gap-10 mt-10">
 					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
 						<div className="space-y-4 w-full p-4 sm:p-8 border border-primary/25 rounded-md text-sm md:text-base">
 							<GrContactInfo
@@ -124,7 +124,7 @@ const page = () => {
 							</p>
 						</div>
 					</div>
-				</Section>
+				</div>
 
 				<Section className="bg-accent/30 p-4 sm:p-16 flex flex-col items-center gap-10">
 					<div className="flex flex-col lg:flex-row items-center gap-6 justify-center">

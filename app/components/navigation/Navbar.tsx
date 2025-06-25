@@ -30,8 +30,8 @@ type LinkProps = { title: string; href: string }[];
 
 const aboutLinks: LinkProps = [
 	{
-		title: "About",
-		href: "/about",
+		title: "About Us",
+		href: "/about-us",
 	},
 	// {
 	// 	title: "Blog",
@@ -39,7 +39,7 @@ const aboutLinks: LinkProps = [
 	// },
 	{
 		title: "Service Areas",
-		href: "/about/service-areas",
+		href: "/about-us/service-areas",
 	},
 	// {
 	// 	title: "Testimonials",
@@ -49,7 +49,7 @@ const aboutLinks: LinkProps = [
 
 const serviceLinks: LinkProps = [
 	{
-		title: "Services",
+		title: "Our Services",
 		href: "/services",
 	},
 	{
