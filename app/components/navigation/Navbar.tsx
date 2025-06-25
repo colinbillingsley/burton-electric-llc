@@ -134,7 +134,7 @@ const Navbar = () => {
 	const [showServices, setShowServices] = useState(false);
 	const [showAbout, setShowAbout] = useState(false);
 	return (
-		<div className="p-3 md:p-4 fixed top-0 left-0 z-50 w-full bg-white border-b border-primary shadow-lg">
+		<div className="p-3 md:p-4 fixed top-0 left-0 z-50 w-full bg-white border-b border-primary shadow-lg font-[family-name:var(--font-montserrat)]">
 			<nav className="w-full flex items-center justify-between">
 				<div className="flex items-center gap-8">
 					<Image

@@ -11,7 +11,7 @@ const PageContainer = ({
 	return (
 		<div
 			className={cn(
-				`mt-30 min-h-screen w-full font-[family-name:var(--font-geist-sans)]`,
+				`mt-30 min-h-screen w-full font-[family-name:var(--font-montserrat)]`,
 				className
 			)}
 		>
