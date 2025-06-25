@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
 	return (
 		<section
-			className="relative w-full h-[110vh] bg-cover bg-center bg-no-repeat"
+			className="relative w-full h-[110vh] bg-cover bg-center bg-no-repeat font-[family-name:var(--font-montserrat)]"
 			style={{ backgroundImage: "url('/hero-bg2.jpg')" }}
 		>
 			{/* Overlay */}

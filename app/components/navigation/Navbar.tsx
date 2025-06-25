@@ -164,6 +164,7 @@ const Navbar = () => {
 													<NavLink
 														title={aboutLink.title}
 														href={aboutLink.href}
+														className="p-4"
 													/>
 												</NavigationMenuLink>
 											</li>
@@ -183,6 +184,7 @@ const Navbar = () => {
 													<NavLink
 														title={serviceLink.title}
 														href={serviceLink.href}
+														className="p-4"
 													/>
 												</NavigationMenuLink>
 											</li>
@@ -234,14 +236,14 @@ const Navbar = () => {
 						>
 							<SheetTitle>Burton Electric LLC</SheetTitle>
 							<SheetClose asChild>
-								<NavLink title="Home" href={"/"} />
+								<NavLink title="Home" href={"/"} className="p-4" />
 							</SheetClose>
 
 							{/* Toggleable About section */}
 							<div className="flex flex-col">
 								<button
 									onClick={() => setShowAbout((prev) => !prev)}
-									className="flex items-center gap-2 text-sm font-medium p-3 hover:bg-accent transition-all outline-none"
+									className="flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none"
 								>
 									<span className="text-base">About</span>
 									{showAbout ? (
@@ -256,7 +258,11 @@ const Navbar = () => {
 									<div className="flex flex-col gap-1 pl-4">
 										{aboutLinks.map((link) => (
 											<SheetClose asChild key={link.href}>
-												<NavLink title={link.title} href={link.href} />
+												<NavLink
+													title={link.title}
+													href={link.href}
+													className="p-4"
+												/>
 											</SheetClose>
 										))}
 									</div>
@@ -267,7 +273,7 @@ const Navbar = () => {
 							<div className="flex flex-col">
 								<button
 									onClick={() => setShowServices((prev) => !prev)}
-									className="flex items-center gap-2 text-sm font-medium p-3 hover:bg-accent transition"
+									className="flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition"
 								>
 									<span className="text-base">Services</span>
 									{showServices ? (
@@ -282,7 +288,11 @@ const Navbar = () => {
 									<div className="flex flex-col gap-1 pl-4">
 										{serviceLinks.map((link) => (
 											<SheetClose asChild key={link.href}>
-												<NavLink title={link.title} href={link.href} />
+												<NavLink
+													title={link.title}
+													href={link.href}
+													className="p-4"
+												/>
 											</SheetClose>
 										))}
 									</div>
@@ -290,15 +300,15 @@ const Navbar = () => {
 							</div>
 
 							<SheetClose asChild>
-								<NavLink title={"FAQ"} href={"/faq"} />
+								<NavLink title={"FAQ"} href={"/faq"} className="p-4" />
 							</SheetClose>
 
 							<SheetClose asChild>
-								<NavLink title={"Gallery"} href={"/gallery"} />
+								<NavLink title={"Gallery"} href={"/gallery"} className="p-4" />
 							</SheetClose>
 
 							<SheetClose asChild>
-								<NavLink title={"Contact"} href={"/contact"} />
+								<NavLink title={"Contact"} href={"/contact"} className="p-4" />
 							</SheetClose>
 
 							{/* Sheet footer */}

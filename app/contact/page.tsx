@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import MainContainer from "../components/MainContainer";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
@@ -18,6 +18,42 @@ import { IoIosCash } from "react-icons/io";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import PageContainer from "../components/PageContainer";
 import Important from "../components/Important";
+import { IoLogoVenmo } from "react-icons/io5";
+
+const paymentMethods: { title: string; icon: ReactNode }[] = [
+	{
+		title: "Visa",
+		icon: <FaCcVisa title="Visa" />,
+	},
+	{
+		title: "MasterCard",
+		icon: <FaCcMastercard title="Master Card" />,
+	},
+	{
+		title: "Discover",
+		icon: <FaCcDiscover title="Discover Card" />,
+	},
+	{
+		title: "American Express",
+		icon: <SiAmericanexpress title="American Express" />,
+	},
+	{
+		title: "Cash",
+		icon: <IoIosCash title="Cash" />,
+	},
+	{
+		title: "Check",
+		icon: <FaMoneyCheckAlt title="Check" />,
+	},
+	{
+		title: "Debit",
+		icon: <FaCreditCard title="Debit" />,
+	},
+	{
+		title: "Venmo",
+		icon: <IoLogoVenmo title="Venmo" />,
+	},
+];
 
 const page = () => {
 	return (
@@ -70,50 +106,27 @@ const page = () => {
 							</p>
 						</div>
 					</div>
+				</Section>
 
-					<Card className="rounded-sm border-secondary/5 border-2 shadow-lg text-center">
-						<CardHeader>
-							<CardTitle className="text-2xl border-b-2 border-primary/50">
-								Accepted Methods of Payment
-							</CardTitle>
-						</CardHeader>
+				<Section className="bg-accent/30 p-4 sm:p-16 flex flex-col items-center gap-10">
+					<div className="flex flex-col lg:flex-row items-center gap-6 justify-center">
+						<p className="text-2xl sm:text-3xl font-semibold lg:self-start p-3">
+							Accepted Methods of Payment
+						</p>
+						<ul className="grid grid-cols-2 lg:grid-cols-3 text-gray-600">
+							{paymentMethods.map((payment, index) => (
+								<li
+									key={`${payment.title}-${index}`}
+									className="flex items-center gap-2 p-3 text-sm sm:text-base"
+								>
+									<i className="text-5xl">{payment.icon}</i>
+									<span>{payment.title}</span>
+								</li>
+							))}
+						</ul>
+					</div>
 
-						<CardContent className="space-y-4">
-							<div className="flex items-center justify-center flex-wrap gap-4">
-								<FaCcVisa size={48} className="text-[#1434CB]" title="Visa" />
-								<FaCcMastercard
-									size={48}
-									className="text-[#EB001B]"
-									title="Master Card"
-								/>
-								<FaCcDiscover
-									size={48}
-									className="text-[#F79C1F]"
-									title="Discover Card"
-								/>
-								<SiAmericanexpress
-									size={38}
-									className="rounded-md text-[#016FD0]"
-									title="American Express"
-								/>
-								<IoIosCash size={48} className="text-lime-600" title="Cash" />
-								<FaMoneyCheckAlt
-									size={48}
-									className="text-gray-700"
-									title="Check"
-								/>
-								<FaCreditCard
-									size={48}
-									className="text-gray-700"
-									title="Debit"
-								/>
-							</div>
-							<p className="font-medium tracking-wide">
-								We also accept Venmo and Invoicing
-							</p>
-						</CardContent>
-					</Card>
-					<ContactForm />
+					<span className="font-medium text-lg">We also accept invoices</span>
 				</Section>
 
 				<Section>

@@ -6,7 +6,7 @@ import MainContainer from "./components/MainContainer";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="font-[family-name:var(--font-montserrat)]">
 			{/* Hero Section */}
 			<Hero />
 			<MainContainer>
