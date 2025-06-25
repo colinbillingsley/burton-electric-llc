@@ -6,7 +6,7 @@ const STROKEWIDTH = 1.75;
 
 const WhyBurton = () => {
 	return (
-		<Section>
+		<Section spacing="large">
 			<h2 className="font-bold text-4xl text-center">
 				Why Burton Electric LLC?
 			</h2>

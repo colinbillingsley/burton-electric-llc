@@ -121,28 +121,26 @@ const page = () => {
 					needs.
 				</p>
 
-				<Section>
-					<ul className="grid md:grid-cols-2 gap-10">
-						{services.map((service) => (
-							<li
-								key={`${service.href}`}
-								className="p-4 border-l-4 border-primary space-y-5 cursor-default hover:scale-105 transition-transform"
+				<ul className="grid md:grid-cols-2 gap-10 mt-12">
+					{services.map((service) => (
+						<li
+							key={`${service.href}`}
+							className="p-4 border-l-4 border-primary space-y-5 cursor-default hover:scale-105 transition-transform"
+						>
+							<span className="block text-xl font-semibold">
+								{service.title}
+							</span>
+							<p>{service.desc}</p>
+							<a
+								href={service.href}
+								className="flex items-center gap-2 w-fit hover:text-primary transition-colors"
 							>
-								<span className="block text-xl font-semibold">
-									{service.title}
-								</span>
-								<p>{service.desc}</p>
-								<a
-									href={service.href}
-									className="flex items-center gap-2 w-fit hover:text-primary transition-colors"
-								>
-									<span>Learn More</span>
-									<ChevronRight size={12} />
-								</a>
-							</li>
-						))}
-					</ul>
-				</Section>
+								<span>Learn More</span>
+								<ChevronRight size={12} />
+							</a>
+						</li>
+					))}
+				</ul>
 
 				<Section className="bg-muted/50 px-8 py-24">
 					<h2 className="text-2xl font-semibold mb-4">

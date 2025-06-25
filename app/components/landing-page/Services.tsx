@@ -91,7 +91,7 @@ Electrical Troubleshooting & Repairs: Diagnosing and fixing electrical issues li
 
 const Services = () => {
 	return (
-		<Section>
+		<Section spacing="large">
 			<div className="grid gap-4 md:grid-cols-2 my-12">
 				<Card>
 					<CardHeader>
@@ -144,7 +144,10 @@ const Services = () => {
 				</a>
 			</div>
 
-			<Section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+			<Section
+				spacing="large"
+				className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center"
+			>
 				<div className="space-y-4">
 					<H2>Commercial Services</H2>
 					<p>

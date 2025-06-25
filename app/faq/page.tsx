@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import { cn } from "@/lib/utils";
 import H2 from "../components/H2";
 import { RiQuestionAnswerLine } from "react-icons/ri";
+import Section from "../components/Section";
 
 const faqs = [
 	{
@@ -56,7 +57,7 @@ const FaqPage = () => {
 					electrical work.
 				</p>
 
-				<div className="flex flex-col gap-4">
+				<Section spacing="small" className="flex flex-col gap-4">
 					{faqs.map((faq, index) => {
 						const isOpen = openIndex === index;
 						return (
@@ -99,16 +100,16 @@ const FaqPage = () => {
 							</Card>
 						);
 					})}
-				</div>
+				</Section>
 
-				<div className="p-10 sm:p-20 mt-10 space-y-2 bg-accent/30">
+				<Section className="p-10 sm:p-20 space-y-2 bg-accent/30">
 					<H2>Contact Us Today</H2>
 					<p className="max-w-2xl text-muted-foreground">
 						Didn’t see your question answered here? Please feel free to call
 						Burton Electric LLC and ask your question directly to one of our
 						licensed electricians.
 					</p>
-				</div>
+				</Section>
 			</MainContainer>
 			<Footer />
 		</PageContainer>
