@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navigation/Navbar";
+import { LoadingProvider } from "./providers/loading-context";
+import LoadingOverlay from "./components/LoadingOverlay";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -26,7 +28,10 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${montserrat.variable} antialiased`}>
 				<Navbar />
-				{children}
+				<LoadingProvider>
+					<LoadingOverlay />
+					{children}
+				</LoadingProvider>
 			</body>
 		</html>
 	);
