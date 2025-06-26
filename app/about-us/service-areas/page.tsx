@@ -381,7 +381,7 @@ const pages = () => {
 								key={index}
 								onClick={() => setOpenIndex(isOpen ? null : index)}
 								className={cn(
-									"cursor-pointer border border-border rounded-xl shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary",
+									"cursor-pointer border border-border rounded-xl shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary overflow-hidden gap-0",
 									isOpen && "bg-primary/5 border-primary shadow-md"
 								)}
 							>
@@ -406,8 +406,11 @@ const pages = () => {
 								</CardHeader>
 								<CardContent
 									className={`text-sm transition-all duration-200 space-y-6 ${
-										isOpen ? "block" : "hidden"
+										isOpen
+											? "max-h-[50rem] opacity-100 pt-2"
+											: "max-h-0 opacity-0"
 									}`}
+									aria-hidden={!isOpen}
 								>
 									<p className="tracking-wide leading-relaxed text-sm lg:text-base">
 										{service.desc}
@@ -417,7 +420,7 @@ const pages = () => {
 											<a
 												key={`${link.href}-${index}`}
 												href={link.href}
-												className="px-3 py-2 bg-primary text-white hover:bg-primary/90 text-center rounded-lg text-xs sm:text-sm"
+												className={`px-3 py-2 bg-primary text-white hover:bg-primary/90 text-center rounded-lg text-xs sm:text-sm`}
 											>
 												{link.title}
 											</a>

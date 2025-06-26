@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Section from "../Section";
 import H2 from "../H2";
+import P from "../P";
 
 const ICONSIZE = 42;
 const STROKEWIDTH = 1.75;
@@ -126,12 +127,12 @@ const Services = () => {
 			</div>
 
 			<div className="w-full bg-primary text-white px-4 py-8 rounded-md space-y-4">
-				<p>
+				<P>
 					As a locally owned and operated business we take pride in serving our
 					community, making Nashville a safer and brighter place. Contact us
 					today for a free consultation and let us help you with all your
 					electrical needs!
-				</p>
+				</P>
 				<a
 					href="/contact"
 					className="group flex items-center gap-2 text-primary bg-white px-4 py-2 font-medium rounded-lg transition-all w-fit"
@@ -150,15 +151,16 @@ const Services = () => {
 			>
 				<div className="space-y-4">
 					<H2>Commercial Services</H2>
-					<p>
+					<P>
 						At Burton Electric LLC, we specialize in providing top-tier
 						electrical services for businesses, from commercial buildouts to
 						restaurant and retail spaces. Our licensed and experienced
-						electricians are committed to ensuring your commercial property's
-						electrical systems run smoothly and safely. Whether you need
-						installation, maintenance, or repairs, we offer prompt, reliable
-						solutions tailored to meet the unique needs of your business.
-					</p>
+						electricians are committed to ensuring your commercial
+						property&#39;s electrical systems run smoothly and safely. Whether
+						you need installation, maintenance, or repairs, we offer prompt,
+						reliable solutions tailored to meet the unique needs of your
+						business.
+					</P>
 
 					<div className="flex flex-col md:flex-row items-center justify-between gap-10">
 						<div className="space-y-6 w-full">
@@ -176,7 +178,7 @@ const Services = () => {
 											/>
 											<p className="font-medium">{service.title}</p>
 										</div>
-										<p>{service.description}</p>
+										<P>{service.description}</P>
 									</li>
 								))}
 							</ul>
@@ -195,13 +197,13 @@ const Services = () => {
 				/>
 				<div className="space-y-4 order-1 md:order-2">
 					<H2>Residential Electrical Services</H2>
-					<p>
+					<P>
 						At Burton Electric LLC, we provide reliable and professional
 						electrical services for homeowners. Whether you need a simple
 						repair, an electrical upgrade, or a complete installation, our
-						licensed electricians are here to ensure your home’s electrical
+						licensed electricians are here to ensure your home&#39;s electrical
 						systems are safe, efficient, and up to code.
-					</p>
+					</P>
 
 					<div className="flex flex-col md:flex-row items-center justify-between gap-10">
 						<div className="space-y-6 w-full">
@@ -219,7 +221,7 @@ const Services = () => {
 											/>
 											<p className="font-medium">{service.title}</p>
 										</div>
-										<p>{service.description}</p>
+										<P>{service.description}</P>
 									</li>
 								))}
 							</ul>

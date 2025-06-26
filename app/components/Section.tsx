@@ -21,7 +21,12 @@ const Section = ({
 		}
 	}
 	return (
-		<section className={cn(`${spacingType(spacing || "default")}`, className)}>
+		<section
+			className={cn(
+				`${spacingType(spacing || "default")} space-y-6`,
+				className
+			)}
+		>
 			{children}
 		</section>
 	);

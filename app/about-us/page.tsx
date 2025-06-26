@@ -30,19 +30,19 @@ const pages = () => {
 							reliable, safe, and efficient electrical services.
 						</p>
 						<p className="max-w-2xl">
-							For the past two decades, we’ve built a reputation for outstanding
-							customer service and high-quality work, specializing in both
-							commercial and residential electrical services. Whether you need a
-							quick repair, a major installation, or ongoing maintenance, we’re
-							here to ensure your electrical systems are running smoothly and
-							safely.
+							For the past two decades, we&#39;ve built a reputation for
+							outstanding customer service and high-quality work, specializing
+							in both commercial and residential electrical services. Whether
+							you need a quick repair, a major installation, or ongoing
+							maintenance, we&#39;re here to ensure your electrical systems are
+							running smoothly and safely.
 						</p>
 						<p className="max-w-2xl">
 							As a local business, we value our customers and the trust they
 							place in us. Our commitment to integrity, professionalism, and
-							personalized service sets us apart, and we’re proud to continue
-							the legacy of excellence that has been passed down through
-							generations.
+							personalized service sets us apart, and we&#39;re proud to
+							continue the legacy of excellence that has been passed down
+							through generations.
 						</p>
 						<p className="max-w-2xl">
 							Thank you for choosing Burton Electric. We look forward to serving
@@ -92,7 +92,7 @@ const pages = () => {
 							<MdOutlineAttachMoney size={48} />
 							<span className="text-center font-medium">Budget Friendly</span>
 							<p className="text-center text-sm">
-								Top-quality electrical work that won’t break the bank.
+								Top-quality electrical work that won&#39;t break the bank.
 							</p>
 						</div>
 					</div>

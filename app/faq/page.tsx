@@ -11,6 +11,10 @@ import { cn } from "@/lib/utils";
 import H2 from "../components/H2";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import Section from "../components/Section";
+import ContactUs, {
+	ContactContent,
+	ContactTitle,
+} from "../components/ContactUs";
 
 const faqs = [
 	{
@@ -57,7 +61,7 @@ const FaqPage = () => {
 					electrical work.
 				</p>
 
-				<Section spacing="small" className="flex flex-col gap-4">
+				<Section spacing="small" className="flex flex-col space-y-4">
 					{faqs.map((faq, index) => {
 						const isOpen = openIndex === index;
 						return (
@@ -65,23 +69,20 @@ const FaqPage = () => {
 								key={index}
 								onClick={() => setOpenIndex(isOpen ? null : index)}
 								className={cn(
-									"cursor-pointer border border-border rounded-xl shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary",
+									"cursor-pointer border border-border rounded-xl shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary overflow-hidden gap-0",
 									isOpen && "bg-primary/5 border-primary shadow-md"
 								)}
 							>
 								<CardHeader>
 									<div className="flex justify-between items-center gap-2">
 										<div className="flex items-center gap-4">
-											<RiQuestionAnswerLine
-												size={24}
-												className="hidden sm:block"
-											/>
+											<RiQuestionAnswerLine size={24} className="shrink-0" />
 											<CardTitle className="text-sm lg:text-base">
 												{faq.question}
 											</CardTitle>
 										</div>
 										<ChevronDown
-											className={`transition-transform ${
+											className={`transition-transform shrink-0 ${
 												isOpen ? "rotate-180" : ""
 											}`}
 											size={18}
@@ -89,11 +90,16 @@ const FaqPage = () => {
 									</div>
 								</CardHeader>
 								<CardContent
-									className={`text-sm transition-all duration-200 ${
-										isOpen ? "block" : "hidden"
+									className={`text-sm transition-all ${
+										isOpen
+											? "max-h-[50rem] opacity-100 pt-2"
+											: "max-h-0 opacity-0"
 									}`}
+									aria-hidden={!isOpen}
 								>
-									<p className="tracking-wide leading-relaxed text-sm lg:text-base">
+									<p
+										className={`tracking-wide leading-relaxed text-sm lg:text-base`}
+									>
 										{faq.answer}
 									</p>
 								</CardContent>
@@ -102,14 +108,14 @@ const FaqPage = () => {
 					})}
 				</Section>
 
-				<Section className="p-10 sm:p-20 space-y-2 bg-accent/30">
-					<H2>Contact Us Today</H2>
-					<p className="max-w-2xl text-muted-foreground">
-						Didn’t see your question answered here? Please feel free to call
-						Burton Electric LLC and ask your question directly to one of our
-						licensed electricians.
-					</p>
-				</Section>
+				<ContactUs>
+					<ContactTitle>Contact Us Today!</ContactTitle>
+					<ContactContent>
+						Didn&apos;t see your question answered here? Please feel free to
+						call Burton Electric LLC and ask your question directly to one of
+						our licensed electricians.
+					</ContactContent>
+				</ContactUs>
 			</MainContainer>
 			<Footer />
 		</PageContainer>

@@ -150,9 +150,9 @@ const page = () => {
 						Schedule a free consultation and we’ll guide you to the right
 						solution.
 					</p>
-					<Link href="/contact">
+					<a href="/contact">
 						<Button className="hover:cursor-pointer">Get in Touch</Button>
-					</Link>
+					</a>
 				</Section>
 			</MainContainer>
 			<Footer />
