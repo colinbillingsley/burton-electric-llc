@@ -4,10 +4,11 @@ import H1 from "@/app/components/H1";
 import Important from "@/app/components/Important";
 import MainContainer from "@/app/components/MainContainer";
 import PageContainer from "@/app/components/PageContainer";
-import Section from "@/app/components/Section";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 import { MdElectricalServices } from "react-icons/md";
 
@@ -22,15 +23,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Appliance Installation",
-				href: "",
+				href: "/areas-of-service/brentwood-appliance-installation",
 			},
 			{
 				title: "Franklin Appliance Installation",
-				href: "",
+				href: "/areas-of-service/franklin-appliance-installation",
 			},
 			{
 				title: "Nashville Appliance Installation",
-				href: "",
+				href: "/areas-of-service/nashville-appliance-installation",
 			},
 		],
 	},
@@ -40,15 +41,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Commercial Ceiling Fan Installation Services",
-				href: "",
+				href: "/areas-of-service/brentwood-commercial-ceiling-fan-installation-services",
 			},
 			{
 				title: "Franklin Commercial Ceiling Fan Installation Services",
-				href: "",
+				href: "/areas-of-service/franklin-commercial-ceiling-fan-installation-services",
 			},
 			{
 				title: "Nashville Commercial Ceiling Fan Installation Services",
-				href: "",
+				href: "/areas-of-service/nashville-commercial-ceiling-fan-installation-services",
 			},
 		],
 	},
@@ -58,15 +59,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrical Contractor",
-				href: "",
+				href: "/areas-of-service/brentwood-electrical-contractor",
 			},
 			{
 				title: "Franklin Electrical Contractor",
-				href: "",
+				href: "/areas-of-service/franklin-electrical-contractor",
 			},
 			{
 				title: "Nashville Electrical Contractor",
-				href: "",
+				href: "/areas-of-service/nashville-electrical-contractor",
 			},
 		],
 	},
@@ -76,15 +77,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrical Contractor Services",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Electrical Contractor Services",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Electrical Contractor Services",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -94,15 +95,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrical Repair",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Electrical Repair",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Electrical Repair",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -112,15 +113,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrical Retrofitting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Electrical Retrofitting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Electrical Retrofitting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -130,15 +131,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -148,15 +149,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Hot Tub And Sauna Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Hot Tub And Sauna Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Hot Tub And Sauna Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -166,15 +167,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood In Floor Heating",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin In Floor Heating",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville In Floor Heating",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -184,15 +185,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Landscape Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Landscape Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Landscape Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -202,15 +203,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Lighting Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Lighting Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Lighting Electrician",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -220,15 +221,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Lighting Installation",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Lighting Installation",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Lighting Installation",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -238,15 +239,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood New Construction Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin New Construction Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville New Construction Electrical",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -256,15 +257,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Residential Ceiling Fan Installations",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Residential Ceiling Fan Installations",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Residential Ceiling Fan Installations",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -274,15 +275,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Rewiring Service",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Rewiring Service",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Rewiring Service",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -292,15 +293,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Security Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Security Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Security Lighting",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -310,15 +311,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Solar Panels",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Solar Panels",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Solar Panels",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -328,15 +329,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Standby Generator",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Standby Generator",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Standby Generator",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
@@ -346,21 +347,22 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Surge Protection",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Franklin Surge Protection",
-				href: "",
+				href: "/areas-of-service/",
 			},
 			{
 				title: "Nashville Surge Protection",
-				href: "",
+				href: "/areas-of-service/",
 			},
 		],
 	},
 ];
 
 const pages = () => {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [openIndex, setOpenIndex] = useState<number | null>(null);
 	return (
 		<PageContainer>
@@ -417,13 +419,11 @@ const pages = () => {
 									</p>
 									<div className="mt-auto flex items-center flex-wrap gap-2">
 										{service.links.map((link, index) => (
-											<a
-												key={`${link.href}-${index}`}
-												href={link.href}
-												className={`px-3 py-2 bg-primary text-white hover:bg-primary/90 text-center rounded-lg text-xs sm:text-sm`}
-											>
-												{link.title}
-											</a>
+											<Link href={link.href} key={`${link.href}-${index}`}>
+												<Button className="text-xs sm:text-sm text-wrap w-fit h-fit whitespace-normal">
+													{link.title}
+												</Button>
+											</Link>
 										))}
 									</div>
 								</CardContent>

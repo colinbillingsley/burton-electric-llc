@@ -30,17 +30,17 @@ const pages = () => {
 							reliable, safe, and efficient electrical services.
 						</p>
 						<p className="max-w-2xl">
-							For the past two decades, we&#39;ve built a reputation for
+							For the past two decades, we&apos;ve built a reputation for
 							outstanding customer service and high-quality work, specializing
 							in both commercial and residential electrical services. Whether
 							you need a quick repair, a major installation, or ongoing
-							maintenance, we&#39;re here to ensure your electrical systems are
+							maintenance, we&apos;re here to ensure your electrical systems are
 							running smoothly and safely.
 						</p>
 						<p className="max-w-2xl">
 							As a local business, we value our customers and the trust they
 							place in us. Our commitment to integrity, professionalism, and
-							personalized service sets us apart, and we&#39;re proud to
+							personalized service sets us apart, and we&apos;re proud to
 							continue the legacy of excellence that has been passed down
 							through generations.
 						</p>
@@ -83,8 +83,8 @@ const pages = () => {
 								Free Consultations Available
 							</span>
 							<p className="text-center text-sm">
-								No obligations. Let's talk through your project and explore the
-								best solution.
+								No obligations. Let&apos;s talk through your project and explore
+								the best solution.
 							</p>
 						</div>
 
@@ -92,7 +92,7 @@ const pages = () => {
 							<MdOutlineAttachMoney size={48} />
 							<span className="text-center font-medium">Budget Friendly</span>
 							<p className="text-center text-sm">
-								Top-quality electrical work that won&#39;t break the bank.
+								Top-quality electrical work that won&apos;t break the bank.
 							</p>
 						</div>
 					</div>

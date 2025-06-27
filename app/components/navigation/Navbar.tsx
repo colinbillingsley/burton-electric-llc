@@ -25,6 +25,8 @@ import {
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 type LinkProps = { title: string; href: string }[];
 
@@ -133,6 +135,16 @@ const serviceLinks: LinkProps = [
 const Navbar = () => {
 	const [showServices, setShowServices] = useState(false);
 	const [showAbout, setShowAbout] = useState(false);
+	const pathname = usePathname();
+
+	const isAboutActive: boolean = pathname.includes("/about-us");
+	const isServiceActive: boolean = pathname.includes("/services");
+
+	function closeTabs(): void {
+		setShowAbout(false);
+		setShowServices(false);
+	}
+
 	return (
 		<div className="p-3 md:p-4 fixed top-0 left-0 z-9999 w-full bg-white border-b border-primary shadow-lg font-[family-name:var(--font-montserrat)]">
 			<nav className="w-full flex items-center justify-between">
@@ -153,11 +165,15 @@ const Navbar = () => {
 								</NavigationMenuLink>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<NavigationMenuTrigger className="bg-transparent">
+								<NavigationMenuTrigger
+									className={`bg-transparent ${
+										isAboutActive ? "text-primary" : ""
+									}`}
+								>
 									About
 								</NavigationMenuTrigger>
 								<NavigationMenuContent>
-									<ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+									<ul className="grid grid-cols-1 gap-2 w-[400px] md:w-[500px] lg:w-[600px]">
 										{aboutLinks.map((aboutLink, index) => (
 											<li key={`${aboutLink.href}-${index}`}>
 												<NavigationMenuLink asChild>
@@ -173,7 +189,11 @@ const Navbar = () => {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<NavigationMenuTrigger className="bg-transparent">
+								<NavigationMenuTrigger
+									className={`bg-transparent ${
+										isServiceActive ? "text-primary" : ""
+									}`}
+								>
 									Services
 								</NavigationMenuTrigger>
 								<NavigationMenuContent>
@@ -213,20 +233,16 @@ const Navbar = () => {
 					</NavigationMenu>
 				</div>
 
-				<a
-					type="phone"
-					href={`tel:+16158301111`}
-					className="hidden md:flex items-center gap-2 font-medium text-sm bg-primary p-2 rounded-lg text-white shadow-lg shadow-transparent hover:shadow-primary/25 transition-all"
-				>
-					<i>
+				<a type="phone" href={`tel:+16158301111`} className="hidden md:block">
+					<Button>
 						<Phone size={18} color="white" />
-					</i>
-					615-830-1111
+						615-830-1111
+					</Button>
 				</a>
 
 				{/* Mobile Navigation */}
 				<div className="block md:hidden">
-					<Sheet>
+					<Sheet onOpenChange={() => closeTabs()}>
 						<SheetTrigger asChild>
 							<Menu size={28} className="text-primary" />
 						</SheetTrigger>
@@ -234,7 +250,7 @@ const Navbar = () => {
 							side="right"
 							className="p-4 flex flex-col gap-1 overflow-y-auto"
 						>
-							<SheetTitle>Burton Electric LLC</SheetTitle>
+							<SheetTitle className="mb-6">Burton Electric LLC</SheetTitle>
 							<SheetClose asChild>
 								<NavLink title="Home" href={"/"} className="p-4" />
 							</SheetClose>
@@ -243,7 +259,9 @@ const Navbar = () => {
 							<div className="flex flex-col">
 								<button
 									onClick={() => setShowAbout((prev) => !prev)}
-									className="flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none"
+									className={`flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none ${
+										isAboutActive ? "text-primary" : ""
+									}`}
 								>
 									<span className="text-base">About</span>
 									{showAbout ? (
@@ -273,7 +291,9 @@ const Navbar = () => {
 							<div className="flex flex-col">
 								<button
 									onClick={() => setShowServices((prev) => !prev)}
-									className="flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition"
+									className={`flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none ${
+										isServiceActive ? "text-primary" : ""
+									}`}
 								>
 									<span className="text-base">Services</span>
 									{showServices ? (
@@ -313,32 +333,23 @@ const Navbar = () => {
 
 							{/* Sheet footer */}
 							<div className="flex items-center gap-4 mt-8">
-								<a
-									type="phone"
-									href={`tel:+16158301111`}
-									className="flex items-center gap-2 font-medium text-sm bg-primary p-2 rounded-full text-white shadow-lg shadow-transparent hover:shadow-primary/25 transition-all"
-								>
-									<i>
+								<a type="phone" href={`tel:+16158301111`}>
+									<Button size={"icon"}>
 										<Phone size={18} color="white" />
-									</i>
+									</Button>
 								</a>
-								<a
-									type="email"
-									href="mailto:burtonelectricllc@gmail.com"
-									className="flex items-center gap-2 font-medium text-sm bg-primary p-2 rounded-full text-white shadow-lg shadow-transparent hover:shadow-primary/25 transition-all"
-								>
-									<i>
+								<a type="email" href="mailto:burtonelectricllc@gmail.com">
+									<Button size={"icon"}>
 										<Mail size={18} color="white" />
-									</i>
+									</Button>
 								</a>
 								<a
 									href={`https://www.google.com/maps/place/Burton+Electric+LLC/@36.1174399,-86.7852455,10z/data=!4m6!3m5!1s0x886489c1f6b9cf55:0x35780e4276fd32ec!8m2!3d36.1160054!4d-86.785147!16s%2Fg%2F11h4czhc5r?authuser=1&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D`}
-									className="flex items-center gap-2 font-medium text-sm bg-primary p-2 rounded-full text-white shadow-lg shadow-transparent hover:shadow-primary/25 transition-all"
 									target="_blank"
 								>
-									<i>
+									<Button size={"icon"}>
 										<MapPin size={18} color="white" />
-									</i>
+									</Button>
 								</a>
 							</div>
 						</SheetContent>

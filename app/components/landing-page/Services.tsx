@@ -5,9 +5,10 @@ import Image from "next/image";
 import Section from "../Section";
 import H2 from "../H2";
 import P from "../P";
+import { Button } from "@/components/ui/button";
 
 const ICONSIZE = 42;
-const STROKEWIDTH = 1.75;
+const STROKEWIDTH = 1.5;
 
 const commercialServices: {
 	title: string;
@@ -97,7 +98,11 @@ const Services = () => {
 				<Card>
 					<CardHeader>
 						<CardTitle className="flex items-center gap-2 text-xl font-medium">
-							<Building size={ICONSIZE} strokeWidth={STROKEWIDTH} />
+							<Building
+								size={ICONSIZE}
+								strokeWidth={STROKEWIDTH}
+								className="shrink-0"
+							/>
 							<span>Commercial Services</span>
 						</CardTitle>
 					</CardHeader>
@@ -113,7 +118,11 @@ const Services = () => {
 				<Card>
 					<CardHeader>
 						<CardTitle className="flex items-center gap-2 text-xl font-medium">
-							<HomeIcon size={ICONSIZE} strokeWidth={STROKEWIDTH} />
+							<HomeIcon
+								size={ICONSIZE}
+								strokeWidth={STROKEWIDTH}
+								className="shrink-0"
+							/>
 							<span>Residential Services</span>
 						</CardTitle>
 					</CardHeader>
@@ -133,15 +142,14 @@ const Services = () => {
 					today for a free consultation and let us help you with all your
 					electrical needs!
 				</P>
-				<a
-					href="/contact"
-					className="group flex items-center gap-2 text-primary bg-white px-4 py-2 font-medium rounded-lg transition-all w-fit"
-				>
-					<span>Contact Us</span>
-					<ArrowRight
-						size={18}
-						className="group-hover:translate-x-1 transition-all"
-					/>
+				<a href="/contact" className="group">
+					<Button size={"lg"} variant={"outline"}>
+						<span>Contact Us</span>
+						<ArrowRight
+							size={16}
+							className="group-hover:translate-x-1 transition-all"
+						/>
+					</Button>
 				</a>
 			</div>
 
@@ -185,16 +193,28 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<img src="/home1.png" alt="picture of nikolas tesla" loading="lazy" />
+				<div className="relative w-full h-[300px] md:h-full order-2">
+					<Image
+						src="/home1.png"
+						alt="picture of nikolas tesla"
+						fill
+						loading="lazy"
+						className="object-contain"
+					/>
+				</div>
 			</Section>
 
 			<Section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-				<img
-					src="/tesla-headshot.jpg"
-					alt="picture of nikolas tesla"
-					loading="lazy"
-					className="order-2 md:order-1"
-				/>
+				<div className="relative w-full h-[300px] md:h-full order-2 md:order-1">
+					<Image
+						src="/tesla-headshot.jpg"
+						fill
+						alt="picture of nikolas tesla"
+						loading="lazy"
+						className="object-contain"
+					/>
+				</div>
+
 				<div className="space-y-4 order-1 md:order-2">
 					<H2>Residential Electrical Services</H2>
 					<P>

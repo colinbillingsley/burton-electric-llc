@@ -15,19 +15,67 @@ const ContactForm = () => {
 		message: "",
 	});
 
+	const [errors, setErrors] = useState({
+		name: "",
+		email: "",
+		phone: "",
+		subject: "",
+		message: "",
+	});
+
+	const validate = () => {
+		const newErrors = {
+			name: "",
+			email: "",
+			phone: "",
+			subject: "",
+			message: "",
+		};
+
+		if (!form.name.trim()) newErrors.name = "Name is required.";
+
+		if (!form.email.trim()) {
+			newErrors.email = "Email is required.";
+		} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(form.email)) {
+			newErrors.email = "Invalid email address.";
+		}
+
+		if (!form.phone.trim()) {
+			newErrors.phone = "Phone is required.";
+		} else if (!/^\d{7,}$/.test(form.phone)) {
+			newErrors.phone = "Phone number must be at least 7 digits.";
+		}
+
+		if (!form.subject.trim()) newErrors.subject = "Subject is required.";
+		if (!form.message.trim()) newErrors.message = "Message is required.";
+
+		setErrors(newErrors);
+
+		// If any error exists, return false
+		return Object.values(newErrors).every((error) => error === "");
+	};
+
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
 		setForm({ ...form, [e.target.name]: e.target.value });
+		setErrors({ ...errors, [e.target.name]: "" }); // clear error on change
 	};
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
+		if (!validate()) return;
 
-		// Submit logic here (API, third-party service, etc.)
 		console.log(form);
 
 		setForm({
+			name: "",
+			email: "",
+			phone: "",
+			subject: "",
+			message: "",
+		});
+		setErrors({
 			name: "",
 			email: "",
 			phone: "",
@@ -42,8 +90,10 @@ const ContactForm = () => {
 			className="w-full space-y-6 bg-white border-2 border-secondary p-8 rounded-sm"
 		>
 			<H2>Have an Inquiry? Get in touch with us today!</H2>
+
+			{/* Name */}
 			<div className="space-y-2">
-				<label htmlFor="name" className="font-medium text-sm block block">
+				<label htmlFor="name" className="font-medium text-sm block">
 					Name *
 				</label>
 				<Input
@@ -53,10 +103,11 @@ const ContactForm = () => {
 					placeholder="Your full name"
 					value={form.name}
 					onChange={handleChange}
-					required
 				/>
+				{errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 			</div>
 
+			{/* Email & Phone */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 				<div className="space-y-2">
 					<label htmlFor="email" className="font-medium text-sm block">
@@ -69,8 +120,10 @@ const ContactForm = () => {
 						placeholder="example@email.com"
 						value={form.email}
 						onChange={handleChange}
-						required
 					/>
+					{errors.email && (
+						<p className="text-red-500 text-sm">{errors.email}</p>
+					)}
 				</div>
 
 				<div className="space-y-2">
@@ -84,11 +137,14 @@ const ContactForm = () => {
 						placeholder="1231231234"
 						value={form.phone}
 						onChange={handleChange}
-						required
 					/>
+					{errors.phone && (
+						<p className="text-red-500 text-sm">{errors.phone}</p>
+					)}
 				</div>
 			</div>
 
+			{/* Subject */}
 			<div className="space-y-2">
 				<label htmlFor="subject" className="font-medium text-sm block">
 					Subject *
@@ -100,10 +156,13 @@ const ContactForm = () => {
 					placeholder="Subject of your message"
 					value={form.subject}
 					onChange={handleChange}
-					required
 				/>
+				{errors.subject && (
+					<p className="text-red-500 text-sm">{errors.subject}</p>
+				)}
 			</div>
 
+			{/* Message */}
 			<div className="space-y-2">
 				<label htmlFor="message" className="font-medium text-sm block">
 					Message *
@@ -115,11 +174,13 @@ const ContactForm = () => {
 					rows={5}
 					value={form.message}
 					onChange={handleChange}
-					required
 				/>
+				{errors.message && (
+					<p className="text-red-500 text-sm">{errors.message}</p>
+				)}
 			</div>
 
-			<Button type="submit" className="w-full">
+			<Button type="submit" className="w-full" size={"lg"}>
 				Send Message
 			</Button>
 		</form>

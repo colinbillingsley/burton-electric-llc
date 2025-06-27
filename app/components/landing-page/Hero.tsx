@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -27,25 +28,23 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className="flex items-center gap-2 sm:gap-4">
-						<a
-							href="/contact"
-							className="text-sm sm:text-base group flex items-center gap-2 text-white bg-primary px-4 py-2 font-medium rounded-lg transition-all w-fit text-nowrap"
-						>
-							<span>Contact Us</span>
-							<ArrowRight
-								size={16}
-								className="group-hover:translate-x-1 transition-all"
-							/>
+						<a href="/contact" className="group">
+							<Button size={"lg"}>
+								<span>Contact Us</span>
+								<ArrowRight
+									size={16}
+									className="group-hover:translate-x-1 transition-all"
+								/>
+							</Button>
 						</a>
-						<a
-							href="/about-us"
-							className="text-sm sm:text-base group flex items-center gap-2 text-white bg-primary px-4 py-2 font-medium rounded-lg transition-all w-fit text-nowrap"
-						>
-							<span>Learn More</span>
-							<ArrowRight
-								size={16}
-								className="group-hover:translate-x-1 transition-all"
-							/>
+						<a href="/about-us" className="group">
+							<Button size={"lg"}>
+								<span>Learn More</span>
+								<ArrowRight
+									size={16}
+									className="group-hover:translate-x-1 transition-all"
+								/>
+							</Button>
 						</a>
 					</div>
 				</div>

@@ -16,8 +16,13 @@ const LoadingOverlay = () => {
 				width={200}
 				height={200}
 			/>
-			<span className="animate-pulse text-2xl font-semibold tracking-wide">
-				Loading...
+			<span className="text-2xl font-semibold tracking-wide flex items-center gap-2">
+				Loading
+				<div className="flex items-center gap-[0.15rem]">
+					<span className="animate-bounce">.</span>
+					<span className="animate-bounce delay-75">.</span>
+					<span className="animate-bounce delay-100">.</span>
+				</div>
 			</span>
 		</div>
 	);

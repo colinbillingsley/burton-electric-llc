@@ -34,7 +34,10 @@ export const LoadingProvider = ({
 
 			const href = target.getAttribute("href");
 			const isExternal =
-				target.getAttribute("target") === "_blank" || href?.startsWith("http");
+				target.getAttribute("target") === "_blank" ||
+				href?.startsWith("http") ||
+				href?.startsWith("mailto:") ||
+				href?.startsWith("tel:");
 
 			if (!isExternal && href && href !== pathname) {
 				setIsLoading(true);

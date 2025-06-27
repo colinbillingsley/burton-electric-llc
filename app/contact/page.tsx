@@ -55,8 +55,6 @@ const paymentMethods: { title: string; icon: ReactNode }[] = [
 	},
 ];
 
-const STROKEWIDTH = 1.75;
-
 const page = () => {
 	return (
 		<PageContainer>
@@ -66,61 +64,56 @@ const page = () => {
 					<Important>Burton Electric LLC</Important>
 				</H1>
 
-				<Section spacing="small" className="grid grid-cols-1 gap-10">
-					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
-						<div className="space-y-4 w-full p-4 sm:p-8 border border-primary/25 rounded-md text-sm md:text-base">
-							<GrContactInfo
-								size={32}
-								strokeWidth={STROKEWIDTH}
-								className="text-primary"
-							/>
+				<Section spacing="small" className="grid md:grid-cols-2 gap-10">
+					{/* Contact Info */}
+					<div className="p-6 bg-muted/30 border-l-4 border-primary space-y-4 shadow-md h-full">
+						<div className="flex items-center gap-4">
+							<div className="p-2 rounded-full bg-primary/10 text-primary">
+								<GrContactInfo size={24} />
+							</div>
+							<h2 className="text-xl font-semibold">Contact Information</h2>
+						</div>
 
-							<span className="block font-semibold text-2xl">
-								Contact Information
-							</span>
-
+						<div className="space-y-2 text-muted-foreground text-sm sm:text-base">
 							<div className="flex items-center gap-2">
 								<MapIcon size={18} />
 								<p>Nashville, Tennessee 37221</p>
 							</div>
-
 							<div className="flex items-center gap-2">
 								<Phone size={18} />
 								<p>(615)-830-1111</p>
 							</div>
-
 							<div className="flex items-center gap-2">
 								<Mail size={18} />
 								<p>burtonelectricllc@gmail.com</p>
 							</div>
-
 							<p>
-								<span className="font-medium">CE contractors license # : </span>
+								<span className="font-medium">CE contractors license #:</span>{" "}
 								75283
 							</p>
-
 							<p>
-								<span className="font-medium">Metro Nashville # : </span>DC1525
+								<span className="font-medium">Metro Nashville #:</span> DC1525
 							</p>
 						</div>
+					</div>
 
-						<div className="space-y-4 w-full p-4 sm:p-8 border border-primary/25 rounded-md">
-							<LuClock4
-								size={32}
-								strokeWidth={STROKEWIDTH}
-								className="text-primary"
-							/>
-							<span className="block font-semibold text-2xl">
-								Hours of Operation
-							</span>
+					{/* Hours of Operation */}
+					<div className="p-6 bg-muted/30 border-l-4 border-primary space-y-4 shadow-md h-full">
+						<div className="flex items-center gap-4">
+							<div className="p-2 rounded-full bg-primary/10 text-primary">
+								<LuClock4 size={24} />
+							</div>
+							<h2 className="text-xl font-semibold">Hours of Operation</h2>
+						</div>
+
+						<div className="space-y-2 text-muted-foreground text-sm sm:text-base">
 							<p>
-								<span className="font-medium">Monday - Friday : </span>
-								8:00AM - 5:00PM
+								<span className="font-medium">Monday - Friday:</span> 8:00AM -
+								5:00PM
 							</p>
-
 							<p>
-								<span className="font-medium">Saturday - Sunday : </span>
-								By Appointment Only
+								<span className="font-medium">Saturday - Sunday:</span> By
+								Appointment Only
 							</p>
 						</div>
 					</div>
@@ -140,7 +133,7 @@ const page = () => {
 									key={`${payment.title}-${index}`}
 									className="flex items-center gap-2 p-3 text-sm sm:text-base"
 								>
-									<i className="text-5xl">{payment.icon}</i>
+									<i className="text-3xl sm:text-5xl">{payment.icon}</i>
 									<span>{payment.title}</span>
 								</li>
 							))}

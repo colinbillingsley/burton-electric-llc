@@ -4,15 +4,16 @@ import MainContainer from "../components/MainContainer";
 import H1 from "../components/H1";
 import Footer from "../components/Footer";
 import Important from "../components/Important";
-import Section from "../components/Section";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import ContactUs, {
+	ContactContent,
+	ContactTitle,
+} from "../components/ContactUs";
 
 const services: { title: string; desc: string; href: string }[] = [
 	{
 		title: "Panel Upgrades",
-		desc: "If you’re looking for an electrical contractor who can replace your electrical panel with a more efficient and reliable one, contact Burton Electric LLC. We are the licensed, bonded, and insured team of contractors you can count on.",
+		desc: "If you're looking for an electrical contractor who can replace your electrical panel with a more efficient and reliable one, contact Burton Electric LLC. We are the licensed, bonded, and insured team of contractors you can count on.",
 		href: "/services/panel-upgrades",
 	},
 	{
@@ -22,12 +23,12 @@ const services: { title: string; desc: string; href: string }[] = [
 	},
 	{
 		title: "In Floor Heating",
-		desc: "There’s no question that there’s nothing worse than setting foot on an ice-cold floor first thing in the morning. If you have had too many days ruined by insufficient heat where you need it most, then you might be interested to know that your floor could become the heat source for your whole home or business.",
+		desc: "There's no question that there's nothing worse than setting foot on an ice-cold floor first thing in the morning. If you have had too many days ruined by insufficient heat where you need it most, then you might be interested to know that your floor could become the heat source for your whole home or business.",
 		href: "/services/in-floor-heating",
 	},
 	{
 		title: "Landscape Lighting",
-		desc: "You no doubt already know what a well designed and maintained landscape can do for your commercial or residential property, but are you getting all that you can out your landscape if it’s not properly lit?",
+		desc: "You no doubt already know what a well designed and maintained landscape can do for your commercial or residential property, but are you getting all that you can out your landscape if it's not properly lit?",
 		href: "/services/landscape-lighting",
 	},
 	{
@@ -42,12 +43,12 @@ const services: { title: string; desc: string; href: string }[] = [
 	},
 	{
 		title: "Appliance Installation",
-		desc: "If you have just purchased or are about to buy a brand-new appliance for your home or local business, there’s no question that you are excited for the day it arrives so that you can enjoy your upgraded amenities.",
+		desc: "If you have just purchased or are about to buy a brand-new appliance for your home or local business, there's no question that you are excited for the day it arrives so that you can enjoy your upgraded amenities.",
 		href: "/services/appliance-installation",
 	},
 	{
 		title: "Electrical Repair",
-		desc: "If you are a homeowner, you know that there’s nothing that detracts from your comfort more than when your electricity isn’t working properly.",
+		desc: "If you are a homeowner, you know that there's nothing that detracts from your comfort more than when your electricity isn't working properly.",
 		href: "/services/electrical-repair",
 	},
 	{
@@ -57,7 +58,7 @@ const services: { title: string; desc: string; href: string }[] = [
 	},
 	{
 		title: "Electrical Retrofitting",
-		desc: "Have you started to notice that your electricity utility bills have been steadily rising even though you haven’t changed anything about your usage in your home or local business?",
+		desc: "Have you started to notice that your electricity utility bills have been steadily rising even though you haven't changed anything about your usage in your home or local business?",
 		href: "/services/electrical-retrofitting",
 	},
 	{
@@ -77,17 +78,17 @@ const services: { title: string; desc: string; href: string }[] = [
 	},
 	{
 		title: "Surge Protection",
-		desc: "Today’s homes and businesses are filled with sensitive electronics that are easily damaged by common power surges, spikes or impulses.",
+		desc: "Today's homes and businesses are filled with sensitive electronics that are easily damaged by common power surges, spikes or impulses.",
 		href: "/services/surge-protection",
 	},
 	{
 		title: "Security Lighting",
-		desc: "Is your home or business adequately protected against intruders and vandals? If you don’t have a professionally installed security lighting system in place, you might want to think about it for a while before you answer the question.",
+		desc: "Is your home or business adequately protected against intruders and vandals? If you don't have a professionally installed security lighting system in place, you might want to think about it for a while before you answer the question.",
 		href: "/services/security-lighting",
 	},
 	{
 		title: "Solar Panels",
-		desc: "Solar panels have been around since the 1970s. The first few solar panels weren’t especially good at converting solar energy into electricity, but a lot of progress has been made since then.",
+		desc: "Solar panels have been around since the 1970s. The first few solar panels weren't especially good at converting solar energy into electricity, but a lot of progress has been made since then.",
 		href: "/services/solar-panels",
 	},
 	{
@@ -142,18 +143,13 @@ const page = () => {
 					))}
 				</ul>
 
-				<Section className="bg-muted/50 px-8 py-24">
-					<h2 className="text-2xl font-semibold mb-4">
-						Not sure what you need?
-					</h2>
-					<p className="mb-6">
-						Schedule a free consultation and we’ll guide you to the right
+				<ContactUs>
+					<ContactTitle>Not sure what you need?</ContactTitle>
+					<ContactContent>
+						Schedule a free consultation and we&apos;ll guide you to the right
 						solution.
-					</p>
-					<a href="/contact">
-						<Button className="hover:cursor-pointer">Get in Touch</Button>
-					</a>
-				</Section>
+					</ContactContent>
+				</ContactUs>
 			</MainContainer>
 			<Footer />
 		</PageContainer>

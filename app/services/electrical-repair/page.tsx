@@ -44,19 +44,19 @@ const pages = () => {
 				<Section spacing="small" className="grid md:grid-cols-2 gap-8">
 					<div className="space-y-6">
 						<P>
-							If you are a homeowner, you know that there’s nothing that
-							detracts from your comfort more than when your electricity isn’t
-							working properly. Without reliable lighting and power for all your
-							devices and appliances, it won’t be long before you start thinking
-							about moving.
+							If you are a homeowner, you know that there&apos;s nothing that
+							detracts from your comfort more than when your electricity
+							isn&apos;t working properly. Without reliable lighting and power
+							for all your devices and appliances, it won&apos;t be long before
+							you start thinking about moving.
 						</P>
 						<P>
 							As for business owners, when you have to deal with electrical
-							hiccups, it can be cause for serious concern. There isn’t a
-							business in the world that doesn’t rely on electricity for their
-							daily operations and if you are constantly dealing with
-							interruptions with your electrical service, you can’t help but
-							wonder how this is affecting your business’s growth and
+							hiccups, it can be cause for serious concern. There isn&apos;t a
+							business in the world that doesn&apos;t rely on electricity for
+							their daily operations and if you are constantly dealing with
+							interruptions with your electrical service, you can&apos;t help
+							but wonder how this is affecting your business&apos;s growth and
 							profitability.
 						</P>
 					</div>
@@ -72,15 +72,15 @@ const pages = () => {
 						<P>
 							Burton Electric LLC has been proud to serves homes and local
 							business for many years, providing high quality and reliable
-							electrical services you can trust. No matter what issue you’re
-							experiencing with your home or business’s electricity, we
-							guarantee that we will quickly identify the problem and find a
-							lasting solution.
+							electrical services you can trust. No matter what issue
+							you&apos;re experiencing with your home or business&apos;s
+							electricity, we guarantee that we will quickly identify the
+							problem and find a lasting solution.
 						</P>
 						<P>
 							Just give Burton Electric LLC a call today, tell us about the
-							problem you’re experiencing, and we will fix it for a reasonable
-							price.
+							problem you&apos;re experiencing, and we will fix it for a
+							reasonable price.
 						</P>
 					</div>
 				</Section>
@@ -89,13 +89,13 @@ const pages = () => {
 					<H2>Signs You Need Electrical Repairs</H2>
 					<P className="mb-10">
 						There are few signs that you need electrical repairs that are
-						universally known. For example, if your home or business’s outlets
-						are emitting a burning smell, you need to pick up the phone and call
-						Burton Electric LLC immediately. That said, there are few telltale
-						signs that you need electrical repairs you may not be aware of. Here
-						are a couple of these warning signs to be on the look out for,
-						because the sooner you our electricians to come repair the issue,
-						the safer your home or business will be.
+						universally known. For example, if your home or business&apos;s
+						outlets are emitting a burning smell, you need to pick up the phone
+						and call Burton Electric LLC immediately. That said, there are few
+						telltale signs that you need electrical repairs you may not be aware
+						of. Here are a couple of these warning signs to be on the look out
+						for, because the sooner you our electricians to come repair the
+						issue, the safer your home or business will be.
 					</P>
 					<ul className="grid md:grid-cols-2 gap-12 md:gap-8">
 						{signsOfRepairs.map((item, index) => (

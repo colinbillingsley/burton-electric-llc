@@ -48,21 +48,21 @@ const pages = () => {
 				>
 					<P>
 						If you have just purchased or are about to buy a brand-new appliance
-						for your home or local business, there’s no question that you are
-						excited for the day it arrives so that you can enjoy your upgraded
-						amenities. Of course, if you haven’t planned to have an electrician
-						on hand to install the appliance in question, you going to be
-						disappointed to learn that you won’t be able to use the new
-						appliance until you get a professional to swing by.
+						for your home or local business, there&apos;s no question that you
+						are excited for the day it arrives so that you can enjoy your
+						upgraded amenities. Of course, if you haven&apos;t planned to have
+						an electrician on hand to install the appliance in question, you
+						going to be disappointed to learn that you won&apos;t be able to use
+						the new appliance until you get a professional to swing by.
 					</P>
 					<P>
 						Modern appliances are more energy efficient and digitally focused
-						than ever before. Whether it’s an industrial strength dishwasher or
-						a new washer and dryer for your family, appliances today do more and
-						function at a much different rate than those you have been using.
-						And with those technological advancements comes new challenges to
-						make sure it’s compatible with your home or business’s electrical
-						infrastructure.
+						than ever before. Whether it&apos;s an industrial strength
+						dishwasher or a new washer and dryer for your family, appliances
+						today do more and function at a much different rate than those you
+						have been using. And with those technological advancements comes new
+						challenges to make sure it&apos;s compatible with your home or
+						business&apos;s electrical infrastructure.
 					</P>
 					<P>
 						For your new commercial or residential appliance to work properly,
@@ -79,22 +79,22 @@ const pages = () => {
 						years and we hope to have the opportunity to impress you with our
 						impeccable customer service. Letting our electricians handle your
 						appliance installation means the product and your home or business
-						won’t be susceptible to fires or electrical surges.
+						won&apos;t be susceptible to fires or electrical surges.
 					</P>
 					<P>
 						Plus, when we install your commercial or residential appliance to
-						the manufacturer’s specifications, your warranty will be protected
-						as some manufacturers require appliances to be installed by licensed
-						electricians. Call Burton Electric LLC today to get a free estimate
-						on our installation services.
+						the manufacturer&apos;s specifications, your warranty will be
+						protected as some manufacturers require appliances to be installed
+						by licensed electricians. Call Burton Electric LLC today to get a
+						free estimate on our installation services.
 					</P>
 				</Section>
 
 				<Section spacing="small">
 					<H2>Able to Install Any Appliance</H2>
 					<P>
-						Burton Electric LLC’s electricians consistently rank among the best
-						in the area thanks to our professional versatility. We are
+						Burton Electric LLC&apos;s electricians consistently rank among the
+						best in the area thanks to our professional versatility. We are
 						comfortable working on residential and commercial projects, always
 						delivering high-quality work and courteous services. So, whether you
 						are a homeowner who is completing a renovation or you are opening a
@@ -113,13 +113,13 @@ const pages = () => {
 					</ul>
 
 					<P>
-						Thanks to our team’s extensive experience installing appliances, we
-						work with most makes and models of appliances. Though we are
-						confident we have the ability to install any appliance, we invite
-						you to give us a call and tell us the make and model of your new
-						appliance. We have yet to be stumped by a concerned client, so you
-						can expect a free, no-obligation estimate on our services when you
-						call.
+						Thanks to our team&apos;s extensive experience installing
+						appliances, we work with most makes and models of appliances. Though
+						we are confident we have the ability to install any appliance, we
+						invite you to give us a call and tell us the make and model of your
+						new appliance. We have yet to be stumped by a concerned client, so
+						you can expect a free, no-obligation estimate on our services when
+						you call.
 					</P>
 				</Section>
 
@@ -128,7 +128,7 @@ const pages = () => {
 					<ContactContent>
 						Upgrading your appliances is always a good idea. New appliances are
 						more efficient and safer. Plus, they can add value to your home and
-						improve your business’s image. All it takes to get the new
+						improve your business&apos;s image. All it takes to get the new
 						appliances working is a phone call to Burton Electric LLC, so what
 						are you waiting for?
 					</ContactContent>

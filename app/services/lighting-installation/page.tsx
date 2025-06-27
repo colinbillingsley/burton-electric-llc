@@ -56,14 +56,14 @@ const pages = () => {
 						to set a relaxing ambiance in your home, they need to be safely
 						installed. The last thing you want is a brand-new lighting scheme
 						for your home or business only to have it either work sporadically
-						or be a fire hazard. Choosing Burton Electric LLC’s experienced
+						or be a fire hazard. Choosing Burton Electric LLC&apos;s experienced
 						electricians to handle the installation eliminates any of these
 						concerns.
 					</P>
 					<P>
 						Not only can we install a beautiful, new and energy efficient
 						lighting system in your home or business, our electricians will make
-						sure it’s up to code and safe for an affordable rate. For
+						sure it&apos;s up to code and safe for an affordable rate. For
 						high-quality lighting with convenient service, give Burton Electric
 						LLC a call today to request a free estimate.
 					</P>
@@ -74,9 +74,9 @@ const pages = () => {
 						<H2>Residential Lighting Installations</H2>
 						<P>
 							When you have been conducting lighting installations as long as
-							our electricians have, there is no room in the house we can’t
-							handle. Whether it’s your kitchen, bathroom, living room, bedroom
-							or anything in between, our experts are well versed in the
+							our electricians have, there is no room in the house we can&apos;t
+							handle. Whether it&apos;s your kitchen, bathroom, living room,
+							bedroom or anything in between, our experts are well versed in the
 							lighting needs of these rooms. Or, if you have something a little
 							less conventional in mind, we are always willing to collaborate
 							with our clients to bring their ideas to life.
@@ -97,10 +97,10 @@ const pages = () => {
 							))}
 						</ul>
 						<P>
-							We can also totally revamp your home’s exterior lighting to make
-							your property more secure while boosting its curb appeal. Whatever
-							your home needs lighting-wise, Burton Electric LLC is here to
-							help.
+							We can also totally revamp your home&apos;s exterior lighting to
+							make your property more secure while boosting its curb appeal.
+							Whatever your home needs lighting-wise, Burton Electric LLC is
+							here to help.
 						</P>
 					</div>
 

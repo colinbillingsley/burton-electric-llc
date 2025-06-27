@@ -11,7 +11,7 @@ const Important = ({
 	return (
 		<span
 			className={cn(
-				`text-5xl md:text-7xl font-bold block text-primary`,
+				`text-4xl sm:text-5xl md:text-7xl font-bold block text-primary`,
 				className
 			)}
 		>

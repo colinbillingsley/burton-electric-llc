@@ -17,11 +17,12 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
 
 		return (
 			<Link
+				prefetch
 				ref={ref}
 				href={href}
 				className={cn(
-					"p-2 font-medium hover:bg-accent hover:text-black w-full",
-					isActive && "bg-primary text-white",
+					"p-2 font-medium hover:bg-accent hover:text-black w-full transition-colors",
+					isActive ? "bg-primary text-white" : "bg-white",
 					className
 				)}
 				{...props}
