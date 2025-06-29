@@ -1,14 +1,26 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Poppins, Roboto, Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navigation/Navbar";
 import { LoadingProvider } from "./providers/loading-context";
 import LoadingOverlay from "./components/LoadingOverlay";
 
-const montserrat = Montserrat({
+const roboto = Roboto({
 	subsets: ["latin"],
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Choose the weights you want
-	variable: "--font-montserrat", // Optional: use as a CSS variable
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-roboto",
+});
+
+const urbanist = Urbanist({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-urbanist",
+});
+
+const poppins = Poppins({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +38,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${montserrat.variable} antialiased`}>
+			<body
+				className={`${urbanist.variable} ${roboto.variable}
+				${poppins.variable} antialiased`}
+			>
 				<Navbar />
 				<LoadingProvider>
 					<LoadingOverlay />

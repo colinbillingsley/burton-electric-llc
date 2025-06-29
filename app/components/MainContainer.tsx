@@ -11,7 +11,7 @@ const MainContainer = ({
 	return (
 		<div
 			className={cn(
-				`min-h-screen w-full px-8 sm:px-20 pt-8 font-[family-name:var(--font-geist-sans)]`,
+				`min-h-screen w-full px-8 sm:px-20 pt-8 font-[family-name:var(--font-poppins)]`,
 				className
 			)}
 		>

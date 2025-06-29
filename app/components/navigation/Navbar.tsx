@@ -146,7 +146,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<div className="p-3 md:p-4 fixed top-0 left-0 z-9999 w-full bg-white border-b border-primary shadow-lg font-[family-name:var(--font-montserrat)]">
+		<div className="p-3 md:p-4 fixed top-0 left-0 z-9999 w-full bg-white border-b border-primary/45 shadow-md shadow-primary/10 font-[family-name:var(--font-poppins)]">
 			<nav className="w-full flex items-center justify-between">
 				<div className="flex items-center gap-8">
 					<Image
@@ -166,8 +166,8 @@ const Navbar = () => {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger
-									className={`bg-transparent ${
-										isAboutActive ? "text-primary" : ""
+									className={`bg-transparent text-black/80 transition-all ${
+										isAboutActive ? "text-primary font-bold" : ""
 									}`}
 								>
 									About
@@ -190,8 +190,8 @@ const Navbar = () => {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger
-									className={`bg-transparent ${
-										isServiceActive ? "text-primary" : ""
+									className={`bg-transparent text-black/80 transition-all ${
+										isServiceActive ? "text-primary font-bold" : ""
 									}`}
 								>
 									Services

@@ -21,8 +21,8 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
 				ref={ref}
 				href={href}
 				className={cn(
-					"p-2 font-medium hover:bg-accent hover:text-black w-full transition-colors",
-					isActive ? "bg-primary text-white" : "bg-white",
+					"p-2 font-medium hover:text-black w-full transition-colors",
+					isActive ? "text-primary font-bold" : "bg-transparent text-black/80",
 					className
 				)}
 				{...props}

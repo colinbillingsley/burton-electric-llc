@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="px-6 py-10 mt-20 bg-secondary text-secondary-foreground font-[family-name:var(--font-montserrat)]">
+		<footer className="px-6 py-10 mt-20 bg-secondary text-secondary-foreground font-[family-name:var(--font-poppins)]">
 			<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* Column 1: Company Info */}
 				<div className="space-y-2">
@@ -17,29 +18,29 @@ const Footer = () => {
 					<h4 className="font-semibold text-lg">Quick Links</h4>
 					<ul className="flex flex-col gap-1 text-sm text-muted-foreground">
 						<li>
-							<a href="/" className="hover:text-primary">
+							<Link href="/" className="hover:text-primary">
 								Home
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/services" className="hover:text-primary">
+							<Link href="/services" className="hover:text-primary">
 								Services
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/about" className="hover:text-primary">
+							<Link href="/about" className="hover:text-primary">
 								About
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/faq" className="hover:text-primary">
+							<Link href="/faq" className="hover:text-primary">
 								FAQ
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/contact" className="hover:text-primary">
+							<Link href="/contact" className="hover:text-primary">
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>

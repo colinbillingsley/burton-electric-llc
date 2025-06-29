@@ -38,7 +38,7 @@ const Hero = () => {
 							</Button>
 						</a>
 						<a href="/about-us" className="group">
-							<Button size={"lg"}>
+							<Button size={"lg"} variant={"outline"}>
 								<span>Learn More</span>
 								<ArrowRight
 									size={16}

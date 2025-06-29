@@ -7,7 +7,7 @@ import H2 from "../H2";
 import P from "../P";
 import { Button } from "@/components/ui/button";
 
-const ICONSIZE = 42;
+const ICONSIZE = 44;
 const STROKEWIDTH = 1.5;
 
 const commercialServices: {
@@ -93,16 +93,19 @@ Electrical Troubleshooting & Repairs: Diagnosing and fixing electrical issues li
 
 const Services = () => {
 	return (
-		<Section spacing="large">
+		<Section spacing="large" className="my-40">
 			<div className="grid gap-4 md:grid-cols-2 my-12">
 				<Card>
 					<CardHeader>
-						<CardTitle className="flex items-center gap-2 text-xl font-medium">
-							<Building
-								size={ICONSIZE}
-								strokeWidth={STROKEWIDTH}
-								className="shrink-0"
-							/>
+						<CardTitle className="flex flex-col gap-2 text-xl font-medium">
+							<div className="p-3 bg-primary/5 rounded-full text-primary w-fit">
+								<Building
+									size={ICONSIZE}
+									strokeWidth={STROKEWIDTH}
+									className="shrink-0"
+								/>
+							</div>
+
 							<span>Commercial Services</span>
 						</CardTitle>
 					</CardHeader>
@@ -117,12 +120,15 @@ const Services = () => {
 
 				<Card>
 					<CardHeader>
-						<CardTitle className="flex items-center gap-2 text-xl font-medium">
-							<HomeIcon
-								size={ICONSIZE}
-								strokeWidth={STROKEWIDTH}
-								className="shrink-0"
-							/>
+						<CardTitle className="flex flex-col gap-2 text-xl font-medium">
+							<div className="p-3 bg-primary/5 rounded-full text-primary w-fit">
+								<HomeIcon
+									size={ICONSIZE}
+									strokeWidth={STROKEWIDTH}
+									className="shrink-0"
+								/>
+							</div>
+
 							<span>Residential Services</span>
 						</CardTitle>
 					</CardHeader>
@@ -135,7 +141,7 @@ const Services = () => {
 				</Card>
 			</div>
 
-			<div className="w-full bg-primary text-white px-4 py-8 rounded-md space-y-4">
+			<div className="w-full bg-primary text-white px-4 py-8 rounded-sm space-y-4">
 				<P>
 					As a locally owned and operated business we take pride in serving our
 					community, making Nashville a safer and brighter place. Contact us
