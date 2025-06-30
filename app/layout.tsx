@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navigation/Navbar";
-import { LoadingProvider } from "./providers/loading-context";
-import LoadingOverlay from "./components/LoadingOverlay";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -28,10 +26,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${poppins.variable} antialiased`}>
 				<Navbar />
-				<LoadingProvider>
-					<LoadingOverlay />
-					{children}
-				</LoadingProvider>
+				{children}
 			</body>
 		</html>
 	);
