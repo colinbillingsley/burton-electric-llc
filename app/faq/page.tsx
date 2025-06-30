@@ -8,7 +8,6 @@ import H1 from "../components/H1";
 import Important from "../components/Important";
 import Footer from "../components/Footer";
 import { cn } from "@/lib/utils";
-import H2 from "../components/H2";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import Section from "../components/Section";
 import ContactUs, {

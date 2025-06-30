@@ -8,6 +8,7 @@ import Section from "../components/Section";
 import { MdFamilyRestroom, MdOutlineAttachMoney } from "react-icons/md";
 import { BsCalendarCheck } from "react-icons/bs";
 import { LuMessageSquareMore } from "react-icons/lu";
+import Image from "next/image";
 
 const pages = () => {
 	return (
@@ -49,10 +50,13 @@ const pages = () => {
 							you!
 						</p>
 					</div>
-					<img
+
+					<Image
 						src="/gallery-images/img28.jpg"
 						alt="image of 2 burton electrical vans on a jobsite"
-						className="rounded-xl block w-full shadow-lg"
+						width={600}
+						height={600}
+						className="object-contain rounded-xl shadow-lg"
 					/>
 				</Section>
 

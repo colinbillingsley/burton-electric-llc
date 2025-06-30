@@ -11,8 +11,6 @@ import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
 import React from "react";
-import { FaHome } from "react-icons/fa";
-import { LuBuilding } from "react-icons/lu";
 
 const pages = () => {
 	return (
