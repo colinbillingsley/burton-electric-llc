@@ -2,6 +2,7 @@ import ContactUs, {
 	ContactContent,
 	ContactTitle,
 } from "@/app/components/ContactUs";
+import Footer from "@/app/components/Footer";
 import H1 from "@/app/components/H1";
 import H2 from "@/app/components/H2";
 import Important from "@/app/components/Important";
@@ -98,6 +99,7 @@ const page = () => {
 					</ContactContent>
 				</ContactUs>
 			</MainContainer>
+			<Footer />
 		</PageContainer>
 	);
 };

@@ -9,6 +9,7 @@ import ContactUs, {
 	ContactContent,
 	ContactTitle,
 } from "../components/ContactUs";
+import Link from "next/link";
 
 const services: { title: string; desc: string; href: string }[] = [
 	{
@@ -132,13 +133,14 @@ const page = () => {
 								{service.title}
 							</span>
 							<p>{service.desc}</p>
-							<a
+							<Link
 								href={service.href}
 								className="flex items-center gap-2 w-fit hover:text-primary transition-colors"
+								prefetch
 							>
 								<span>Learn More</span>
 								<ChevronRight size={12} />
-							</a>
+							</Link>
 						</li>
 					))}
 				</ul>

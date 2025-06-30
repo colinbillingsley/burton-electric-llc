@@ -2,6 +2,7 @@ import ContactUs, {
 	ContactContent,
 	ContactTitle,
 } from "@/app/components/ContactUs";
+import Footer from "@/app/components/Footer";
 import H1 from "@/app/components/H1";
 import H2 from "@/app/components/H2";
 import Important from "@/app/components/Important";
@@ -121,11 +122,11 @@ const page = () => {
 						))}
 					</ul>
 					<P>
-						If you don’t see the appliance you need installed listed here, don’t
-						fret. When you have been installing appliances for as long as we
-						have, you end up being very confident in your ability to handle any
-						installation. Just give us a call and let us know what you need
-						installed and we’ll let you know if we can help.
+						If you don&apos;t see the appliance you need installed listed here,
+						don&apos;t fret. When you have been installing appliances for as
+						long as we have, you end up being very confident in your ability to
+						handle any installation. Just give us a call and let us know what
+						you need installed and we&apos;ll let you know if we can help.
 					</P>
 				</Section>
 
@@ -138,6 +139,7 @@ const page = () => {
 					</ContactContent>
 				</ContactUs>
 			</MainContainer>
+			<Footer />
 		</PageContainer>
 	);
 };

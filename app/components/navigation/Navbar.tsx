@@ -166,7 +166,7 @@ const Navbar = () => {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger
-									className={`bg-transparent text-black/80 transition-all ${
+									className={`bg-transparent text-muted-foreground transition-all ${
 										isAboutActive ? "text-primary font-bold" : ""
 									}`}
 								>
@@ -190,7 +190,7 @@ const Navbar = () => {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger
-									className={`bg-transparent text-black/80 transition-all ${
+									className={`bg-transparent text-muted-foreground transition-all ${
 										isServiceActive ? "text-primary font-bold" : ""
 									}`}
 								>
@@ -260,7 +260,7 @@ const Navbar = () => {
 								<button
 									onClick={() => setShowAbout((prev) => !prev)}
 									className={`flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none ${
-										isAboutActive ? "text-primary" : ""
+										isAboutActive ? "text-primary" : "text-muted-foreground"
 									}`}
 								>
 									<span className="text-base">About</span>
@@ -292,7 +292,7 @@ const Navbar = () => {
 								<button
 									onClick={() => setShowServices((prev) => !prev)}
 									className={`flex items-center gap-2 text-sm font-medium p-4 hover:bg-accent transition-all outline-none ${
-										isServiceActive ? "text-primary" : ""
+										isServiceActive ? "text-primary" : "text-muted-foreground"
 									}`}
 								>
 									<span className="text-base">Services</span>

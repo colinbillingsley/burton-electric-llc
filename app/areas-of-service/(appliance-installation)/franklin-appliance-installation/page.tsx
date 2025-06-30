@@ -12,6 +12,7 @@ import Section from "@/app/components/Section";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { appliances } from "../brentwood-appliance-installation/page";
+import Footer from "@/app/components/Footer";
 
 const page = () => {
 	return (
@@ -89,7 +90,7 @@ const page = () => {
 						Home and business owners in the Franklin area have plenty of choices
 						when they are looking for professional appliance installation
 						services, so why should they seek out the help of Burton Electric
-						LLC? Well, it’s simple.
+						LLC? Well, it&apos;s simple.
 					</P>
 					<P>
 						Friendly and responsive service. Our technicians are renowned around
@@ -120,6 +121,7 @@ const page = () => {
 					</ContactContent>
 				</ContactUs>
 			</MainContainer>
+			<Footer />
 		</PageContainer>
 	);
 };

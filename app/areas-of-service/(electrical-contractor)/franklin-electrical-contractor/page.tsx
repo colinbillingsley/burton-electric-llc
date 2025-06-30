@@ -2,6 +2,7 @@ import ContactUs, {
 	ContactContent,
 	ContactTitle,
 } from "@/app/components/ContactUs";
+import Footer from "@/app/components/Footer";
 import H1 from "@/app/components/H1";
 import H2 from "@/app/components/H2";
 import Important from "@/app/components/Important";
@@ -42,13 +43,13 @@ const page = () => {
 				<Section spacing="small">
 					<P>
 						Building a brand-new home or business in the Franklin area is
-						exciting. It’s true for both residential and commercial remodels.
-						Although, the excitement can easily be dampened when you are
-						suddenly faced with the issue of how you plan to power the new or
-						remodeled space. Your designs may look good on paper, but can they
-						be feasibly wired in a way that keeps your electrical costs low? If
-						you don’t have an answer to this question, then you need to consult
-						with a licensed and insured electrical contractor.
+						exciting. It&apos;s true for both residential and commercial
+						remodels. Although, the excitement can easily be dampened when you
+						are suddenly faced with the issue of how you plan to power the new
+						or remodeled space. Your designs may look good on paper, but can
+						they be feasibly wired in a way that keeps your electrical costs
+						low? If you don&apos;t have an answer to this question, then you
+						need to consult with a licensed and insured electrical contractor.
 					</P>
 					<P>
 						Electrical contractors are a little bit different than your average
@@ -69,7 +70,7 @@ const page = () => {
 					<P>
 						For a free estimate one of the many residential and commercial
 						electrical contracting services we offer, give Burton Electric LLC a
-						call today and prepare to be impressed with our team’s
+						call today and prepare to be impressed with our team&apos;s
 						professionalism, courtesy and ability to communicate.
 					</P>
 				</Section>
@@ -98,11 +99,11 @@ const page = () => {
 						))}
 					</ul>
 					<P>
-						If the service you require isn’t listed here, don’t fret. Our
-						electrical contractors are among the most experienced in the area,
-						which means the probability that they have completed the task you
-						require is very high. Just give us a call, tell us what you need and
-						we’ll make you our best offer.
+						If the service you require isn&apos;t listed here, don&apos;t fret.
+						Our electrical contractors are among the most experienced in the
+						area, which means the probability that they have completed the task
+						you require is very high. Just give us a call, tell us what you need
+						and we&apos;ll make you our best offer.
 					</P>
 				</Section>
 
@@ -114,9 +115,9 @@ const page = () => {
 						plenty of experience designing and building new electrical systems,
 						retrofitting existing infrastructure and so much more. Because
 						commercial clients are losing money every day when their facility
-						doesn’t have power, our commercial electrical contractors specialize
-						in completing projects on tight deadlines while coordinating with
-						the other tradespeople.
+						doesn&apos;t have power, our commercial electrical contractors
+						specialize in completing projects on tight deadlines while
+						coordinating with the other tradespeople.
 					</P>
 					<P>Our commercial services include:</P>
 					<ul className="flex items-center gap-4 flex-wrap">
@@ -134,12 +135,12 @@ const page = () => {
 						))}
 					</ul>
 					<P>
-						If the commercial electrical contracting service you require isn’t
-						listed above, we remind you that our contractors are among the most
-						experienced in the area and have no doubt completed a similar job in
-						the past. Just give us a call, tell us what you expect from our
-						contractors and we will give you an estimate that’s affordable and
-						fixed.
+						If the commercial electrical contracting service you require
+						isn&apos;t listed above, we remind you that our contractors are
+						among the most experienced in the area and have no doubt completed a
+						similar job in the past. Just give us a call, tell us what you
+						expect from our contractors and we will give you an estimate
+						that&apos;s affordable and fixed.
 					</P>
 				</Section>
 
@@ -151,6 +152,7 @@ const page = () => {
 					</ContactContent>
 				</ContactUs>
 			</MainContainer>
+			<Footer />
 		</PageContainer>
 	);
 };

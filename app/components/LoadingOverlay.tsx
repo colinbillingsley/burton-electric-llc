@@ -9,7 +9,7 @@ const LoadingOverlay = () => {
 	if (!isLoading) return null;
 
 	return (
-		<div className="fixed inset-0 z-[9999] bg-secondary/50 flex flex-col items-center justify-center gap-6 text-white">
+		<div className="fixed inset-0 z-[9999] bg-secondary/50 flex flex-col items-center justify-center gap-6 text-white font-[family-name:var(--font-poppins)]">
 			<Image
 				src={"/burton-logo.png"}
 				alt="Burton Electric Logo"

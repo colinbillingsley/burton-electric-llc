@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
@@ -28,7 +29,7 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className="flex items-center gap-2 sm:gap-4">
-						<a href="/contact" className="group">
+						<Link href="/contact" className="group" prefetch>
 							<Button size={"lg"}>
 								<span>Contact Us</span>
 								<ArrowRight
@@ -36,8 +37,8 @@ const Hero = () => {
 									className="group-hover:translate-x-1 transition-all"
 								/>
 							</Button>
-						</a>
-						<a href="/about-us" className="group">
+						</Link>
+						<Link href="/about-us" className="group" prefetch>
 							<Button size={"lg"} variant={"outline"}>
 								<span>Learn More</span>
 								<ArrowRight
@@ -45,7 +46,7 @@ const Hero = () => {
 									className="group-hover:translate-x-1 transition-all"
 								/>
 							</Button>
-						</a>
+						</Link>
 					</div>
 				</div>
 

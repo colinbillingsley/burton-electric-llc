@@ -2,6 +2,7 @@ import ContactUs, {
 	ContactContent,
 	ContactTitle,
 } from "@/app/components/ContactUs";
+import Footer from "@/app/components/Footer";
 import H1 from "@/app/components/H1";
 import H2 from "@/app/components/H2";
 import Important from "@/app/components/Important";
@@ -33,12 +34,12 @@ const page = () => {
 
 				<Section spacing="small">
 					<P>
-						If you don’t know the difference between an electrician and an
-						electrical contractor, you don’t need to beat yourself up over it
-						because very few people realize there is a difference between the
+						If you don&apos;t know the difference between an electrician and an
+						electrical contractor, you don&apos;t need to beat yourself up over
+						it because very few people realize there is a difference between the
 						two disciplines. Yes, both work with electricity and their expertise
 						are invaluable whenever there is electrical work required, but
-						that’s where the similarities end.
+						that&apos;s where the similarities end.
 					</P>
 					<P>
 						An electrician is a trained tradesperson who can assist you with
@@ -132,6 +133,7 @@ const page = () => {
 					</ContactContent>
 				</ContactUs>
 			</MainContainer>
+			<Footer />
 		</PageContainer>
 	);
 };

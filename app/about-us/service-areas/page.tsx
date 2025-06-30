@@ -55,7 +55,7 @@ const serviceAreas: {
 	},
 	{
 		title: "Electrical Contractor",
-		desc: "Burton Electric LLC is an electrical contracting firm that has been proud to serve homes and businesses for many years. We have built our firm from scratch into one of the most trusted electrical contracting firms in the area thanks to our team’s dedication to quality workmanship.",
+		desc: "Burton Electric LLC is an electrical contracting firm that has been proud to serve homes and businesses for many years. We have built our firm from scratch into one of the most trusted electrical contracting firms in the area thanks to our team's dedication to quality workmanship.",
 		links: [
 			{
 				title: "Brentwood Electrical Contractor",
@@ -73,19 +73,19 @@ const serviceAreas: {
 	},
 	{
 		title: "Electrical Contractor Services",
-		desc: "Regardless of whether it’s a big or small job, when you call Burton Electric LLC, you should always expect prompt, reliable service and quality workmanship. Whether you need something installed, repaired, replaced or simply inspected by someone with extensive knowledge of electricity, Burton Electric LLC’s fully licensed technicians are always available to help in any way they can.",
+		desc: "Regardless of whether it's a big or small job, when you call Burton Electric LLC, you should always expect prompt, reliable service and quality workmanship. Whether you need something installed, repaired, replaced or simply inspected by someone with extensive knowledge of electricity, Burton Electric LLC's fully licensed technicians are always available to help in any way they can.",
 		links: [
 			{
 				title: "Brentwood Electrical Contractor Services",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-electrical-contractor-services",
 			},
 			{
 				title: "Franklin Electrical Contractor Services",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-electrical-contractor-services",
 			},
 			{
 				title: "Nashville Electrical Contractor Services",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-electrical-contractor-services",
 			},
 		],
 	},
@@ -95,33 +95,33 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrical Repair",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-electrical-repair",
 			},
 			{
 				title: "Franklin Electrical Repair",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-electrical-repair",
 			},
 			{
 				title: "Nashville Electrical Repair",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-electrical-repair",
 			},
 		],
 	},
 	{
 		title: "Electrical Retrofitting",
-		desc: "If your home or business has been having trouble keeping up with modern energy demands, you might be due for an electrical retrofit. An electrical retrofit may involve installing a new electrical panel, a complete or partial re-wiring or another solution as determined by one of Burton Electric LLC’s skilled commercial and residential electricians to make your home or business better equipped to manage your energy demands.",
+		desc: "If your home or business has been having trouble keeping up with modern energy demands, you might be due for an electrical retrofit. An electrical retrofit may involve installing a new electrical panel, a complete or partial re-wiring or another solution as determined by one of Burton Electric LLC's skilled commercial and residential electricians to make your home or business better equipped to manage your energy demands.",
 		links: [
 			{
 				title: "Brentwood Electrical Retrofitting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-electrical-retrofitting",
 			},
 			{
 				title: "Franklin Electrical Retrofitting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-electrical-retrofitting",
 			},
 			{
 				title: "Nashville Electrical Retrofitting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-electrical-retrofitting",
 			},
 		],
 	},
@@ -131,69 +131,69 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-electrician",
 			},
 			{
 				title: "Franklin Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-electrician",
 			},
 			{
 				title: "Nashville Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-electrician",
 			},
 		],
 	},
 	{
 		title: "Hot Tub And Sauna Electrical",
-		desc: "Installing a hot tub or sauna will require any number of electrical troubleshooting, repair and installation of safety electrical outlets, wiring upgrades and wiring maintenance to make sure that you can enjoy your new home spa to the fullest. After all, the last thing you want is to be in the middle of a soak or a steam and suddenly be without power because your new home spa blew a fuse. So, rather than get left in the dark, make sure that your new hot tub or sauna are installed by Burton Electric LLC’s team of skilled, licensed and insured electricians.",
+		desc: "Installing a hot tub or sauna will require any number of electrical troubleshooting, repair and installation of safety electrical outlets, wiring upgrades and wiring maintenance to make sure that you can enjoy your new home spa to the fullest. After all, the last thing you want is to be in the middle of a soak or a steam and suddenly be without power because your new home spa blew a fuse. So, rather than get left in the dark, make sure that your new hot tub or sauna are installed by Burton Electric LLC's team of skilled, licensed and insured electricians.",
 		links: [
 			{
 				title: "Brentwood Hot Tub And Sauna Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-hot-tub-and-sauna-electrical",
 			},
 			{
 				title: "Franklin Hot Tub And Sauna Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-hot-tub-and-sauna-electrical",
 			},
 			{
 				title: "Nashville Hot Tub And Sauna Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-hot-tub-and-sauna-electrical",
 			},
 		],
 	},
 	{
-		title: "In Floor Heating",
+		title: "In-Floor Heating",
 		desc: "If you are interested in adding an in-floor heating system to your home or business, give Burton Electric LLC a call today. We have been helping install and maintain these incredible and discrete sources of heat for many years and we are confident that our licensed and insured electricians can handle anything you need related to in-floor heating systems.",
 		links: [
 			{
-				title: "Brentwood In Floor Heating",
-				href: "/areas-of-service/",
+				title: "Brentwood In-Floor Heating",
+				href: "/areas-of-service/brentwood-in-floor-heating",
 			},
 			{
-				title: "Franklin In Floor Heating",
-				href: "/areas-of-service/",
+				title: "Franklin In-Floor Heating",
+				href: "/areas-of-service/franklin-in-floor-heating",
 			},
 			{
-				title: "Nashville In Floor Heating",
-				href: "/areas-of-service/",
+				title: "Nashville In-Floor Heating",
+				href: "/areas-of-service/nashville-in-floor-heating",
 			},
 		],
 	},
 	{
 		title: "Landscape Lighting",
-		desc: "Thanks to our extensive experience installing outdoor lighting, Burton Electric LLC’s electrical contractors can design, install and maintain landscape lighting systems of any size or style. Just let us know what you hope to accomplish with your outdoor lighting design and a member of our team will be glad to give you a free quote.",
+		desc: "Thanks to our extensive experience installing outdoor lighting, Burton Electric LLC's electrical contractors can design, install and maintain landscape lighting systems of any size or style. Just let us know what you hope to accomplish with your outdoor lighting design and a member of our team will be glad to give you a free quote.",
 		links: [
 			{
 				title: "Brentwood Landscape Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-landscape-lighting",
 			},
 			{
 				title: "Franklin Landscape Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-landscape-lighting",
 			},
 			{
 				title: "Nashville Landscape Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-landscape-lighting",
 			},
 		],
 	},
@@ -203,51 +203,51 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Lighting Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-lighting-electrician",
 			},
 			{
 				title: "Franklin Lighting Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-lighting-electrician",
 			},
 			{
 				title: "Nashville Lighting Electrician",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-lighting-electrician",
 			},
 		],
 	},
 	{
 		title: "Lighting Installation",
-		desc: "Burton Electric LLC’s fully licensed and insured electricians have been completing all sorts of residential and commercial lighting installations for many years. Not only can we ensure that your new lighting is installed safely, we can make sure it’s working at maximum efficiency for a price that works for your budget.",
+		desc: "Burton Electric LLC's fully licensed and insured electricians have been completing all sorts of residential and commercial lighting installations for many years. Not only can we ensure that your new lighting is installed safely, we can make sure it's working at maximum efficiency for a price that works for your budget.",
 		links: [
 			{
 				title: "Brentwood Lighting Installation",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-lighting-installation",
 			},
 			{
 				title: "Franklin Lighting Installation",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-lighting-installation",
 			},
 			{
 				title: "Nashville Lighting Installation",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-lighting-installation",
 			},
 		],
 	},
 	{
 		title: "New Construction Electrical",
-		desc: "Burton Electric LLC has been providing new construction electrical services to residential and commercial developers and contractors for many years. Our calling card is thorough, reliable electrical services that make everyone’s lives easier.",
+		desc: "Burton Electric LLC has been providing new construction electrical services to residential and commercial developers and contractors for many years. Our calling card is thorough, reliable electrical services that make everyone's lives easier.",
 		links: [
 			{
 				title: "Brentwood New Construction Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-new-construction-electrical",
 			},
 			{
 				title: "Franklin New Construction Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-new-construction-electrical",
 			},
 			{
 				title: "Nashville New Construction Electrical",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-new-construction-electrical",
 			},
 		],
 	},
@@ -257,51 +257,51 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Residential Ceiling Fan Installations",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-residential-ceiling-fan-installations",
 			},
 			{
 				title: "Franklin Residential Ceiling Fan Installations",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-residential-ceiling-fan-installations",
 			},
 			{
 				title: "Nashville Residential Ceiling Fan Installations",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-residential-ceiling-fan-installations",
 			},
 		],
 	},
 	{
 		title: "Rewiring Service",
-		desc: "For the last several years, Burton Electric LLC has been proud to provide high-quality and efficient rewiring services to residential and commercial clients in the area. The reason people continue to seek out Burton Electric LLC’s licensed and insured electricians whenever they need rewiring services is largely due to the fact that our dedication to our profession has garnered a reputation for being the best. And the best is exactly what you can expect when you choose Burton Electric LLC for our rewiring services.",
+		desc: "For the last several years, Burton Electric LLC has been proud to provide high-quality and efficient rewiring services to residential and commercial clients in the area. The reason people continue to seek out Burton Electric LLC's licensed and insured electricians whenever they need rewiring services is largely due to the fact that our dedication to our profession has garnered a reputation for being the best. And the best is exactly what you can expect when you choose Burton Electric LLC for our rewiring services.",
 		links: [
 			{
 				title: "Brentwood Rewiring Service",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-rewiring-service",
 			},
 			{
 				title: "Franklin Rewiring Service",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-rewiring-service",
 			},
 			{
 				title: "Nashville Rewiring Service",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-rewiring-service",
 			},
 		],
 	},
 	{
 		title: "Security Lighting",
-		desc: "Burton Electric LLC is made up of licensed and insured electricians who have an extensive amount of experience installing motion sensor lights and digital timer switches in homes and businesses around the area. Our company is committed to providing quality, reliable security lighting at an affordable price because we know what’s at stake. Your life or your livelihood could be derailed without quality security lighting, which is why we want to provide it to you.",
+		desc: "Burton Electric LLC is made up of licensed and insured electricians who have an extensive amount of experience installing motion sensor lights and digital timer switches in homes and businesses around the area. Our company is committed to providing quality, reliable security lighting at an affordable price because we know what's at stake. Your life or your livelihood could be derailed without quality security lighting, which is why we want to provide it to you.",
 		links: [
 			{
 				title: "Brentwood Security Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-security-lighting",
 			},
 			{
 				title: "Franklin Security Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-security-lighting",
 			},
 			{
 				title: "Nashville Security Lighting",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-security-lighting",
 			},
 		],
 	},
@@ -311,15 +311,15 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Solar Panels",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-solar-panels",
 			},
 			{
 				title: "Franklin Solar Panels",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-solar-panels",
 			},
 			{
 				title: "Nashville Solar Panels",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-solar-panels",
 			},
 		],
 	},
@@ -329,33 +329,33 @@ const serviceAreas: {
 		links: [
 			{
 				title: "Brentwood Standby Generator",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-standby-generator",
 			},
 			{
 				title: "Franklin Standby Generator",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-standby-generator",
 			},
 			{
 				title: "Nashville Standby Generator",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-standby-generator",
 			},
 		],
 	},
 	{
 		title: "Surge Protection",
-		desc: "Burton Electric LLC has been proud to help area home and business owners increase their protections against surges. Plug-in surge protectors are certainly an asset, but if you want to be completely assured that you are protected against the worst-case scenario, you need to give us a call today. When you do, a member of Burton Electric LLC’s team will be happy to give you a free estimate on our surge protection services.",
+		desc: "Burton Electric LLC has been proud to help area home and business owners increase their protections against surges. Plug-in surge protectors are certainly an asset, but if you want to be completely assured that you are protected against the worst-case scenario, you need to give us a call today. When you do, a member of Burton Electric LLC's team will be happy to give you a free estimate on our surge protection services.",
 		links: [
 			{
 				title: "Brentwood Surge Protection",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/brentwood-surge-protection",
 			},
 			{
 				title: "Franklin Surge Protection",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/franklin-surge-protection",
 			},
 			{
 				title: "Nashville Surge Protection",
-				href: "/areas-of-service/",
+				href: "/areas-of-service/nashville-surge-protection",
 			},
 		],
 	},
@@ -372,8 +372,8 @@ const pages = () => {
 				</H1>
 				<p className="text-muted-foreground my-4 max-w-2xl">
 					Proudly serving Nashville and surrounding communities with reliable,
-					high-quality electrical services. No matter where you are, we’re just
-					a call away.
+					high-quality electrical services. No matter where you are, we&apos;re
+					just a call away.
 				</p>
 				<div className="flex flex-col gap-4">
 					{serviceAreas.map((service, index) => {
@@ -419,7 +419,11 @@ const pages = () => {
 									</p>
 									<div className="mt-auto flex items-center flex-wrap gap-2">
 										{service.links.map((link, index) => (
-											<Link href={link.href} key={`${link.href}-${index}`}>
+											<Link
+												href={link.href}
+												key={`${link.href}-${index}`}
+												prefetch
+											>
 												<Button className="text-xs sm:text-sm text-wrap w-fit h-fit whitespace-normal">
 													{link.title}
 												</Button>

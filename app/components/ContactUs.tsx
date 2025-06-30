@@ -17,7 +17,7 @@ const ContactUs = ({
 		<Section
 			spacing="small"
 			className={cn(
-				`bg-primary text-white space-y-4 px-8 py-14 rounded-sm relative overflow-hidden`,
+				`bg-gradient-to-br from-primary to-[#885619] text-white space-y-4 px-8 py-14 rounded-sm relative overflow-hidden`,
 				className
 			)}
 		>
