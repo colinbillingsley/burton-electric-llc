@@ -10,14 +10,39 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Nashville Security Lighting Services | Burton Electric LLC",
+	description:
+		"Outdoor lighting will improve your Nashville's security. Call Burton Electric LLC today at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Security Lighting Services",
+		"Nashville Security Lighting Services",
+		"Franklin Security Lighting Services",
+		"Security Lighting Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (
 		<PageContainer>
 			<MainContainer>
 				<H1>
-					<Important>Security Lighting Services in Nashville</Important>
+					<Important>Nashville Security Lighting Services</Important>
 				</H1>
 
 				<Section spacing="small">

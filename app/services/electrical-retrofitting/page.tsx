@@ -10,7 +10,34 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Electrical Retrofitting Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Burton Electric LLC will retrofit your electrical system to make it more modern, safer and more efficient. Call us at (615) 830-1111! ",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Electrical Retrofitting",
+		"Brentwood Electrical Retrofitting",
+		"Franklin Electrical Retrofitting",
+		"Nashville Electrical Retrofitting",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (
@@ -24,19 +51,19 @@ const pages = () => {
 					<div className="space-y-6">
 						<P>
 							Have you started to notice that your electricity utility bills
-							have been steadily rising even though you haven’t changed anything
-							about your usage in your home or local business? If so, then you
-							might be the perfect candidate for our electrical retrofitting
-							services.
+							have been steadily rising even though you haven&apos;t changed
+							anything about your usage in your home or local business? If so,
+							then you might be the perfect candidate for our electrical
+							retrofitting services.
 						</P>
 						<P>
 							Burton Electric LLC has been proud to serve residential and
 							commercial clients in the area whenever their electrical assets
 							have become out of date and obsolete. Obsolete lights, wires,
 							panels, appliances, etc., can all contribute to rising utility
-							bills because out of date electrical equipment isn’t as efficient,
-							especially when it has to keep up with the amp demands of modern
-							technology.
+							bills because out of date electrical equipment isn&apos;t as
+							efficient, especially when it has to keep up with the amp demands
+							of modern technology.
 						</P>
 						<P>
 							Practically anything that uses electricity in your home or
@@ -58,9 +85,9 @@ const pages = () => {
 						</P>
 						<P>
 							When you choose Burton Electric LLC to conduct an electrical
-							retrofitting, everyone wins. You’ll be all set to save money on
-							electricity, you’ll be making your home or business more
-							environmentally friendly and we’ll have yet another satisfied
+							retrofitting, everyone wins. You&apos;ll be all set to save money
+							on electricity, you&apos;ll be making your home or business more
+							environmentally friendly and we&apos;ll have yet another satisfied
 							customer. To arrange for your electrical retrofitting
 							consultation, call Burton Electric LLC today.
 						</P>
@@ -76,9 +103,9 @@ const pages = () => {
 						residential or commercial electricians so that they can take note of
 						everything obsolete piece that needs updating. Once we have
 						completed the audit, we will provide you with a free quote on the
-						retrofitting process. It’s company policy to clearly explain every
-						little cost included in the quote so that you know exactly what you
-						are paying for.
+						retrofitting process. It&apos;s company policy to clearly explain
+						every little cost included in the quote so that you know exactly
+						what you are paying for.
 					</P>
 					<P>
 						Once we get to work on the actual retrofitting process, we will
@@ -90,8 +117,8 @@ const pages = () => {
 						and ready to save you a bunch of money in utilities every month.
 					</P>
 					<P>
-						You won’t believe the difference our electrical retrofitting can
-						make, so give us a call today.
+						You won&apos;t believe the difference our electrical retrofitting
+						can make, so give us a call today.
 					</P>
 				</Section>
 

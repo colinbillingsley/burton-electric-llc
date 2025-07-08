@@ -10,9 +10,36 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
 import { MdOutlineOutlet } from "react-icons/md";
 import { TbCircuitChangeover } from "react-icons/tb";
+
+export const metadata: Metadata = {
+	title:
+		"Electrical Repairs Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Burton Electric LLC's electrical experts will correctly repair any issue with your home or business' electrical system. Call us at (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Electrical Repairs",
+		"Brentwood Electrical Repairs",
+		"Franklin Electrical Repairs",
+		"Nashville Electrical Repairs",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE = 28;
 

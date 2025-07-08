@@ -10,6 +10,29 @@ import ContactUs, {
 	ContactTitle,
 } from "../components/ContactUs";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title:
+		"Electrical Services Nashville, Franklin, Brentwood | Burton Electric LLC",
+	description:
+		"Burton Electric LLC's expert electricians provide effective, efficient electrical services in Nashville, Brentwood and Franklin",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const services: { title: string; desc: string; href: string }[] = [
 	{

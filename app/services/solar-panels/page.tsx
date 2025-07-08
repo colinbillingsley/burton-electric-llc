@@ -10,9 +10,37 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { MdSavings } from "react-icons/md";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+
+export const metadata: Metadata = {
+	title:
+		"Solar Panels Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Solar panels provide environmentally friendly, cost-effective energy. Call Burton Electric LLC at (615) 830-1111 today to learn more!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Solar Panel Services",
+		"Solar Panels",
+		"Brentwood Solar Panels",
+		"Franklin Solar Panels",
+		"Nashville Solar Panels",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (
@@ -26,8 +54,8 @@ const pages = () => {
 					<div className="space-y-6">
 						<P>
 							Solar panels have been around since the 1970s. The first few solar
-							panels weren’t especially good at converting solar energy into
-							electricity, but a lot of progress has been made since then.
+							panels weren&apos;t especially good at converting solar energy
+							into electricity, but a lot of progress has been made since then.
 							Modern solar panels are excellent at harnessing energy from the
 							sun and converting it into electricity to power your home or
 							business. As conventional forms of energy continue to rise while
@@ -41,8 +69,8 @@ const pages = () => {
 							switch to solar panel requires a deft, experienced hand. And
 							whether you are a home or a business, proper installation is key
 							if you are going to make it work. Lucky for you, you have already
-							found the area’s foremost solar panel experts in Burton Electric
-							LLC.
+							found the area&apos;s foremost solar panel experts in Burton
+							Electric LLC.
 						</P>
 						<P>
 							Burton Electric LLC was quick to adopt comprehensive solar panel
@@ -69,8 +97,8 @@ const pages = () => {
 							Solar panel systems can help you save money and protect against
 							rising utility rates. On average, most homes and businesses pay
 							back on their systems in just seven and a half years of operation,
-							and they continue to save the rest of their system’s more than
-							25-year lifespan.
+							and they continue to save the rest of their system&apos;s more
+							than 25-year lifespan.
 						</P>
 
 						<ul className="grid md:grid-cols-2 gap-8">
@@ -82,7 +110,7 @@ const pages = () => {
 									</span>
 								</div>
 								<P>
-									Let’s face it, even with energy efficient appliances and
+									Let&apos;s face it, even with energy efficient appliances and
 									devices, there is no sign that electricity prices are going
 									down any time soon. However, if you produce your own
 									electricity to offset the costs from the electric company, you
@@ -111,12 +139,13 @@ const pages = () => {
 				<Section>
 					<H2>Are Solar Panels Right for You?</H2>
 					<P>
-						Some people aren’t sure that they can benefit from solar panels
-						because their property doesn’t get a lot of direct sunlight. Solar
-						panels don’t need direct sunlight, they need the photons present in
-						natural daylight, so you don’t have to worry about that being an
-						issue. We’ll make sure that it works to save you money when you
-						contact Burton Electric LLC today about making the switch to solar.
+						Some people aren&apos;t sure that they can benefit from solar panels
+						because their property doesn&apos;t get a lot of direct sunlight.
+						Solar panels don&apos;t need direct sunlight, they need the photons
+						present in natural daylight, so you don&apos;t have to worry about
+						that being an issue. We&apos;ll make sure that it works to save you
+						money when you contact Burton Electric LLC today about making the
+						switch to solar.
 					</P>
 				</Section>
 

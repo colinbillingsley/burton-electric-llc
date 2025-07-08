@@ -9,6 +9,28 @@ import { MdFamilyRestroom, MdOutlineAttachMoney } from "react-icons/md";
 import { BsCalendarCheck } from "react-icons/bs";
 import { LuMessageSquareMore } from "react-icons/lu";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "About Us | Burton Electric LLC",
+	description:
+		"Burton Electric LLC is the top-rated electrical services company servicing Nashville, Brentwood, and Franklin.",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (

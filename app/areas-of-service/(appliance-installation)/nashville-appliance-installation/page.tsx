@@ -10,7 +10,31 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Nashville Appliance Installation | Burton Electric LLC",
+	description:
+		"If you would like a new appliance installed for your Nashville home or business, call Burton Electric LLC today! (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Appliance Installation",
+		"Nashville Appliance Installation",
+		"Franklin Appliance Installation",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (

@@ -10,9 +10,37 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdLight, MdOutlineEnergySavingsLeaf } from "react-icons/md";
+
+export const metadata: Metadata = {
+	title:
+		"Residential Ceiling Fan Installation Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Ceiling fans will all you to regulate the temperature in your home and keep you nice and cool. For effective installation service, give us a call at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Residential Ceiling Fan Installation Services",
+		"Residential Ceiling Fan Installation",
+		"Brentwood Residential Ceiling Fan Installation",
+		"Franklin Residential Ceiling Fan Installation",
+		"Nashville Residential Ceiling Fan Installation",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (
@@ -28,44 +56,44 @@ const pages = () => {
 						<P>
 							Whether you want a ceiling fan in your kitchen, bathroom, bedroom
 							or even outdoors, it is almost always a smart investment. Ceiling
-							fans aren’t just an excellent piece of decor for any area of your
-							home, they can also increase the energy efficiency and overall
-							comfort of virtually any home in the area.
+							fans aren&apos;t just an excellent piece of decor for any area of
+							your home, they can also increase the energy efficiency and
+							overall comfort of virtually any home in the area.
 						</P>
 						<P>
 							With these benefits your home is waiting to reap, you are probably
 							ready to rush to the store to grab yourself that brand-new ceiling
-							fan you’ve been thinking about buying, but we must ask you to be
-							patient and get in touch with Burton Electric LLC first. Whether
-							you want a ceiling fan with lights or without, a ceiling fan with
-							remote controls or one for your outdoor space, you need to think
-							about who is going to install it.
+							fan you&apos;ve been thinking about buying, but we must ask you to
+							be patient and get in touch with Burton Electric LLC first.
+							Whether you want a ceiling fan with lights or without, a ceiling
+							fan with remote controls or one for your outdoor space, you need
+							to think about who is going to install it.
 						</P>
 					</div>
 					<div className="space-y-6">
 						<P>
-							Installing a ceiling fan isn’t as simple as climbing up on your
-							ladder and plugging it in. You need an intimate understanding of
-							how your home’s electrical infrastructure works to successfully
-							install a ceiling fan. Without an expertise in all things
-							electrical, you won’t be installing a ceiling fan so much as a
-							fire hazard. Plus, there is a serious risk of injury when you do
-							take the matter of installation in your own hands. Rather than put
-							yourself and your home in danger over a new ceiling fan, give
-							Burton Electric LLC a call.
+							Installing a ceiling fan isn&apos;t as simple as climbing up on
+							your ladder and plugging it in. You need an intimate understanding
+							of how your home&apos;s electrical infrastructure works to
+							successfully install a ceiling fan. Without an expertise in all
+							things electrical, you won&apos;t be installing a ceiling fan so
+							much as a fire hazard. Plus, there is a serious risk of injury
+							when you do take the matter of installation in your own hands.
+							Rather than put yourself and your home in danger over a new
+							ceiling fan, give Burton Electric LLC a call.
 						</P>
 						<P>
-							Burton Electric LLC’s licensed and insured electricians have a ton
-							of experience installing ceiling fans in homes all over the area.
-							Our electricians can successfully install ceiling fans wherever
-							you need them, even there is no existing wiring. We can run the
-							ceiling fan wiring wherever it’s needed. Regardless of size or
-							style, our electricians have the expertise necessary to safely
-							connect your new ceiling fan in a safe, efficient and affordable
-							manner.
+							Burton Electric LLC&apos;s licensed and insured electricians have
+							a ton of experience installing ceiling fans in homes all over the
+							area. Our electricians can successfully install ceiling fans
+							wherever you need them, even there is no existing wiring. We can
+							run the ceiling fan wiring wherever it&apos;s needed. Regardless
+							of size or style, our electricians have the expertise necessary to
+							safely connect your new ceiling fan in a safe, efficient and
+							affordable manner.
 						</P>
 						<P>
-							To request a free quote on Burton Electric LLC’s residential
+							To request a free quote on Burton Electric LLC&apos;s residential
 							ceiling fan installation services, give us a call today.
 						</P>
 					</div>
@@ -74,8 +102,8 @@ const pages = () => {
 				<Section>
 					<H2>What A Ceiling Fan Can Do for Your Home</H2>
 					<P>
-						You probably don’t realize how much good a professionally installed
-						residential ceiling fan can do for your home. A few of the
+						You probably don&apos;t realize how much good a professionally
+						installed residential ceiling fan can do for your home. A few of the
 						highlights include:
 					</P>
 					<ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
@@ -100,10 +128,10 @@ const pages = () => {
 								<span className="text-2xl font-medium">Light Up a Room</span>
 							</div>
 							<P>
-								While it’s not totally necessary to get a ceiling fan with
+								While it&apos;s not totally necessary to get a ceiling fan with
 								lights, they are always a great source of overhead lighting. So,
 								if you want to save energy while changing up the ambiance of a
-								certain room, just let us know and we’ll take care of it.
+								certain room, just let us know and we&apos;ll take care of it.
 							</P>
 						</li>
 						<li className="space-y-4">
@@ -112,8 +140,9 @@ const pages = () => {
 								<span className="text-2xl font-medium">Decoration</span>
 							</div>
 							<P>
-								Want to draw guests’ eyes upward to make the room look larger?
-								Ceiling fans of all shapes and sizes can do this for you.
+								Want to draw guests&apos; eyes upward to make the room look
+								larger? Ceiling fans of all shapes and sizes can do this for
+								you.
 							</P>
 						</li>
 					</ul>

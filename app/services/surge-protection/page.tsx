@@ -10,10 +10,38 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
 import { BsExclamationTriangle } from "react-icons/bs";
 import { MdBolt, MdElectricalServices, MdPowerOff } from "react-icons/md";
 import { RiPlugLine } from "react-icons/ri";
+
+export const metadata: Metadata = {
+	title:
+		"Surge Protection Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Burton Electric LLC will protect your electrical devices from power surges by ensuring you have adequate surge protection. Call us at (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Surge Protection Services",
+		"Surge Protection",
+		"Brentwood Surge Protection",
+		"Franklin Surge Protection",
+		"Nashville Surge Protection",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE: number = 28;
 
@@ -55,14 +83,14 @@ const pages = () => {
 
 				<Section spacing="small" className="">
 					<P>
-						Today’s homes and businesses are filled with sensitive electronics
-						that are easily damaged by common power surges, spikes or impulses.
-						Of course, no home or business owner suspects that they will succumb
-						to the damaging effects of an electrical surge, but isn’t it better
-						to be safe than sorry? When you consider that it could cost anywhere
-						from 10 to 20 thousand dollars to replace all the electronics in
-						your home or business, you better believe that investing in surge
-						protection services is worth your while.
+						Today&apos;s homes and businesses are filled with sensitive
+						electronics that are easily damaged by common power surges, spikes
+						or impulses. Of course, no home or business owner suspects that they
+						will succumb to the damaging effects of an electrical surge, but
+						isn&apos;t it better to be safe than sorry? When you consider that
+						it could cost anywhere from 10 to 20 thousand dollars to replace all
+						the electronics in your home or business, you better believe that
+						investing in surge protection services is worth your while.
 					</P>
 					<P>
 						Making sure that your home or business receives the best possible

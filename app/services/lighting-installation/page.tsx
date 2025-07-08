@@ -10,8 +10,36 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
+
+export const metadata: Metadata = {
+	title:
+		"Lighting Installation Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Burton Electric LLC's lighting experts will correctly, safely and efficiently install your property's new lighting system. Call us at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Lighting Installation Services",
+		"Lighting Installation",
+		"Brentwood Lighting Installation",
+		"Franklin Lighting Installation",
+		"Nashville Lighting Installation",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const residentialLighting: { title: string }[] = [
 	{

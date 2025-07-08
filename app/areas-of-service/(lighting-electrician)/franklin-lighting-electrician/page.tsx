@@ -10,8 +10,33 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
+
+export const metadata: Metadata = {
+	title: "Franklin Lighting Electricians | Burton Electric LLC",
+	description:
+		"If you're looking for a lighting electrician in Franklin whose work you can trust, call Burton Electric LLC at (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Lighting Electricians",
+		"Nashville Lighting Electricians",
+		"Franklin Lighting Electricians",
+		"Lighting Electricians",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const comServices: string[] = [
 	"Decorative lighting and banners",

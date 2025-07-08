@@ -11,7 +11,33 @@ import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
 import { Gauge, Lightbulb, Palette, ThermometerSun } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Nashville Residential Ceiling Fan Installations | Burton Electric LLC",
+	description:
+		"Burton Electric LLC will correctly install a brand-new ceiling fan for your Nashville home. Call (615) 830-1111 today",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Residential Ceiling Fan Installations",
+		"Nashville Residential Ceiling Fan Installations",
+		"Franklin Residential Ceiling Fan Installations",
+		"Residential Ceiling Fan Installations",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE: number = 42;
 const STROKEWIDTH: number = 1.5;
@@ -71,7 +97,7 @@ const page = () => {
 							<P className="text-2xl font-medium">Indoor Comfort</P>
 							<P className="text-muted-foreground">
 								Yes, ceiling fans can create a nice breeze when the weather gets
-								too warm, but they also have an important purpose when it’s
+								too warm, but they also have an important purpose when it&apos;s
 								cold. Certain makes of ceiling fans can be set in reverse to
 								push the hot air downward to keep your home warmer when the
 								temperature starts dropping outside.
@@ -100,9 +126,9 @@ const page = () => {
 							<P className="text-2xl font-medium">Additional lighting</P>
 							<P className="text-muted-foreground">
 								You know what goes great with a ceiling fan? Additional
-								lighting! If you want to have better control over your home’s
-								temperature while improving its overall ambiance, our
-								electricians have all the necessary know-how to rig up a
+								lighting! If you want to have better control over your
+								home&apos;s temperature while improving its overall ambiance,
+								our electricians have all the necessary know-how to rig up a
 								beautiful new lighting system complete with ceiling fan.
 							</P>
 						</div>
@@ -116,7 +142,8 @@ const page = () => {
 							<P className="text-muted-foreground">
 								With so many different makes and models of ceiling fans
 								available on the market today, you just might find a beautiful,
-								ornate ceiling fan that increases your home’s esthetic value.
+								ornate ceiling fan that increases your home&apos;s esthetic
+								value.
 							</P>
 						</div>
 					</div>

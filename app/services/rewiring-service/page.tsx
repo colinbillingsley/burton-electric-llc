@@ -10,7 +10,35 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Rewiring Service Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Burton Electric LLC will correctly rewire your electrical system to maintain safety and ensure it's functioning properly. Give us a call at (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Rewiring Services",
+		"Rewiring",
+		"Brentwood Rewiring",
+		"Franklin Rewiring",
+		"Nashville Rewiring",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (

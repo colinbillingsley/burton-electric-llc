@@ -11,11 +11,36 @@ import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
 import { AlertTriangle, PlugZap, Zap } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
 import { BsOutlet } from "react-icons/bs";
 
 const ICONSIZE: number = 32;
 const STROKEWIDTH: number = 1.5;
+
+export const metadata: Metadata = {
+	title: "Nashville Electrical Repair | Burton Electric LLC",
+	description:
+		"Burton Electric LLC provides safe, effective electrical repair services in Nashville. Call (615) 830-1111.",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Electrical Repair",
+		"Nashville Electrical Repair",
+		"Franklin Electrical Repair",
+		"Electrical Repair",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (

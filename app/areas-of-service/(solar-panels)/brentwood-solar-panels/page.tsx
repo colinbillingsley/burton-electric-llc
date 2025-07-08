@@ -11,7 +11,32 @@ import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
 import { Gauge, Leaf, PiggyBank, TrendingUp } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Brentwood Solar Panel Services | Burton Electric LLC",
+	description:
+		"Solar panels are environmentally friendly and are a worthwhile investment for property owners in Brentwood. Call Burton Electric LLC at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Solar Panel Services",
+		"Nashville Solar Panel Services",
+		"Franklin Solar Panel Services",
+		"Solar Panel Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE: number = 42;
 const STROKEWIDTH: number = 1.5;
@@ -21,7 +46,7 @@ const page = () => {
 		<PageContainer>
 			<MainContainer>
 				<H1>
-					<Important>Solar Panels in Brentwood</Important>
+					<Important>Brentwood Solar Panel Services</Important>
 				</H1>
 
 				<Section spacing="small">

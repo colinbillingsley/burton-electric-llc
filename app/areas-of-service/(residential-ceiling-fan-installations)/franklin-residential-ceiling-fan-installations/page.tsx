@@ -10,7 +10,32 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Franklin Residential Ceiling Fan Installations | Burton Electric LLC",
+	description:
+		"Burton Electric LLC will correctly install a brand-new ceiling fan for your Franklin home. Call (615) 830-1111 today",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Residential Ceiling Fan Installations",
+		"Nashville Residential Ceiling Fan Installations",
+		"Franklin Residential Ceiling Fan Installations",
+		"Residential Ceiling Fan Installations",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (

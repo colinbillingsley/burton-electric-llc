@@ -10,8 +10,33 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
+
+export const metadata: Metadata = {
+	title: "Nashville Electrical Contractor Services | Burton Electric LLC",
+	description:
+		"Burton Electric LLC electrical contractor services will enhance the comfort of any Nashville home or business. For installations or repair services, call (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Electrical Contractor Services",
+		"Nashville Electrical Contractor Services",
+		"Franklin Electrical Contractor Services",
+		"Electrical Contractor Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const resElecContServices: string[] = [
 	"Electric panel upgrades",

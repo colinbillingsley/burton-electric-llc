@@ -10,8 +10,34 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
+
+export const metadata: Metadata = {
+	title: "Appliance Installation | Burton Electric LLC",
+	description:
+		"Burton Electric LLC are the electrical contractors who specialize in panel upgrades and energy efficiency. Call us at (615) 830-1111 today.",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Appliance Installation",
+		"Brentwood Appliance Installation",
+		"Franklin Appliance Installation",
+		"Nashville Appliance Installation",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const applianceInstalls: { title: string }[] = [
 	{

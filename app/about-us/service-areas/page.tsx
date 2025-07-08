@@ -1,16 +1,35 @@
-"use client";
 import Footer from "@/app/components/Footer";
 import H1 from "@/app/components/H1";
 import Important from "@/app/components/Important";
 import MainContainer from "@/app/components/MainContainer";
+import DropdownBoxes from "@/app/components/our-services-page/DropdownBoxes";
 import PageContainer from "@/app/components/PageContainer";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { ChevronDown } from "lucide-react";
-import Link from "next/link";
-import React, { useState } from "react";
+import Head from "next/head";
+import { Metadata } from "next";
 import { MdElectricalServices } from "react-icons/md";
+
+export const metadata: Metadata = {
+	title: "Service Areas | Burton Electric LLC",
+	description:
+		"Burton Electric LLC provides outstanding quality electrical services in Nashville, Brentwood and Franklin. Call (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Service Areas",
+		"Electrician Service Areas",
+		"Electrical Service Areas",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const serviceAreas: {
 	title: string;
@@ -363,9 +382,11 @@ const serviceAreas: {
 
 const pages = () => {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
-	const [openIndex, setOpenIndex] = useState<number | null>(null);
 	return (
 		<PageContainer>
+			<Head>
+				<title>Service Areas | Burton Electric LLC</title>
+			</Head>
 			<MainContainer>
 				<H1>
 					<Important>Service Areas</Important>
@@ -375,7 +396,11 @@ const pages = () => {
 					high-quality electrical services. No matter where you are, we&apos;re
 					just a call away.
 				</p>
-				<div className="flex flex-col gap-4">
+				<DropdownBoxes
+					items={serviceAreas}
+					icon={<MdElectricalServices size={24} className="flex-shrink-0" />}
+				/>
+				{/* <div className="flex flex-col gap-4">
 					{serviceAreas.map((service, index) => {
 						const isOpen = openIndex === index;
 						return (
@@ -434,7 +459,7 @@ const pages = () => {
 							</Card>
 						);
 					})}
-				</div>
+				</div> */}
 			</MainContainer>
 			<Footer />
 		</PageContainer>

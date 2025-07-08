@@ -10,7 +10,34 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Electrical Contractor Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Call Burton Electric LLC at (615) 830-1111 for a reliable, experienced electrical contractor servicing Nashville, Brentwood and Franklin",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Electrical Contracting Services",
+		"Brentwood Electrical Contracting Services",
+		"Franklin Electrical Contracting Services",
+		"Nashville Electrical Contracting Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (

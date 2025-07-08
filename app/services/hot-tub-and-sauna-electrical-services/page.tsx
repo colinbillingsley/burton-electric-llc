@@ -10,8 +10,36 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
 import { BsLightningChargeFill } from "react-icons/bs";
+
+export const metadata: Metadata = {
+	title:
+		"Hot Tub and Sauna Electrical Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"If you're having a new hot tub or sauna installed, choose Burton Electric LLC help you set up the electrical system. Call (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Hot Tub and Sauna Electrical Services",
+		"Hot Tub and Sauna Electrical",
+		"Brentwood Hot Tub and Sauna Electrical",
+		"Franklin Hot Tub and Sauna Electrical",
+		"Nashville Hot Tub and Sauna Electrical",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const relatedTasks: string[] = [
 	"Electrical troubleshooting",

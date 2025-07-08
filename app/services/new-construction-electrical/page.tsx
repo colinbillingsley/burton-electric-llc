@@ -10,9 +10,37 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
 import { PiWarningBold } from "react-icons/pi";
 import { TbPlugConnectedX, TbRulerOff } from "react-icons/tb";
+
+export const metadata: Metadata = {
+	title:
+		"New Construction Electrical Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"For any new construction project, you can rely on Burton Electric LLC for safe, efficient electrical work. Give us a call at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"New Construction Electrical Services",
+		"New Construction Electrical",
+		"Brentwood New Construction Electrical",
+		"Franklin New Construction Electrical",
+		"Nashville New Construction Electrical",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE = 28;
 
@@ -28,7 +56,7 @@ const costUnlicensedElecContractors: {
 	},
 	{
 		title: "Unprotected wiring",
-		desc: "Wiring needs to be properly protected from weather, tampering and environmental changes. If it’s not, you are inviting all kinds of trouble. Unlicensed electrical contractors have been known to neglect protecting the wiring, but when you work with Burton Electric LLC it’ll never happen because we can’t afford to lose our licenses.",
+		desc: "Wiring needs to be properly protected from weather, tampering and environmental changes. If it's not, you are inviting all kinds of trouble. Unlicensed electrical contractors have been known to neglect protecting the wiring, but when you work with Burton Electric LLC it'll never happen because we can't afford to lose our licenses.",
 		icon: <PiWarningBold size={ICONSIZE} className="shrink-0" />,
 	},
 	{

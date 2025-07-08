@@ -19,6 +19,27 @@ import Important from "../components/Important";
 import { IoLogoVenmo } from "react-icons/io5";
 import { GrContactInfo } from "react-icons/gr";
 import { LuClock4 } from "react-icons/lu";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Contact Burton Electric LLC at (615) 830-1111 | Burton Electric LLC",
+	description: "Contact Burton Electric LLC by calling (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const paymentMethods: { title: string; icon: ReactNode }[] = [
 	{

@@ -10,7 +10,32 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Nashville In-Floor Heating Services | Burton Electric LLC",
+	description:
+		"Burton Electric LLC's electrical contractors specialize in installing and repairing in floor heating in Nashville homes. Call (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood In-Floor Heating Services",
+		"Nashville In-Floor Heating Services",
+		"Franklin In-Floor Heating Services",
+		"In-Floor Heating Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (

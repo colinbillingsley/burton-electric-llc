@@ -11,7 +11,32 @@ import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
 import { Eye, Flashlight, ShieldAlert } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title: "Franklin Security Lighting Services | Burton Electric LLC",
+	description:
+		"Outdoor lighting will improve your Franklin's security. Call Burton Electric LLC today at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Security Lighting Services",
+		"Nashville Security Lighting Services",
+		"Franklin Security Lighting Services",
+		"Security Lighting Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const ICONSIZE: number = 42;
 const STROKEWIDTH: number = 1.5;
@@ -21,7 +46,7 @@ const page = () => {
 		<PageContainer>
 			<MainContainer>
 				<H1>
-					<Important>Security Lighting Services in Franklin</Important>
+					<Important>Franklin Security Lighting Services</Important>
 				</H1>
 
 				<Section spacing="small">
@@ -46,8 +71,9 @@ const page = () => {
 							/>
 							<P className="text-2xl font-medium">Deterring crime</P>
 							<P className="text-muted-foreground">
-								Most people believe that where there’s light, someone must be
-								there using it. And they might be watching, ready to dial 911.
+								Most people believe that where there&apos;s light, someone must
+								be there using it. And they might be watching, ready to dial
+								911.
 							</P>
 						</div>
 						<div className="p-4 space-y-4 border-2 border-muted bg-white shadow-md rounded-sm">

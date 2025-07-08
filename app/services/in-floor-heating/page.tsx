@@ -10,7 +10,35 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"In-Floor Heating Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"Electrical in-floor heating is a great way to keep your home or business warm and cozy. Call Burton Electric LLC at (615) 830-1111 today!",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"In-Floor Heating Services",
+		"In-Floor Heating",
+		"Brentwood In-Floor Heating",
+		"Franklin In-Floor Heating",
+		"Nashville In-Floor Heating",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (

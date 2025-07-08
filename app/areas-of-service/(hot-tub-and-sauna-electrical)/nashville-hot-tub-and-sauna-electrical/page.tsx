@@ -10,7 +10,33 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Nashville Hot Tub and Sauna Electrical Services | Burton Electric LLC",
+	description:
+		"Burton Electric LLC has the skills and expertise to correctly install the electrical systems for any hot tub or sauna in Nashville",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Brentwood Hot Tub and Sauna Electrical Services",
+		"Nashville Hot Tub and Sauna Electrical Services",
+		"Franklin Hot Tub and Sauna Electrical Services",
+		"Hot Tub and Sauna Electrical Services",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const page = () => {
 	return (

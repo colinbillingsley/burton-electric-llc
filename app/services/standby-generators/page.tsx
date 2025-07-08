@@ -10,7 +10,35 @@ import MainContainer from "@/app/components/MainContainer";
 import P from "@/app/components/P";
 import PageContainer from "@/app/components/PageContainer";
 import Section from "@/app/components/Section";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+	title:
+		"Standby Generators Nashville, Brentwood, and Franklin | Burton Electric LLC",
+	description:
+		"A standby generator will ensure you have access to consistent, uninterrupted power for your home or business. Call Burton Electric LLC at (615) 830-1111",
+	icons: {
+		icon: "/burton-logo.png",
+	},
+	keywords: [
+		"Burton Electric LLC",
+		"Standby Generator Services",
+		"Standby Generators",
+		"Brentwood Standby Generators",
+		"Franklin Standby Generators",
+		"Nashville Standby Generators",
+		"Nashville Electrician",
+		"Nashville Electrical Contractor",
+		"Nashville Residential Electrician",
+		"Brentwood Electrician",
+		"Brentwood Electrical Contractor",
+		"Brentwood Residential Electrician",
+		"Franklin Electrician",
+		"Franklin Electrical Contractor",
+		"Franklin Residential Electrician",
+	],
+};
 
 const pages = () => {
 	return (
