@@ -381,7 +381,6 @@ const serviceAreas: {
 ];
 
 const pages = () => {
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	return (
 		<PageContainer>
 			<Head>
@@ -400,66 +399,6 @@ const pages = () => {
 					items={serviceAreas}
 					icon={<MdElectricalServices size={24} className="flex-shrink-0" />}
 				/>
-				{/* <div className="flex flex-col gap-4">
-					{serviceAreas.map((service, index) => {
-						const isOpen = openIndex === index;
-						return (
-							<Card
-								key={index}
-								onClick={() => setOpenIndex(isOpen ? null : index)}
-								className={cn(
-									"cursor-pointer border border-border rounded-xl shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary overflow-hidden gap-0",
-									isOpen && "bg-primary/5 border-primary shadow-md"
-								)}
-							>
-								<CardHeader>
-									<div className="flex justify-between items-center gap-2">
-										<div className="flex items-center gap-4">
-											<MdElectricalServices
-												size={24}
-												className="flex-shrink-0"
-											/>
-											<CardTitle className="text-sm lg:text-base">
-												{service.title}
-											</CardTitle>
-										</div>
-										<ChevronDown
-											className={`transition-transform flex-shrink-0 ${
-												isOpen ? "rotate-180" : ""
-											}`}
-											size={18}
-										/>
-									</div>
-								</CardHeader>
-								<CardContent
-									className={`text-sm transition-all duration-200 space-y-6 ${
-										isOpen
-											? "max-h-[50rem] opacity-100 pt-2"
-											: "max-h-0 opacity-0"
-									}`}
-									aria-hidden={!isOpen}
-								>
-									<p className="tracking-wide leading-relaxed text-sm lg:text-base">
-										{service.desc}
-									</p>
-									<div className="mt-auto flex items-center flex-wrap gap-2">
-										{service.links.map((link, index) => (
-											<Link
-												href={link.href}
-												key={`${link.href}-${index}`}
-												prefetch
-											>
-												<Button className="text-xs sm:text-sm text-wrap w-fit h-fit whitespace-normal">
-													{link.title}
-												</Button>
-											</Link>
-										))}
-									</div>
-								</CardContent>
-							</Card>
-						);
-					})}
-				</div> */}
 			</MainContainer>
 			<Footer />
 		</PageContainer>
