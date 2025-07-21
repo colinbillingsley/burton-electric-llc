@@ -5,6 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import H2 from "../H2";
+import {
+	AlertDialog,
+	AlertDialogAction,
+	AlertDialogCancel,
+	AlertDialogContent,
+	AlertDialogDescription,
+	AlertDialogFooter,
+	AlertDialogHeader,
+	AlertDialogTitle,
+	AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 const ContactForm = () => {
 	const [form, setForm] = useState({
@@ -180,8 +191,31 @@ const ContactForm = () => {
 				)}
 			</div>
 
-			<Button type="submit" className="w-full" size={"lg"}>
+			{/* <Button type="submit" className="w-full" size={"lg"}>
 				Send Message
+			</Button> */}
+			<Button type="button" size={"lg"} className="w-full">
+				<AlertDialog>
+					<AlertDialogTrigger className="w-full">
+						Send Message
+					</AlertDialogTrigger>
+					<AlertDialogContent>
+						<AlertDialogHeader>
+							<AlertDialogTitle>
+								Sending a message to Burton Electric LLC is currently undergoing
+								maintainence.
+							</AlertDialogTitle>
+							<AlertDialogDescription>
+								While we work on improving our contact form, please reach out to
+								us via phone or email for any inquiries. Thank you for your
+								understanding!
+							</AlertDialogDescription>
+						</AlertDialogHeader>
+						<AlertDialogFooter>
+							<AlertDialogCancel>Continue</AlertDialogCancel>
+						</AlertDialogFooter>
+					</AlertDialogContent>
+				</AlertDialog>
 			</Button>
 		</form>
 	);
