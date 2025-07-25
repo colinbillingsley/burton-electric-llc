@@ -5,6 +5,7 @@ import P from "./P";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ContactUs = ({
 	children,
@@ -22,9 +23,9 @@ const ContactUs = ({
 			)}
 		>
 			{children}
-			<a href="/contact">
+			<Link href="/contact-us" prefetch>
 				<Button variant={"outline"}>Contact Us</Button>
-			</a>
+			</Link>
 			<Image
 				src={"/burton-logo.png"}
 				width={350}

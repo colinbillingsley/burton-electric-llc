@@ -6,6 +6,7 @@ import Section from "../Section";
 import H2 from "../H2";
 import P from "../P";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ICONSIZE = 44;
 const STROKEWIDTH = 1.5;
@@ -148,7 +149,7 @@ const Services = () => {
 					today for a free consultation and let us help you with all your
 					electrical needs!
 				</P>
-				<a href="/contact" className="group">
+				<Link href="/contact-us" className="group" prefetch>
 					<Button size={"lg"} variant={"outline"}>
 						<span>Contact Us</span>
 						<ArrowRight
@@ -156,7 +157,7 @@ const Services = () => {
 							className="group-hover:translate-x-1 transition-all"
 						/>
 					</Button>
-				</a>
+				</Link>
 			</div>
 
 			<Section

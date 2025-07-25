@@ -226,7 +226,7 @@ const Navbar = () => {
 
 							<NavigationMenuItem>
 								<NavigationMenuLink asChild>
-									<NavLink title="Contact" href="/contact" />
+									<NavLink title="Contact" href="/contact-us" />
 								</NavigationMenuLink>
 							</NavigationMenuItem>
 						</NavigationMenuList>
@@ -328,7 +328,11 @@ const Navbar = () => {
 							</SheetClose>
 
 							<SheetClose asChild>
-								<NavLink title={"Contact"} href={"/contact"} className="p-4" />
+								<NavLink
+									title={"Contact"}
+									href={"/contact-us"}
+									className="p-4"
+								/>
 							</SheetClose>
 
 							{/* Sheet footer */}

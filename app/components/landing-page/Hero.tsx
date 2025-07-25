@@ -26,7 +26,7 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className="flex items-center gap-2 sm:gap-4">
-						<Link href="/contact" className="group" prefetch>
+						<Link href="/contact-us" className="group" prefetch>
 							<Button size={"lg"}>
 								<span>Contact Us</span>
 								<ArrowRight
