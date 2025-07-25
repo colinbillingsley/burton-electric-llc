@@ -4,10 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<section
-			className="relative w-full h-[110vh] bg-cover bg-center bg-no-repeat font-[family-name:var(--font-montserrat)]"
-			style={{ backgroundImage: "url('/hero-bg2.jpg')" }}
-		>
+		<section className="relative w-full h-[110vh] bg-cover bg-center bg-no-repeat font-[family-name:var(--font-montserrat)] bg-[url('/hero-bg2.jpg')] mt-[6.2rem] md:mt-[6.5rem]">
 			{/* Overlay */}
 			<div className="absolute inset-0 bg-black/50 z-0" />
 
