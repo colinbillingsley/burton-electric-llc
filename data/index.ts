@@ -23,6 +23,7 @@ export const mainProjects: {
 			"/bna-airport/IMG1.jpg",
 			"/bna-airport/IMG2.jpg",
 			"/bna-airport/IMG3.jpg",
+			"/bna-airport/IMG4.jpg",
 		],
 	},
 	{
@@ -47,12 +48,6 @@ export const mainProjects: {
 			"/sushi-bar/IMG3.jpg",
 			"/sushi-bar/IMG4.jpg",
 		],
-	},
-	{
-		bgImage: "/sandellas/IMG1.jpg",
-		project: "Sandella's Flatbread Cafe",
-		url: "/gallery/sandellas",
-		images: ["/sandellas/IMG1.jpg"],
 	},
 	{
 		bgImage: "/eggspectation/IMG1.jpg",
