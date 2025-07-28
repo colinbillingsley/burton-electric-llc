@@ -76,8 +76,6 @@ const ContactForm = () => {
 		e.preventDefault();
 		if (!validate()) return;
 
-		console.log(form);
-
 		setForm({
 			name: "",
 			email: "",
