@@ -3,7 +3,6 @@ import MainContainer from "../components/MainContainer";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import H1 from "../components/H1";
-import ContactForm from "../components/contact-page/ContactForm";
 import { Mail, MapIcon, Phone } from "lucide-react";
 import {
 	FaCcDiscover,
