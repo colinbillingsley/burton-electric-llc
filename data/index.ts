@@ -27,15 +27,16 @@ export const mainProjects: {
 		],
 	},
 	{
-		bgImage: "/the-blue-parrot/IMG1.jpg",
+		bgImage: "/the-blue-parrot/IMG1.JPEG",
 		project: "The Blue Parrot Bar/Restaurant",
 		url: "/gallery/the-blue-parrot",
 		images: [
-			"/the-blue-parrot/IMG1.jpg",
+			"/the-blue-parrot/IMG1.JPEG",
 			"/the-blue-parrot/IMG2.jpg",
 			"/the-blue-parrot/IMG3.jpg",
 			"/the-blue-parrot/IMG4.jpg",
 			"/the-blue-parrot/IMG5.jpg",
+			"/the-blue-parrot/IMG6.jpg",
 		],
 	},
 	{

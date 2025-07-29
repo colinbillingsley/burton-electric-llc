@@ -39,7 +39,7 @@ const page = () => {
 				</H1>
 				<p className="text-muted-foreground my-5">
 					A look at some of the commercial projects we&apos;ve completed around
-					Nashville and surrounding areas.
+					Nashville, TN and surrounding areas.
 				</p>
 
 				<ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

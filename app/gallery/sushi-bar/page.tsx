@@ -43,7 +43,7 @@ const page = () => {
 				</H1>
 
 				<P className="text-muted-foreground my-5">
-					A look at the The Sushi Bar project we completed in Nashville.
+					A look at the The Sushi Bar project we completed in Nashville, TN.
 				</P>
 
 				<ProjectImages images={mainProjects[3].images} />

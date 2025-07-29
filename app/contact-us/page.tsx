@@ -166,9 +166,9 @@ const page = () => {
 					</span>
 				</Section>
 
-				<Section spacing="large">
+				{/* <Section spacing="large">
 					<ContactForm />
-				</Section>
+				</Section> */}
 
 				<Section>
 					<div className="w-full h-[300px] md:h-[400px] rounded-md overflow-hidden border">

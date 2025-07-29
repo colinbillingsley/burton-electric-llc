@@ -44,7 +44,7 @@ const page = () => {
 
 				<P className="text-muted-foreground my-5">
 					A look at the projects we have completed at the BNA Airport in
-					Nashville.
+					Nashville, TN.
 				</P>
 
 				<ProjectImages images={mainProjects[1].images} />

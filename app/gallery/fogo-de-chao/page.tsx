@@ -43,7 +43,7 @@ const page = () => {
 				</H1>
 
 				<P className="text-muted-foreground my-5">
-					A look at the Fogo de Chão project we completed in Nashville.
+					A look at the Fogo de Chão project we completed in Nashville, TN.
 				</P>
 
 				<ProjectImages images={mainProjects[0].images} />

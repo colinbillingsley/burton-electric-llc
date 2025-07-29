@@ -43,10 +43,10 @@ const page = () => {
 				</H1>
 
 				<P className="text-muted-foreground my-5">
-					A look at the Eggspectation project we completed in Nashville.
+					A look at the Eggspectation project we completed in Nashville, TN.
 				</P>
 
-				<ProjectImages images={mainProjects[5].images} />
+				<ProjectImages images={mainProjects[4].images} />
 
 				<ContactUs className="mt-50">
 					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>
