@@ -3,6 +3,7 @@ export const mainProjects: {
 	project: string;
 	url: string;
 	images: string[];
+	videos?: string[];
 }[] = [
 	{
 		bgImage: "/fogo-de-chao/IMG1.jpg",
@@ -16,14 +17,22 @@ export const mainProjects: {
 		],
 	},
 	{
-		bgImage: "/bna-airport/IMG1.jpg",
+		bgImage: "/bna-airport/castle-1.jpg",
 		project: "BNA Airport Projects",
 		url: "/gallery/bna-airport",
 		images: [
-			"/bna-airport/IMG1.jpg",
-			"/bna-airport/IMG2.jpg",
-			"/bna-airport/IMG3.jpg",
-			"/bna-airport/IMG4.jpg",
+			"/bna-airport/castle-1.jpg",
+			"/bna-airport/castle-2.jpg",
+			"/bna-airport/castle-3.jpg",
+			"/bna-airport/castle-4.jpg",
+			"/bna-airport/castle-5.jpg",
+			"/bna-airport/castle-6.jpg",
+			"/bna-airport/sandellas-1.jpg",
+			"/bna-airport/flytes-1.jpg",
+		],
+		videos: [
+			"/bna-airport/videos/castle-finished.mp4",
+			"/bna-airport/videos/castle-unfinished.mp4",
 		],
 	},
 	{
