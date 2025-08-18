@@ -14,6 +14,11 @@ export const mainProjects: {
 			"/fogo-de-chao/IMG2.jpg",
 			"/fogo-de-chao/IMG3.jpg",
 			"/fogo-de-chao/IMG4.jpg",
+			"/fogo-de-chao/IMG5.jpg",
+			"/fogo-de-chao/IMG6.jpg",
+			"/fogo-de-chao/IMG7.jpg",
+			"/fogo-de-chao/IMG8.jpg",
+			"/fogo-de-chao/IMG9.jpg",
 		],
 	},
 	{
