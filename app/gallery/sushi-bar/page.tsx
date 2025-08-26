@@ -46,7 +46,7 @@ const page = () => {
 					A look at the The Sushi Bar project we completed in Nashville, TN.
 				</P>
 
-				<ProjectImages images={mainProjects[3].images} />
+				<ProjectImages images={mainProjects[4].images} />
 
 				<ContactUs className="mt-50">
 					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>

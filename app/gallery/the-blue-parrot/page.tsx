@@ -46,7 +46,7 @@ const page = () => {
 					A look at the The Blue Parrot project we completed in Nashville, TN.
 				</P>
 
-				<ProjectImages images={mainProjects[2].images} />
+				<ProjectImages images={mainProjects[3].images} />
 				<ContactUs className="mt-50">
 					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>
 					<ContactContent>

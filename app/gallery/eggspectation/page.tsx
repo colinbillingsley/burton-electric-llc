@@ -46,7 +46,7 @@ const page = () => {
 					A look at the Eggspectation project we completed in Nashville, TN.
 				</P>
 
-				<ProjectImages images={mainProjects[4].images} />
+				<ProjectImages images={mainProjects[6].images} />
 
 				<ContactUs className="mt-50">
 					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>
