@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 const MainProjectCard = ({
@@ -12,14 +13,20 @@ const MainProjectCard = ({
 }) => {
 	return (
 		<Link
-			href={`${url}`}
+			href={url}
 			className="relative h-[20rem] w-full group block overflow-hidden rounded-lg shadow-lg"
 			prefetch
 		>
-			{/* Background image */}
-			<div
-				className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-300 scale-100 group-hover:scale-105"
-				style={{ backgroundImage: `url(${bgImage})` }}
+			<Image
+				src={bgImage}
+				alt={project}
+				fill
+				className="object-cover transition-transform duration-300 group-hover:scale-105"
+				sizes="(max-width: 640px) 100vw,
+               (max-width: 1024px) 50vw,
+               33vw"
+				placeholder="blur"
+				blurDataURL="/placeholder.png"
 			/>
 
 			{/* Black overlay */}
