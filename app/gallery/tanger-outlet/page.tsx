@@ -39,11 +39,12 @@ const page = () => {
 		<PageContainer>
 			<MainContainer>
 				<H1>
-					<Important>Eggspectation</Important>
+					<Important>Tanger Outlet Projects</Important>
 				</H1>
 
 				<P className="text-muted-foreground my-5">
-					A look at the Eggspectation project we completed in Nashville, TN.
+					A look at some of the Tanger Outlet projects we completed in
+					Nashville, TN.
 				</P>
 
 				<ProjectImages images={mainProjects[6].images} />
