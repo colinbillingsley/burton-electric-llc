@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: {
 	params: { slug: string };
 }): Promise<Metadata> {
-	const { slug } = await params;
+	const { slug } = params;
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
 	);
@@ -43,7 +43,7 @@ const page = async ({
 }: {
 	params: { slug: string };
 }): Promise<ReactElement> => {
-	const { slug } = await params;
+	const { slug } = params;
 	// Match slug to project
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
