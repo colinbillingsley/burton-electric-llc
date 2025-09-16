@@ -1,0 +1,20 @@
+import { cn } from "@/lib/utils";
+import React, { ReactNode } from "react";
+
+const H2 = ({
+	children,
+	className,
+}: {
+	children: ReactNode;
+	className?: string;
+}) => {
+	return (
+		<h2
+			className={cn(`text-secondary text-2xl md:text-3xl font-bold`, className)}
+		>
+			{children}
+		</h2>
+	);
+};
+
+export default H2;

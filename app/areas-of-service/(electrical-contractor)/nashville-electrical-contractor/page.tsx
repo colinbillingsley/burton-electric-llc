@@ -1,40 +1,27 @@
-import ContactUs, {
-	ContactContent,
-	ContactTitle,
-} from "@/app/components/ContactUs";
-import Footer from "@/app/components/Footer";
-import H1 from "@/app/components/H1";
-import H2 from "@/app/components/H2";
-import Important from "@/app/components/Important";
-import MainContainer from "@/app/components/MainContainer";
-import P from "@/app/components/P";
-import PageContainer from "@/app/components/PageContainer";
-import Section from "@/app/components/Section";
+import CenterDiv from "@/components/CenterDiv";
+import ContactUs from "@/components/ContactUs";
+import H2 from "@/components/H2";
+import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
+import PageContainer from "@/components/PageContainer";
+import PageHeading from "@/components/PageHeading";
+import Section from "@/components/Section";
+import { baseKeywords, icon } from "@/data/seo";
+import { Zap } from "lucide-react";
 import { Metadata } from "next";
-import React from "react";
-import { BsLightningChargeFill } from "react-icons/bs";
 
 export const metadata: Metadata = {
 	title: "Nashville Electrical Contractors | Burton Electric LLC",
 	description:
 		"For reliable, safe and efficient electrical contractor services in Nashville, call Burton Electric LLC at (615) 830-1111 today!",
 	icons: {
-		icon: "/burton-logo.png",
+		icon: icon,
 	},
 	keywords: [
 		"Brentwood Electrical Contractors",
 		"Nashville Electrical Contractors",
 		"Franklin Electrical Contractors",
 		"Electrical Contractors",
-		"Nashville Electrician",
-		"Nashville Electrical Contractor",
-		"Nashville Residential Electrician",
-		"Brentwood Electrician",
-		"Brentwood Electrical Contractor",
-		"Brentwood Residential Electrician",
-		"Franklin Electrician",
-		"Franklin Electrical Contractor",
-		"Franklin Residential Electrician",
+		...baseKeywords,
 	],
 };
 
@@ -52,113 +39,108 @@ const resServices: string[] = [
 const page = () => {
 	return (
 		<PageContainer>
-			<MainContainer>
-				<H1>
-					<Important>Nashville Electrical Contractors</Important>
-				</H1>
+			<SlideInFromLeft amount={0}>
+				<CenterDiv>
+					<PageHeading>
+						<p>Nashville Electrical Contractors</p>
+					</PageHeading>
 
-				<Section spacing="small">
-					<P>
-						If you don&apos;t know the difference between an electrician and an
-						electrical contractor, you don&apos;t need to beat yourself up over
-						it because very few people realize there is a difference between the
-						two disciplines. Yes, both work with electricity and their expertise
-						are invaluable whenever there is electrical work required, but
-						that&apos;s where the similarities end.
-					</P>
-					<P>
-						An electrician is a trained tradesperson who can assist you with
-						repairs and installations of your residential or commercial property
-						in the Nashville area whereas an electrical contractor is a person
-						or firm that performs specialized construction related to the
-						design, installation and maintenance of electrical systems. This
-						means when you are building something from scratch or remodeling an
-						existing residential or commercial building and need a specialist to
-						tend to all the electrical demands, you need to find a reliable,
-						licensed and insured electrical contractor.
-					</P>
-					<P>
-						If you are a residential or commercial client in need of the
-						professional assistance an electrical contractor can provide, your
-						best bet is to contact Burton Electric LLC. Burton Electric LLC has
-						been proud to serve homes and businesses in the Nashville area,
-						designing, installing and maintaining all kinds of electrical
-						systems. Since our first day as an electrical contracting firm, we
-						have always done everything we can to make quality work our calling
-						card.
-					</P>
-					<P>
-						For a free estimate on our electrical contracting services, get in
-						touch with Burton Electric LLC today.
-					</P>
-				</Section>
+					<Section my="sm" className="space-y-4">
+						<p>
+							If you don&apos;t know the difference between an electrician and
+							an electrical contractor, you don&apos;t need to beat yourself up
+							over it because very few people realize there is a difference
+							between the two disciplines. Yes, both work with electricity and
+							their expertise are invaluable whenever there is electrical work
+							required, but that&apos;s where the similarities end.
+						</p>
+						<p>
+							An electrician is a trained tradesperson who can assist you with
+							repairs and installations of your residential or commercial
+							property in the Nashville area whereas an electrical contractor is
+							a person or firm that performs specialized construction related to
+							the design, installation and maintenance of electrical systems.
+							This means when you are building something from scratch or
+							remodeling an existing residential or commercial building and need
+							a specialist to tend to all the electrical demands, you need to
+							find a reliable, licensed and insured electrical contractor.
+						</p>
+						<p>
+							If you are a residential or commercial client in need of the
+							professional assistance an electrical contractor can provide, your
+							best bet is to contact Burton Electric LLC. Burton Electric LLC
+							has been proud to serve homes and businesses in the Nashville
+							area, designing, installing and maintaining all kinds of
+							electrical systems. Since our first day as an electrical
+							contracting firm, we have always done everything we can to make
+							quality work our calling card.
+						</p>
+						<p>
+							For a free estimate on our electrical contracting services, get in
+							touch with Burton Electric LLC today.
+						</p>
+					</Section>
 
-				<Section>
-					<H2>Residential Electrical Contracting Services</H2>
-					<P>
-						Whether you are planning a remodel, or you are going to build a
-						custom home in the Nashville area, you are going to need to power
-						your home somehow. If you want to make sure that your new or
-						remodeled home is free from any electrical issues, it starts with
-						choosing Burton Electric LLC as your residential electrical
-						contractor.
-					</P>
-					<P>
-						Burton Electric LLC should be your first choice when you need a
-						residential electrical contractor because our team is extremely
-						qualified and experienced. On jobs both big and small, you can
-						always expect attention to detail, integrity and quality work at an
-						affordable price. Just some of the things we can assist you with
-						include:
-					</P>
-					<ul className="flex items-center gap-4 flex-wrap">
-						{resServices.map((service, index) => (
-							<li
-								key={`service-${index}`}
-								className="flex items-center gap-2 px-4 py-2 border border-primary shadow-sm w-fit rounded-lg hover:cursor-default"
-							>
-								<BsLightningChargeFill
-									size={15}
-									className="shrink-0 text-primary"
-								/>
-								<P className="font-medium">{service}</P>
-							</li>
-						))}
-					</ul>
-					<P>
-						Give us a call today to get a free estimate on the residential
-						contracting service you require.
-					</P>
-				</Section>
+					<Section my="sm" className="space-y-6">
+						<H2>Residential Electrical Contracting Services</H2>
+						<p>
+							Whether you are planning a remodel, or you are going to build a
+							custom home in the Nashville area, you are going to need to power
+							your home somehow. If you want to make sure that your new or
+							remodeled home is free from any electrical issues, it starts with
+							choosing Burton Electric LLC as your residential electrical
+							contractor.
+						</p>
+						<p>
+							Burton Electric LLC should be your first choice when you need a
+							residential electrical contractor because our team is extremely
+							qualified and experienced. On jobs both big and small, you can
+							always expect attention to detail, integrity and quality work at
+							an affordable price. Just some of the things we can assist you
+							with include:
+						</p>
+						<ul className="flex items-center gap-4 flex-wrap">
+							{resServices.map((service, index) => (
+								<li
+									key={`service-${index}`}
+									className="flex items-center gap-2 px-4 py-2 border border-primary shadow-sm w-fit rounded-lg hover:cursor-default"
+								>
+									<Zap size={15} className="shrink-0 text-primary" />
+									<p className="font-medium">{service}</p>
+								</li>
+							))}
+						</ul>
+						<p>
+							Give us a call today to get a free estimate on the residential
+							contracting service you require.
+						</p>
+					</Section>
 
-				<Section>
-					<H2>Commercial Electrical Contracting Services</H2>
-					<P>
-						Because their scope is typically much bigger than residential jobs,
-						commercial electrical work is extremely complicated and needs to be
-						conducted by a professional commercial electrical contractor. Burton
-						Electric LLC has been making sure Nashville businesses receive
-						efficient and cost-effective commercial electrical contracting
-						services to keep them up to code for several years.
-					</P>
-					<P>
-						When you require trained, licensed and insured professionals with
-						our expertise, give us a call right away to get a free estimate on
-						our services.
-					</P>
-				</Section>
-
-				<ContactUs>
-					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>
-					<ContactContent>
-						For all your residential and commercial electrical contracting
+					<Section my="sm" className="space-y-4">
+						<H2>Commercial Electrical Contracting Services</H2>
+						<p>
+							Because their scope is typically much bigger than residential
+							jobs, commercial electrical work is extremely complicated and
+							needs to be conducted by a professional commercial electrical
+							contractor. Burton Electric LLC has been making sure Nashville
+							businesses receive efficient and cost-effective commercial
+							electrical contracting services to keep them up to code for
+							several years.
+						</p>
+						<p>
+							When you require trained, licensed and insured professionals with
+							our expertise, give us a call right away to get a free estimate on
+							our services.
+						</p>
+					</Section>
+				</CenterDiv>
+			</SlideInFromLeft>
+			<ContactUs
+				desc="For all your residential and commercial electrical contracting
 						needs, Burton Electric LLC is proud to be your reliable, affordable
 						one-stop shop for all things design, installation and maintenance.
-						Get a free estimate when you call us today.
-					</ContactContent>
-				</ContactUs>
-			</MainContainer>
-			<Footer />
+						Get a free estimate when you call us today."
+			/>
 		</PageContainer>
 	);
 };

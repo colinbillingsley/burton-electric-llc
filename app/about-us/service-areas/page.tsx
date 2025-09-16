@@ -1,41 +1,31 @@
-import Footer from "@/app/components/Footer";
-import H1 from "@/app/components/H1";
-import Important from "@/app/components/Important";
-import MainContainer from "@/app/components/MainContainer";
-import DropdownBoxes from "@/app/components/our-services-page/DropdownBoxes";
-import PageContainer from "@/app/components/PageContainer";
 import Head from "next/head";
 import { Metadata } from "next";
-import { MdElectricalServices } from "react-icons/md";
+import PageContainer from "@/components/PageContainer";
+import Section from "@/components/Section";
+import PageHeading from "@/components/PageHeading";
+import CenterDiv from "@/components/CenterDiv";
+import { StaggeredList } from "@/components/motion/StaggerdList";
+import { ServiceCard } from "./components/ServiceCard";
+import { baseKeywords, icon } from "@/data/seo";
+import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
 
 export const metadata: Metadata = {
 	title: "Service Areas | Burton Electric LLC",
 	description:
 		"Burton Electric LLC provides outstanding quality electrical services in Nashville, Brentwood and Franklin. Call (615) 830-1111",
 	icons: {
-		icon: "/burton-logo.png",
+		icon: icon,
 	},
-	keywords: [
-		"Service Areas",
-		"Electrician Service Areas",
-		"Electrical Service Areas",
-		"Nashville Electrician",
-		"Nashville Electrical Contractor",
-		"Nashville Residential Electrician",
-		"Brentwood Electrician",
-		"Brentwood Electrical Contractor",
-		"Brentwood Residential Electrician",
-		"Franklin Electrician",
-		"Franklin Electrical Contractor",
-		"Franklin Residential Electrician",
-	],
+	keywords: [...baseKeywords],
 };
 
-const serviceAreas: {
+export type ServiceAreaType = {
 	title: string;
 	desc: string;
 	links: { title: string; href: string }[];
-}[] = [
+};
+
+const serviceAreas: ServiceAreaType[] = [
 	{
 		title: "Appliance Installation",
 		desc: "For all your residential and commercial appliance installation needs, trust the professionals at Burton Electric LLC to get it done correctly, efficiently and at an affordable rate.",
@@ -386,21 +376,34 @@ const pages = () => {
 			<Head>
 				<title>Service Areas | Burton Electric LLC</title>
 			</Head>
-			<MainContainer>
-				<H1>
-					<Important>Service Areas</Important>
-				</H1>
-				<p className="text-muted-foreground my-4 max-w-2xl">
-					Proudly serving Nashville and surrounding communities with reliable,
-					high-quality electrical services. No matter where you are, we&apos;re
-					just a call away.
-				</p>
-				<DropdownBoxes
-					items={serviceAreas}
-					icon={<MdElectricalServices size={24} className="flex-shrink-0" />}
-				/>
-			</MainContainer>
-			<Footer />
+
+			<SlideInFromLeft amount={0}>
+				<CenterDiv>
+					<PageHeading>
+						<p>Service Areas</p>
+					</PageHeading>
+					<p className="text-muted-foreground my-4 max-w-2xl">
+						Proudly serving Nashville, TN and surrounding communities with
+						reliable, high-quality electrical services. No matter where you are,
+						we&apos;re just a call away.
+					</p>
+				</CenterDiv>
+
+				<Section my="sm">
+					<CenterDiv>
+						<StaggeredList className="grid grid-cols-1" amount={0}>
+							{serviceAreas.map((service) => (
+								<ServiceCard
+									key={service.title.toLowerCase().replace(" ", "-")}
+									title={service.title}
+									desc={service.desc}
+									links={service.links}
+								/>
+							))}
+						</StaggeredList>
+					</CenterDiv>
+				</Section>
+			</SlideInFromLeft>
 		</PageContainer>
 	);
 };

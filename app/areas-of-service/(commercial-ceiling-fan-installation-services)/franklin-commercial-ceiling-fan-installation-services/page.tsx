@@ -1,15 +1,11 @@
-import ContactUs, {
-	ContactContent,
-	ContactTitle,
-} from "@/app/components/ContactUs";
-import Footer from "@/app/components/Footer";
-import H1 from "@/app/components/H1";
-import H2 from "@/app/components/H2";
-import Important from "@/app/components/Important";
-import MainContainer from "@/app/components/MainContainer";
-import P from "@/app/components/P";
-import PageContainer from "@/app/components/PageContainer";
-import Section from "@/app/components/Section";
+import CenterDiv from "@/components/CenterDiv";
+import ContactUs from "@/components/ContactUs";
+import H2 from "@/components/H2";
+import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
+import PageContainer from "@/components/PageContainer";
+import PageHeading from "@/components/PageHeading";
+import Section from "@/components/Section";
+import { baseKeywords, icon } from "@/data/seo";
 import { Metadata } from "next";
 import React from "react";
 
@@ -19,113 +15,103 @@ export const metadata: Metadata = {
 	description:
 		"Burton Electric LLC's expert electricians will effectively install a new ceiling fan for your Franklin business space. Call (615) 830-1111 today",
 	icons: {
-		icon: "/burton-logo.png",
+		icon: icon,
 	},
 	keywords: [
 		"Brentwood Commercial Ceiling Fan Installations",
 		"Nashville Commercial Ceiling Fan Installations",
 		"Franklin Commercial Ceiling Fan Installations",
 		"Commercial Ceiling Fan Installations",
-		"Nashville Electrician",
-		"Nashville Electrical Contractor",
-		"Nashville Residential Electrician",
-		"Brentwood Electrician",
-		"Brentwood Electrical Contractor",
-		"Brentwood Residential Electrician",
-		"Franklin Electrician",
-		"Franklin Electrical Contractor",
-		"Franklin Residential Electrician",
+		...baseKeywords,
 	],
 };
 
 const page = () => {
 	return (
 		<PageContainer>
-			<MainContainer>
-				<H1>
-					<Important>Franklin Commercial Ceiling Fan Installations</Important>
-				</H1>
+			<SlideInFromLeft amount={0}>
+				<CenterDiv>
+					<PageHeading>
+						<p>Franklin Commercial Ceiling Fan Installations</p>
+					</PageHeading>
 
-				<Section spacing="small">
-					<P>
-						Ceiling fans are almost always a very attractive addition to any
-						place of business in the Franklin area. On esthetics alone, they
-						have been known to add value to commercial properties, but their
-						usefulness is more than skin deep. There are a whole bunch of
-						benefits new ceiling fans could bring to your Franklin business, but
-						the key is to get it installed by one of Burton Electric LLC&apos;s
-						trained professionals.
-					</P>
-					<P>
-						Any time wires and electricity are involved, it&apos;s a bad idea to
-						take matters into your own hands. Doing so means you are increasing
-						the probability of a disaster derailing your normal operations. This
-						could be in the form of an electrical fire or shocks. Either way, it
-						doesn&apos;t make sense to put your business in harm&apos;s way just
-						to save the couple of extra bucks by handling the ceiling fan
-						installation yourself. Especially when Burton Electric LLC&apos;s
-						commercial electricians are ready to provide professional, licensed
-						and insured installations at an incredibly affordable rate.
-					</P>
-					<P>
-						Burton Electric LLC&apos;s electricians have successfully installed
-						commercial ceiling fans all over the Franklin area for a variety of
-						different businesses. No matter the size or style, we can guarantee
-						that your commercial ceiling fan will be quickly and safely
-						installed, maximizing your business&apos;s functionality.
-					</P>
-					<P>
-						For a free estimate on our commercial ceiling fan installations, get
-						in touch with Burton Electric LLC today and a member of our amazing
-						team will happy to deal with you.
-					</P>
-				</Section>
+					<Section my="sm" className="space-y-4">
+						<p>
+							Ceiling fans are almost always a very attractive addition to any
+							place of business in the Franklin area. On esthetics alone, they
+							have been known to add value to commercial properties, but their
+							usefulness is more than skin deep. There are a whole bunch of
+							benefits new ceiling fans could bring to your Franklin business,
+							but the key is to get it installed by one of Burton Electric
+							LLC&apos;s trained professionals.
+						</p>
+						<p>
+							Any time wires and electricity are involved, it&apos;s a bad idea
+							to take matters into your own hands. Doing so means you are
+							increasing the probability of a disaster derailing your normal
+							operations. This could be in the form of an electrical fire or
+							shocks. Either way, it doesn&apos;t make sense to put your
+							business in harm&apos;s way just to save the couple of extra bucks
+							by handling the ceiling fan installation yourself. Especially when
+							Burton Electric LLC&apos;s commercial electricians are ready to
+							provide professional, licensed and insured installations at an
+							incredibly affordable rate.
+						</p>
+						<p>
+							Burton Electric LLC&apos;s electricians have successfully
+							installed commercial ceiling fans all over the Franklin area for a
+							variety of different businesses. No matter the size or style, we
+							can guarantee that your commercial ceiling fan will be quickly and
+							safely installed, maximizing your business&apos;s functionality.
+						</p>
+						<p>
+							For a free estimate on our commercial ceiling fan installations,
+							get in touch with Burton Electric LLC today and a member of our
+							amazing team will happy to deal with you.
+						</p>
+					</Section>
 
-				<Section>
-					<H2>What Commercial Ceiling Fans Can Do for Your Business</H2>
-					<P>
-						The first and most obvious benefit commercial ceiling fans can add
-						to your business lies in the esthetics. If you run an office,
-						restaurant or salon, the ceiling fans you choose to install can add
-						some additional flair to make your place of business even more
-						inviting. However, there&apos;s another, less obvious reason for why
-						you should consider adding ceiling fans.
-					</P>
-					<P>
-						Whether it&apos;s sweltering hot or freezing cold, it is essential
-						that your place of business is adequately heated or cooled to
-						maintain employee productivity and to make sure that your customers
-						have a positive experience. Of course, doing so can be costly. If
-						you find that you are spending too much on heating and cooling every
-						month, then you might be delighted to learn that ceiling fans can do
-						a lot to reduce these operational costs.
-					</P>
-					<P>
-						When the summer heat is at its peak, you can take some of the strain
-						off your commercial air conditioner by letting your ceiling fans
-						circulate the conditioned air around the building, keeping it cooler
-						for less money. As for when the temperature starts to drop, the hot
-						air generated by your heater tends to collect at the ceiling. A
-						ceiling fan can push the hot air back down where employees and
-						clients are. Again, this takes the need to use more energy to
-						produce more heat away.
-					</P>
-					<P>
-						So, if you want to drive down your operational costs, getting
-						commercial ceiling fans installed is worth a shot.
-					</P>
-				</Section>
-
-				<ContactUs>
-					<ContactTitle>Contact Burton Electric LLC Today!</ContactTitle>
-					<ContactContent>
-						If your business needs commercial ceiling fans installed, contact
+					<Section my="sm" className="space-y-4">
+						<H2>What Commercial Ceiling Fans Can Do for Your Business</H2>
+						<p>
+							The first and most obvious benefit commercial ceiling fans can add
+							to your business lies in the esthetics. If you run an office,
+							restaurant or salon, the ceiling fans you choose to install can
+							add some additional flair to make your place of business even more
+							inviting. However, there&apos;s another, less obvious reason for
+							why you should consider adding ceiling fans.
+						</p>
+						<p>
+							Whether it&apos;s sweltering hot or freezing cold, it is essential
+							that your place of business is adequately heated or cooled to
+							maintain employee productivity and to make sure that your
+							customers have a positive experience. Of course, doing so can be
+							costly. If you find that you are spending too much on heating and
+							cooling every month, then you might be delighted to learn that
+							ceiling fans can do a lot to reduce these operational costs.
+						</p>
+						<p>
+							When the summer heat is at its peak, you can take some of the
+							strain off your commercial air conditioner by letting your ceiling
+							fans circulate the conditioned air around the building, keeping it
+							cooler for less money. As for when the temperature starts to drop,
+							the hot air generated by your heater tends to collect at the
+							ceiling. A ceiling fan can push the hot air back down where
+							employees and clients are. Again, this takes the need to use more
+							energy to produce more heat away.
+						</p>
+						<p>
+							So, if you want to drive down your operational costs, getting
+							commercial ceiling fans installed is worth a shot.
+						</p>
+					</Section>
+				</CenterDiv>
+			</SlideInFromLeft>
+			<ContactUs
+				desc="If your business needs commercial ceiling fans installed, contact
 						Burton Electric LLC today to find out firsthand how we have earned
-						our reputation as Franklin&apos;s most reliable electrical company.
-					</ContactContent>
-				</ContactUs>
-			</MainContainer>
-			<Footer />
+						our reputation as Franklin's most reliable electrical company."
+			/>
 		</PageContainer>
 	);
 };
