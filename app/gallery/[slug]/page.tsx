@@ -33,7 +33,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 	};
 }
 
-const Page = ({ params }: { params: { slug: string } }) => {
+const page = ({ params }: { params: { slug: string } }) => {
 	const { slug } = params;
 	// Match slug to project
 	const project = imageData.find(
@@ -103,4 +103,4 @@ const Page = ({ params }: { params: { slug: string } }) => {
 	);
 };
 
-export default Page;
+export default page;
