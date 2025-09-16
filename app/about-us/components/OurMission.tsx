@@ -13,8 +13,8 @@ const OurMission = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center md:place-items-start">
 					<SlideInFromLeft className="order-2 md:order-1">
 						<Image
-							src="/burton-logo2.png"
-							alt="image of 2 burton electrical vans on a jobsite"
+							src="/burton-logo-dark.png"
+							alt="image of burton electric logo"
 							width={500}
 							height={500}
 							className="object-contain"
