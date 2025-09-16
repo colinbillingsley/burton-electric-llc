@@ -48,6 +48,10 @@
 			{ "id": 6, "url": "/bna-airport/castle-6.jpg" },
 			{ "id": 7, "url": "/bna-airport/flytes-1.jpg" },
 			{ "id": 8, "url": "/bna-airport/sandellas-1.jpg" }
+		],
+		"videos": [
+			{ "id": 1, "url": "/bna-airport/videos/castle-unfinished.mp4" },
+			{ "id": 2, "url": "/bna-airport/videos/castle-finished.mp4" }
 		]
 	},
 	{

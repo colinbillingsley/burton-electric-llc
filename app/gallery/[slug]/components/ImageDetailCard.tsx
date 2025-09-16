@@ -15,7 +15,7 @@ type ImageDetailCardProps = {
 	id: number;
 };
 
-const ImageViewer = ({ images, url, id }: ImageDetailCardProps) => {
+const ImageViewer = ({ images, id }: ImageDetailCardProps) => {
 	const [open, setOpen] = useState(false);
 	const [index, setIndex] = useState(id - 1);
 
@@ -29,7 +29,7 @@ const ImageViewer = ({ images, url, id }: ImageDetailCardProps) => {
 			<DialogTrigger asChild>
 				<div
 					onClick={() => setIndex(id - 1)}
-					className="relative w-full aspect-[4/3] overflow-hidden cursor-pointer"
+					className="group relative w-full aspect-[4/3] overflow-hidden cursor-pointer"
 				>
 					<Image
 						src={images[id - 1].url}
@@ -37,6 +37,7 @@ const ImageViewer = ({ images, url, id }: ImageDetailCardProps) => {
 						fill
 						className="object-cover"
 					/>
+					<div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-[0.35] transition-opacity duration-300" />
 				</div>
 			</DialogTrigger>
 

@@ -5,8 +5,6 @@ import NavLink from "./NavLink";
 import { SlideInFromLeft } from "../motion/SlideInFromLeft";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { NavigationMenuItem } from "@/components/ui/navigation-menu";
-import { motion } from "framer-motion";
 import DropdownLink from "./DropdownLink";
 import { SlideUp } from "../motion/SlideUp";
 

@@ -5,9 +5,9 @@ import PageHeading from "@/components/PageHeading";
 import { notFound } from "next/navigation";
 import { ImageCardType } from "@/data/images";
 
-type Props = {
+interface Props {
 	params: { slug: string };
-};
+}
 
 import rawImageData from "@/data/imagesJson.json";
 import Section from "@/components/Section";
@@ -15,12 +15,18 @@ import { StaggeredList } from "@/components/motion/StaggerdList";
 import { Metadata } from "next";
 import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
+import ContactUs from "@/components/ContactUs";
 const imageData = rawImageData as ImageCardType[];
 
 // ✅ generate metadata dynamically
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+	params,
+}: {
+	params: { slug: string };
+}): Promise<Metadata> {
+	const { slug } = await params;
 	const project = imageData.find(
-		(p) => p.url.replace("/gallery/", "") === params.slug
+		(p) => p.url.replace("/gallery/", "") === slug
 	);
 
 	if (!project) return {};
@@ -35,10 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	};
 }
 
-const page = ({ params }: Props) => {
+const page = async ({ params }: Props) => {
+	const { slug } = await params;
 	// Match slug to project
 	const project = imageData.find(
-		(p) => p.url.replace("/gallery/", "") === params.slug
+		(p) => p.url.replace("/gallery/", "") === slug
 	);
 
 	if (!project) return notFound();
@@ -74,7 +81,32 @@ const page = ({ params }: Props) => {
 						))}
 					</StaggeredList>
 				</Section>
+
+				{project.videos && (
+					<Section my="sm">
+						<StaggeredList
+							className="grid grid-cols-1 md:grid-cols-2 gap-4"
+							amount={0}
+						>
+							{project.videos.map((video) => (
+								<div key={`video-${video.id}`}>
+									<video
+										className="w-full rounded-lg"
+										width="320"
+										height="240"
+										controls
+										muted
+									>
+										<source src={video.url} type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							))}
+						</StaggeredList>
+					</Section>
+				)}
 			</CenterDiv>
+			<ContactUs />
 		</PageContainer>
 	);
 };

@@ -158,7 +158,6 @@ const OgNavbar = () => {
 	const pathname = usePathname();
 
 	const [scrolled, setScrolled] = useState(false);
-	const [mobileOpen, setMobileOpen] = useState(false);
 
 	useEffect(() => {
 		// detect if screen is md or larger

@@ -8,4 +8,5 @@ export type ImageCardType = {
 	alt?: string;
 	url: string;
 	imgs: { id: number; url: string }[];
+	videos?: { id: number; url: string }[];
 };
