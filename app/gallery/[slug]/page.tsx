@@ -38,11 +38,7 @@ export async function generateMetadata({
 	};
 }
 
-const page = async ({
-	params,
-}: {
-	params: { slug: string };
-}): Promise<ReactElement> => {
+const page = async ({ params }: { params: { slug: string } }) => {
 	const { slug } = params;
 	// Match slug to project
 	const project = imageData.find(
