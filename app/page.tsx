@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-		<div className="font-[family-name:var(--font-montserrat)]">
+		<div className="w-full h-full font-[family-name:var(--font-montserrat)]">
 			{/* Hero Section */}
 			<Hero />
 			<OurServices />

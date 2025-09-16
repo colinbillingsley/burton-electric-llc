@@ -21,7 +21,7 @@ const Section = ({
 		}
 	}
 	return (
-		<section className={cn(`${determineMySpacing(my)}`, className)}>
+		<section className={cn(`${determineMySpacing(my)} w-full`, className)}>
 			{children}
 		</section>
 	);
