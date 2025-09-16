@@ -11,17 +11,12 @@ import { StaggeredList } from "@/components/motion/StaggerdList";
 import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
-import { Metadata } from "next";
 import React from "react";
 const imageData = rawImageData as ImageCardType[];
 
 // ✅ generate metadata dynamically
-export async function generateMetadata({
-	params,
-}: {
-	params: { slug: string };
-}): Promise<Metadata> {
-	const { slug } = await params;
+export function generateMetadata({ params }: { params: { slug: string } }) {
+	const { slug } = params;
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
 	);
@@ -38,8 +33,8 @@ export async function generateMetadata({
 	};
 }
 
-const Page = ({ params }: { params: Promise<{ slug: string }> }) => {
-	const { slug } = React.use(params);
+const Page = ({ params }: { params: { slug: string } }) => {
+	const { slug } = params;
 	// Match slug to project
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
