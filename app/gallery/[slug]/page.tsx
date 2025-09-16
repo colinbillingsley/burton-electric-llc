@@ -8,11 +8,10 @@ import { ImageCardType } from "@/data/images";
 import rawImageData from "@/data/imagesJson.json";
 import Section from "@/components/Section";
 import { StaggeredList } from "@/components/motion/StaggerdList";
-import { Metadata } from "next";
 import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
-import { ReactElement } from "react";
+import { Metadata } from "next";
 const imageData = rawImageData as ImageCardType[];
 
 // ✅ generate metadata dynamically
@@ -38,7 +37,7 @@ export async function generateMetadata({
 	};
 }
 
-const page = async ({ params }: { params: { slug: string } }) => {
+const page = ({ params }: { params: { slug: string } }) => {
 	const { slug } = params;
 	// Match slug to project
 	const project = imageData.find(
