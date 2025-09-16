@@ -4,21 +4,24 @@ import PageContainer from "@/components/PageContainer";
 import PageHeading from "@/components/PageHeading";
 import { notFound } from "next/navigation";
 import { ImageCardType } from "@/data/images";
-
 import rawImageData from "@/data/imagesJson.json";
 import Section from "@/components/Section";
 import { StaggeredList } from "@/components/motion/StaggerdList";
 import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
-import React from "react";
+import { Metadata } from "next";
+
 const imageData = rawImageData as ImageCardType[];
 
+interface PageProps {
+	params: Record<string, string>;
+}
+
 // ✅ generate metadata dynamically
-export function generateMetadata({ params }: { params: { slug: string } }) {
-	const { slug } = params;
+export function generateMetadata({ params }: PageProps): Metadata {
 	const project = imageData.find(
-		(p) => p.url.replace("/gallery/", "") === slug
+		(p) => p.url.replace("/gallery/", "") === params.slug
 	);
 
 	if (!project) return {};
@@ -26,18 +29,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 	return {
 		title: `Gallery of ${project.name} | Burton Electric LLC`,
 		description: project.desc,
-		icons: {
-			icon,
-		},
+		icons: { icon },
 		keywords: [...baseKeywords, project.name, project.location],
 	};
 }
 
-const page = ({ params }: { params: { slug: string } }) => {
-	const { slug } = params;
-	// Match slug to project
+const Page = ({ params }: PageProps) => {
 	const project = imageData.find(
-		(p) => p.url.replace("/gallery/", "") === slug
+		(p) => p.url.replace("/gallery/", "") === params.slug
 	);
 
 	if (!project) return notFound();
@@ -57,7 +56,6 @@ const page = ({ params }: { params: { slug: string } }) => {
 						<div className="size-1 rounded-full bg-primary-darker" />
 						<p>{project.category}</p>
 					</div>
-
 					<p className="text-muted-foreground">{project.desc}</p>
 				</FadeIn>
 
@@ -103,4 +101,4 @@ const page = ({ params }: { params: { slug: string } }) => {
 	);
 };
 
-export default page;
+export default Page;
