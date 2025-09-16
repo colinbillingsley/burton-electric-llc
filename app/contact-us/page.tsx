@@ -1,11 +1,8 @@
 import CenterDiv from "@/components/CenterDiv";
 import { FadeIn } from "@/components/motion/FadeIn";
-import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
 import { SlideInFromRight } from "@/components/motion/SlideInFromRight";
-import { StaggeredList } from "@/components/motion/StaggerdList";
 import PageContainer from "@/components/PageContainer";
 import PageHeading from "@/components/PageHeading";
-import Section from "@/components/Section";
 import { burtonAddress, burtonEmail, burtonPhone } from "@/data/generalInfo";
 import { baseKeywords, icon } from "@/data/seo";
 import {

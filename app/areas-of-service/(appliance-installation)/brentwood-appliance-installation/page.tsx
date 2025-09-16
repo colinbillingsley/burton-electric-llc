@@ -8,6 +8,7 @@ import Section from "@/components/Section";
 import { baseKeywords, icon } from "@/data/seo";
 import { Zap } from "lucide-react";
 import { Metadata } from "next";
+import { appliances } from "../data";
 
 export const metadata: Metadata = {
 	title: "Brentwood Appliance Installation | Burton Electric LLC",
@@ -23,20 +24,6 @@ export const metadata: Metadata = {
 		...baseKeywords,
 	],
 };
-
-export const appliances: string[] = [
-	"Refrigerators",
-	"Ovens",
-	"Air conditioners",
-	"Dishwashers",
-	"Washers and Dryers",
-	"Built-in microwaves",
-	"Electric heaters",
-	"Dehumidifiers",
-	"Pool pumps",
-	"Garbage disposals",
-	"And many more",
-];
 
 const page = () => {
 	return (

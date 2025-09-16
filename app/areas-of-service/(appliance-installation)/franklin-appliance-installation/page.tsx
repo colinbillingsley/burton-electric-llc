@@ -6,9 +6,9 @@ import Section from "@/components/Section";
 import { baseKeywords, icon } from "@/data/seo";
 import { Zap } from "lucide-react";
 import { Metadata } from "next";
-import { appliances } from "../brentwood-appliance-installation/page";
 import ContactUs from "@/components/ContactUs";
 import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
+import { appliances } from "../data";
 
 export const metadata: Metadata = {
 	title: "Franklin Appliance Installation | Burton Electric LLC",

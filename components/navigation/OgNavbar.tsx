@@ -15,10 +15,7 @@ import {
 	Facebook,
 	Instagram,
 	LucideIcon,
-	Mail,
-	MapPin,
 	Menu,
-	Phone,
 } from "lucide-react";
 import {
 	Sheet,
@@ -28,12 +25,10 @@ import {
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { SlideInFromLeft } from "../motion/SlideInFromLeft";
 import Link from "next/link";
-import { SlideInFromRight } from "../motion/SlideInFromRight";
 import { StaggeredList } from "../motion/StaggerdList";
 import { FadeIn } from "../motion/FadeIn";
 

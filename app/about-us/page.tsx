@@ -7,7 +7,6 @@ import OurServices from "./components/OurServices";
 import WhyChooseUs from "./components/WhyChooseUs";
 import OurMission from "./components/OurMission";
 import AboutUs from "./components/AboutUs";
-import { FadeIn } from "@/components/motion/FadeIn";
 import CenterDiv from "@/components/CenterDiv";
 import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
 

@@ -3,9 +3,7 @@ import {
 	CheckCircle,
 	CircuitBoard,
 	Home,
-	Lightbulb,
 	LucideIcon,
-	Shield,
 	Wrench,
 	Zap,
 } from "lucide-react";

@@ -7,11 +7,8 @@ import PageHeading from "@/components/PageHeading";
 import Section from "@/components/Section";
 import { baseKeywords, icon } from "@/data/seo";
 import {
-	AlertTriangle,
-	Flame,
 	FlameIcon,
 	LucideIcon,
-	Plug,
 	PlugZap,
 	TriangleAlert,
 	Zap,

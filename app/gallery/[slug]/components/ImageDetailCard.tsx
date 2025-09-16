@@ -3,18 +3,11 @@ import Image from "next/image";
 import { useState } from "react";
 import {
 	Dialog,
-	DialogClose,
 	DialogContent,
 	DialogTitle,
 	DialogTrigger,
 } from "@/components/ui/dialog";
-import {
-	ArrowLeft,
-	ArrowRight,
-	ChevronLeft,
-	ChevronRight,
-	X,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 type ImageDetailCardProps = {
 	images: { id: number; url: string }[];

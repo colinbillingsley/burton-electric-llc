@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { StaggeredList } from "../motion/StaggerdList";
 import NavLink from "./NavLink";
 import { SlideInFromLeft } from "../motion/SlideInFromLeft";
 import Link from "next/link";
@@ -117,8 +116,6 @@ const navLinks: LinkProps = [
 	{ href: "/gallery", name: "Gallery" },
 	{ href: "/contact-us", name: "Contact" },
 ];
-
-const MotionNavigationMenuItem = motion(NavigationMenuItem);
 
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
