@@ -12,6 +12,7 @@ import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
 import { Metadata } from "next";
+import React from "react";
 const imageData = rawImageData as ImageCardType[];
 
 // ✅ generate metadata dynamically
@@ -20,7 +21,7 @@ export async function generateMetadata({
 }: {
 	params: { slug: string };
 }): Promise<Metadata> {
-	const { slug } = params;
+	const { slug } = await params;
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
 	);
@@ -37,8 +38,8 @@ export async function generateMetadata({
 	};
 }
 
-const page = ({ params }: { params: { slug: string } }) => {
-	const { slug } = params;
+const Page = ({ params }: { params: Promise<{ slug: string }> }) => {
+	const { slug } = React.use(params);
 	// Match slug to project
 	const project = imageData.find(
 		(p) => p.url.replace("/gallery/", "") === slug
@@ -107,4 +108,4 @@ const page = ({ params }: { params: { slug: string } }) => {
 	);
 };
 
-export default page;
+export default Page;
