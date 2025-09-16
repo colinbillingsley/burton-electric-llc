@@ -5,10 +5,6 @@ import PageHeading from "@/components/PageHeading";
 import { notFound } from "next/navigation";
 import { ImageCardType } from "@/data/images";
 
-interface Props {
-	params: { slug: string };
-}
-
 import rawImageData from "@/data/imagesJson.json";
 import Section from "@/components/Section";
 import { StaggeredList } from "@/components/motion/StaggerdList";
@@ -16,6 +12,7 @@ import { Metadata } from "next";
 import { baseKeywords, icon } from "@/data/seo";
 import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
+import { ReactElement } from "react";
 const imageData = rawImageData as ImageCardType[];
 
 // ✅ generate metadata dynamically
@@ -41,7 +38,11 @@ export async function generateMetadata({
 	};
 }
 
-const page = async ({ params }: Props) => {
+const page = async ({
+	params,
+}: {
+	params: { slug: string };
+}): Promise<ReactElement> => {
 	const { slug } = await params;
 	// Match slug to project
 	const project = imageData.find(
