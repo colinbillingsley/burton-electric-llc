@@ -99,7 +99,9 @@ const RecentProjects = () => {
 											<h3 className="text-2xl md:text-3xl font-bold mb-2">
 												{image.title}
 											</h3>
-											<p className="text-lg opacity-90">{image.description}</p>
+											<p className="text-base opacity-90">
+												{image.description}
+											</p>
 										</div>
 									</div>
 								</div>
