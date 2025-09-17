@@ -66,7 +66,10 @@ const Page = ({ params }: PageProps) => {
 				</FadeIn>
 
 				<Section my="sm">
-					<StaggeredList className="grid grid-cols-1 md:grid-cols-2" amount={0}>
+					<StaggeredList
+						className="grid grid-cols-1 md:grid-cols-2 gap-1"
+						amount={0}
+					>
 						{project.imgs.map((img, index) => (
 							<ImageDetailCard
 								key={index}
