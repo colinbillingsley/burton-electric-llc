@@ -78,7 +78,7 @@ const RecentProjects = () => {
 
 				<SlideUp>
 					<div className="relative max-w-5xl mx-auto">
-						<div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black">
+						<div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-xl shadow-black/25 bg-black">
 							{projectImages.map((image, index) => (
 								<div
 									key={index}
