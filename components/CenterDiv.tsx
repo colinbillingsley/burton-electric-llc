@@ -1,0 +1,23 @@
+import { cn } from "@/lib/utils";
+import React, { ReactNode } from "react";
+
+const CenterDiv = ({
+	children,
+	className,
+}: {
+	children: ReactNode;
+	className?: string;
+}) => {
+	return (
+		<div
+			className={cn(
+				`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden`,
+				className
+			)}
+		>
+			{children}
+		</div>
+	);
+};
+
+export default CenterDiv;

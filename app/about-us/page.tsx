@@ -1,130 +1,44 @@
 import React from "react";
-import MainContainer from "../components/MainContainer";
-import H1 from "../components/H1";
-import Footer from "../components/Footer";
-import PageContainer from "../components/PageContainer";
-import Important from "../components/Important";
-import Section from "../components/Section";
-import { MdFamilyRestroom, MdOutlineAttachMoney } from "react-icons/md";
-import { BsCalendarCheck } from "react-icons/bs";
-import { LuMessageSquareMore } from "react-icons/lu";
-import Image from "next/image";
 import { Metadata } from "next";
+import PageContainer from "@/components/PageContainer";
+import PageHeading from "@/components/PageHeading";
+import { baseKeywords, icon } from "@/data/seo";
+import OurServices from "./components/OurServices";
+import WhyChooseUs from "./components/WhyChooseUs";
+import OurMission from "./components/OurMission";
+import AboutUs from "./components/AboutUs";
+import CenterDiv from "@/components/CenterDiv";
+import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
 
 export const metadata: Metadata = {
 	title: "About Us | Burton Electric LLC",
 	description:
 		"Burton Electric LLC is the top-rated electrical services company servicing Nashville, Brentwood, and Franklin.",
 	icons: {
-		icon: "/burton-logo.png",
+		icon: icon,
 	},
-	keywords: [
-		"Burton Electric LLC",
-		"Nashville Electrician",
-		"Nashville Electrical Contractor",
-		"Nashville Residential Electrician",
-		"Brentwood Electrician",
-		"Brentwood Electrical Contractor",
-		"Brentwood Residential Electrician",
-		"Franklin Electrician",
-		"Franklin Electrical Contractor",
-		"Franklin Residential Electrician",
-	],
+	keywords: [...baseKeywords],
 };
 
 const pages = () => {
 	return (
 		<PageContainer>
-			<MainContainer>
-				<H1>
-					About
-					<Important>Burton Electric LLC</Important>
-				</H1>
+			<SlideInFromLeft amount={0}>
+				<CenterDiv>
+					<PageHeading>
+						<p>About</p>
+						<span>Burton Electric LLC</span>
+					</PageHeading>
+				</CenterDiv>
 
-				<Section className="grid lg:grid-cols-2 items-start justify-center gap-8">
-					<div className="space-y-8">
-						<p className="max-w-2xl">
-							Welcome to Burton Electric LLC, where tradition meets expertise in
-							electrical services. As a proud fourth-generation electrician, I
-							bring over 25 years of experience in providing top-quality
-							electrical solutions to homes and businesses in our local
-							community. From a young age, I learned the trade from my family,
-							and that hands-on experience has shaped my passion for delivering
-							reliable, safe, and efficient electrical services.
-						</p>
-						<p className="max-w-2xl">
-							For the past two decades, we&apos;ve built a reputation for
-							outstanding customer service and high-quality work, specializing
-							in both commercial and residential electrical services. Whether
-							you need a quick repair, a major installation, or ongoing
-							maintenance, we&apos;re here to ensure your electrical systems are
-							running smoothly and safely.
-						</p>
-						<p className="max-w-2xl">
-							As a local business, we value our customers and the trust they
-							place in us. Our commitment to integrity, professionalism, and
-							personalized service sets us apart, and we&apos;re proud to
-							continue the legacy of excellence that has been passed down
-							through generations.
-						</p>
-						<p className="max-w-2xl">
-							Thank you for choosing Burton Electric. We look forward to serving
-							you!
-						</p>
-					</div>
+				<AboutUs />
 
-					<Image
-						src="/gallery-images/img28.jpg"
-						alt="image of 2 burton electrical vans on a jobsite"
-						width={600}
-						height={600}
-						className="object-contain rounded-xl shadow-lg"
-					/>
-				</Section>
+				<OurMission />
 
-				<Section className="">
-					<div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-						<div className="flex flex-col justify-center items-center gap-6 p-4 text-primary rounded-md shadow-lg border border-primary">
-							<MdFamilyRestroom size={48} />
-							<span className="text-center font-medium">Family Owned</span>
-							<p className="text-center text-sm">
-								Proudly serving Nashville with a personal touch only a
-								family-run business can offer.
-							</p>
-						</div>
+				<OurServices />
 
-						<div className="flex flex-col justify-center items-center gap-6 p-4 text-primary rounded-md shadow-lg border border-primary">
-							<BsCalendarCheck size={48} />
-							<span className="text-center font-medium">
-								Available by Appointment
-							</span>
-							<p className="text-center text-sm">
-								We work around your schedule — book a time that fits your needs.
-							</p>
-						</div>
-
-						<div className="flex flex-col justify-center items-center gap-6 p-4 text-primary rounded-md shadow-lg border border-primary">
-							<LuMessageSquareMore size={48} />
-							<span className="text-center font-medium">
-								Free Consultations Available
-							</span>
-							<p className="text-center text-sm">
-								No obligations. Let&apos;s talk through your project and explore
-								the best solution.
-							</p>
-						</div>
-
-						<div className="flex flex-col justify-center items-center gap-6 p-4 text-primary rounded-md shadow-lg border border-primary">
-							<MdOutlineAttachMoney size={48} />
-							<span className="text-center font-medium">Budget Friendly</span>
-							<p className="text-center text-sm">
-								Top-quality electrical work that won&apos;t break the bank.
-							</p>
-						</div>
-					</div>
-				</Section>
-			</MainContainer>
-			<Footer />
+				<WhyChooseUs />
+			</SlideInFromLeft>
 		</PageContainer>
 	);
 };

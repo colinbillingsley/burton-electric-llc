@@ -1,0 +1,167 @@
+[
+	{
+		"featuredUrl": "/fogo-de-chao/IMG5.jpg",
+		"name": "Fogo De Chão",
+		"desc": "An upscale Brazilian steakhouse in Nashville's Yards development, offering a full churrasco experience with fire-roasted meats, a vibrant Market Table, and handcrafted cocktails.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2025",
+		"alt": "Image of front of brazilian steakhouse Fogo De Chão",
+		"url": "/gallery/fogo-de-chao",
+		"imgs": [
+			{ "id": 1, "url": "/fogo-de-chao/IMG1.jpg" },
+			{ "id": 2, "url": "/fogo-de-chao/IMG2.jpg" },
+			{ "id": 3, "url": "/fogo-de-chao/IMG3.jpg" },
+			{ "id": 4, "url": "/fogo-de-chao/IMG4.jpg" },
+			{ "id": 5, "url": "/fogo-de-chao/IMG5.jpg" },
+			{ "id": 6, "url": "/fogo-de-chao/IMG6.jpg" },
+			{ "id": 7, "url": "/fogo-de-chao/IMG7.jpg" },
+			{ "id": 8, "url": "/fogo-de-chao/IMG8.jpg" },
+			{ "id": 9, "url": "/fogo-de-chao/IMG9.jpg" },
+			{ "id": 10, "url": "/fogo-de-chao/IMG10.jpg" },
+			{ "id": 11, "url": "/fogo-de-chao/IMG11.jpg" },
+			{ "id": 12, "url": "/fogo-de-chao/IMG12.jpg" },
+			{ "id": 13, "url": "/fogo-de-chao/IMG13.jpg" },
+			{ "id": 14, "url": "/fogo-de-chao/IMG14.jpg" },
+			{ "id": 15, "url": "/fogo-de-chao/IMG15.jpg" },
+			{ "id": 16, "url": "/fogo-de-chao/IMG16.jpg" },
+			{ "id": 17, "url": "/fogo-de-chao/IMG17.jpg" },
+			{ "id": 18, "url": "/fogo-de-chao/IMG18.jpg" },
+			{ "id": 19, "url": "/fogo-de-chao/IMG19.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/bna-airport/castle-1.jpg",
+		"name": "BNA Airport",
+		"desc": "Completed multiple restaurant projects at BNA — including The Castle, Sandella's, and Flytes — bringing travelers fresh dining options in Concourse D.",
+		"category": "Airport",
+		"location": "Nashville, TN",
+		"year": "2025",
+		"alt": "Image of the restaurant The Castle in the BNA Airport.",
+		"url": "/gallery/bna-airport",
+		"imgs": [
+			{ "id": 1, "url": "/bna-airport/castle-1.jpg" },
+			{ "id": 2, "url": "/bna-airport/castle-2.jpg" },
+			{ "id": 3, "url": "/bna-airport/castle-3.jpg" },
+			{ "id": 4, "url": "/bna-airport/castle-4.jpg" },
+			{ "id": 5, "url": "/bna-airport/castle-5.jpg" },
+			{ "id": 6, "url": "/bna-airport/castle-6.jpg" },
+			{ "id": 7, "url": "/bna-airport/flytes-1.jpg" },
+			{ "id": 8, "url": "/bna-airport/sandellas-1.jpg" }
+		],
+		"videos": [
+			{ "id": 1, "url": "/bna-airport/videos/castle-unfinished.mp4" },
+			{ "id": 2, "url": "/bna-airport/videos/castle-finished.mp4" }
+		]
+	},
+	{
+		"featuredUrl": "/fogg-street/IMG1.jpg",
+		"name": "Fogg Street",
+		"desc": "A lively British-inspired restaurant and pub in Nashville, complete with rooftop lawn bowling, sweeping city views, plenty of draft whiskey & beers, and a fun atmosphere perfect for game nights and gatherings.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2025",
+		"alt": "Image from drone showcasing Fogg Street Restaurant and downtown Nashville, TN.",
+		"url": "/gallery/fogg-street",
+		"imgs": [
+			{ "id": 1, "url": "/fogg-street/IMG1.jpg" },
+			{ "id": 2, "url": "/fogg-street/IMG2.jpg" },
+			{ "id": 3, "url": "/fogg-street/IMG3.jpg" },
+			{ "id": 4, "url": "/fogg-street/IMG4.jpg" },
+			{ "id": 5, "url": "/fogg-street/IMG5.jpg" },
+			{ "id": 6, "url": "/fogg-street/IMG6.jpg" },
+			{ "id": 7, "url": "/fogg-street/IMG7.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/sushi-bar/IMG1.jpg",
+		"name": "Sushi Bar",
+		"desc": "A sleek sushi and cocktail bar featuring fresh fish, intimate counter seating, and refined ambiance for elevated dining in Nashville.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2024",
+		"alt": "Image showcasing bar at Sushi Bar.",
+		"url": "/gallery/sushi-bar",
+		"imgs": [
+			{ "id": 1, "url": "/sushi-bar/IMG1.jpg" },
+			{ "id": 2, "url": "/sushi-bar/IMG2.jpg" },
+			{ "id": 3, "url": "/sushi-bar/IMG3.jpg" },
+			{ "id": 4, "url": "/sushi-bar/IMG4.jpg" },
+			{ "id": 5, "url": "/sushi-bar/IMG5.jpg" },
+			{ "id": 6, "url": "/sushi-bar/IMG6.jpg" },
+			{ "id": 7, "url": "/sushi-bar/IMG7.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/barrel-proof/IMG1.jpg",
+		"name": "Barrel Proof",
+		"desc": "A whiskey and cocktail bar in Germantown, boasting over 300 whiskeys, great happy hour specials, and a warm, welcoming atmosphere perfect for evenings out.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2024",
+		"alt": "Image showcasing bar at Barrel Proof.",
+		"url": "/gallery/barrel-proof",
+		"imgs": [
+			{ "id": 1, "url": "/barrel-proof/IMG1.jpg" },
+			{ "id": 2, "url": "/barrel-proof/IMG2.jpg" },
+			{ "id": 3, "url": "/barrel-proof/IMG3.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/tanger-outlet/sunglass-hut-1.jpg",
+		"name": "Tanger Outlets",
+		"desc": "Completed projects at Tanger Outlets, including Sunglass Hut and the Eggspectation restaurant, enhancing the shopping and dining experience.",
+		"category": "Mall",
+		"location": "Nashville, TN",
+		"year": "2024",
+		"alt": "Image showcasing front of Sunglass Hut store at Tanger Outlet.",
+		"url": "/gallery/tanger-outlet",
+		"imgs": [
+			{ "id": 1, "url": "/tanger-outlet/eggspectation-1.jpg" },
+			{ "id": 2, "url": "/tanger-outlet/eggspectation-2.jpg" },
+			{ "id": 3, "url": "/tanger-outlet/eggspectation-3.jpg" },
+			{ "id": 4, "url": "/tanger-outlet/eggspectation-4.jpg" },
+			{ "id": 5, "url": "/tanger-outlet/eggspectation-5.jpg" },
+			{ "id": 6, "url": "/tanger-outlet/sunglass-hut-1.jpg" },
+			{ "id": 7, "url": "/tanger-outlet/sunglass-hut-2.jpg" },
+			{ "id": 8, "url": "/tanger-outlet/sunglass-hut-3.jpg" },
+			{ "id": 9, "url": "/tanger-outlet/sunglass-hut-4.jpg" },
+			{ "id": 10, "url": "/tanger-outlet/sunglass-hut-5.jpg" },
+			{ "id": 11, "url": "/tanger-outlet/sunglass-hut-6.jpg" },
+			{ "id": 12, "url": "/tanger-outlet/sunglass-hut-7.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/taco-chela/IMG2.jpg",
+		"name": "Taco Chela",
+		"desc": "A vibrant spot serving elevated Latin street food & cocktails, with lively flavors perfect for casual nights out.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2024",
+		"alt": "Image showcasing bar at Taco Chela restaurant.",
+		"url": "/gallery/taco-chela",
+		"imgs": [
+			{ "id": 1, "url": "/taco-chela/IMG1.jpg" },
+			{ "id": 2, "url": "/taco-chela/IMG2.jpg" }
+		]
+	},
+	{
+		"featuredUrl": "/the-blue-parrot/IMG7.jpg",
+		"name": "The Blue Parrot",
+		"desc": "A new gem on 4th Ave S, blending approachable New American dining with a modern cocktail bar in a stylish, downtown Nashville setting.",
+		"category": "Restaurant",
+		"location": "Nashville, TN",
+		"year": "2024",
+		"alt": "Image showcasing side of building of The Blue Parrot restaurant.",
+		"url": "/gallery/blue-parrot",
+		"imgs": [
+			{ "id": 1, "url": "/the-blue-parrot/IMG1.JPEG" },
+			{ "id": 2, "url": "/the-blue-parrot/IMG2.jpg" },
+			{ "id": 3, "url": "/the-blue-parrot/IMG3.jpg" },
+			{ "id": 4, "url": "/the-blue-parrot/IMG4.jpg" },
+			{ "id": 5, "url": "/the-blue-parrot/IMG5.jpg" },
+			{ "id": 6, "url": "/the-blue-parrot/IMG6.jpg" },
+			{ "id": 7, "url": "/the-blue-parrot/IMG7.jpg" }
+		]
+	}
+]

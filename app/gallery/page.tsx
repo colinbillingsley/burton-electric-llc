@@ -1,60 +1,73 @@
-import React from "react";
-import MainContainer from "../components/MainContainer";
-import H1 from "../components/H1";
-import Footer from "../components/Footer";
-import PageContainer from "../components/PageContainer";
-import Important from "../components/Important";
-import "react-photo-view/dist/react-photo-view.css";
+import CenterDiv from "@/components/CenterDiv";
+import { FadeIn } from "@/components/motion/FadeIn";
+import { StaggeredList } from "@/components/motion/StaggerdList";
+import PageContainer from "@/components/PageContainer";
+import PageHeading from "@/components/PageHeading";
+import Section from "@/components/Section";
+import { baseKeywords, icon } from "@/data/seo";
 import { Metadata } from "next";
-import MainProjectCard from "../components/gallery-page/MainProjectCard";
-import { mainProjects } from "@/data";
+import React from "react";
+import ImageCard from "./components/ImageCard";
+import ContactUs from "@/components/ContactUs";
+import { ImageCardType } from "@/data/images";
 
 export const metadata: Metadata = {
 	title: "Gallery | Burton Electric LLC",
 	description:
 		"Gallery of Burton Electric LLC projects in Nashville, Franklin, and Brentwood.",
 	icons: {
-		icon: "/burton-logo.png",
+		icon: icon,
 	},
-	keywords: [
-		"Burton Electric LLC",
-		"Nashville Electrician",
-		"Nashville Electrical Contractor",
-		"Nashville Residential Electrician",
-		"Brentwood Electrician",
-		"Brentwood Electrical Contractor",
-		"Brentwood Residential Electrician",
-		"Franklin Electrician",
-		"Franklin Electrical Contractor",
-		"Franklin Residential Electrician",
-	],
+	keywords: [...baseKeywords],
 };
+
+import rawImageData from "@/data/imagesJson.json";
+const imageData = rawImageData as ImageCardType[];
 
 const page = () => {
 	return (
 		<PageContainer>
-			<MainContainer>
-				<H1>
-					<Important>Gallery</Important>
-				</H1>
-				<p className="text-muted-foreground my-5">
-					A look at some of the commercial projects we&apos;ve completed around
-					Nashville, TN and surrounding areas.
-				</p>
+			<FadeIn>
+				<CenterDiv className="space-y-4">
+					<PageHeading>
+						<p>Gallery</p>
+					</PageHeading>
+					<p className="text-muted-foreground">
+						See the quality craftsmanship and professional results we deliver in
+						for our commercial clients across Nashville, TN and surrounding
+						areas.
+					</p>
+				</CenterDiv>
+			</FadeIn>
 
-				<ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-					{mainProjects.map((project, idx) => (
-						<li key={idx} className="mb-6">
-							<MainProjectCard
-								bgImage={project.bgImage}
-								project={project.project}
-								url={project.url}
+			<Section my="sm">
+				<CenterDiv>
+					<StaggeredList
+						className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+						amount={0}
+					>
+						{imageData.map((img, index) => (
+							<ImageCard
+								key={index}
+								featuredUrl={img.featuredUrl}
+								name={img.name}
+								desc={img.desc}
+								category={img.category}
+								location={img.location}
+								year={img.year}
+								alt={img.alt || ""}
+								url={img.url}
 							/>
-						</li>
-					))}
-				</ul>
-			</MainContainer>
-			<Footer />
+						))}
+					</StaggeredList>
+				</CenterDiv>
+			</Section>
+
+			<ContactUs
+				desc={
+					"Inspired by our work? Let's talk about how Burton Electric LLC can bring the same quality and attention to detail to your next project. Contact us today to get started."
+				}
+			/>
 		</PageContainer>
 	);
 };
