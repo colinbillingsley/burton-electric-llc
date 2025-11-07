@@ -254,7 +254,7 @@ const OgNavbar = () => {
 				</NavigationMenu>
 			</div>
 
-			<StaggeredList className="hidden md:flex items-center gap-2 text-primary">
+			<StaggeredList className="hidden md:flex items-center gap-2 text-primary py-0">
 				{socialLinks.map((link) => (
 					<Link
 						href={link.href}

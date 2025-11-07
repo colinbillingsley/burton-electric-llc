@@ -29,7 +29,7 @@ export function StaggeredList({
 					transition: { staggerChildren: stagger },
 				},
 			}}
-			className={cn(``, className)}
+			className={cn(`py-4`, className)}
 		>
 			{children.map((child, i) => (
 				<motion.li
