@@ -1,5 +1,21 @@
 [
 	{
+		"featuredUrl": "/fifth-third-mt-juliet/IMG1.jpg",
+		"name": "Fifth Third Bank - Mt. Juliet",
+		"desc": "A modern bank branch in Mt. Juliet, TN, featuring sleek design elements, customer-friendly spaces, and advanced technology for an enhanced banking experience.",
+		"category": "Bank",
+		"location": "Mt. Juliet, TN",
+		"year": "2026",
+		"alt": "Image of the Fifth Third Bank branch in Mt. Juliet, TN.",
+		"url": "/gallery/fifth-third-mt-juliet",
+		"imgs": [
+			{ "id": 1, "url": "/fifth-third-mt-juliet/IMG1.jpg" },
+			{ "id": 2, "url": "/fifth-third-mt-juliet/IMG2.jpg" },
+			{ "id": 3, "url": "/fifth-third-mt-juliet/IMG3.jpg" },
+			{ "id": 4, "url": "/fifth-third-mt-juliet/IMG4.jpg" }
+		]
+	},
+	{
 		"featuredUrl": "/fogo-de-chao/IMG5.jpg",
 		"name": "Fogo De Chão",
 		"desc": "An upscale Brazilian steakhouse in Nashville's Yards development, offering a full churrasco experience with fire-roasted meats, a vibrant Market Table, and handcrafted cocktails.",
