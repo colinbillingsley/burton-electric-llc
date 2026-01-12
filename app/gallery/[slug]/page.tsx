@@ -12,6 +12,8 @@ import ImageDetailCard from "./components/ImageDetailCard";
 import ContactUs from "@/components/ContactUs";
 import { Metadata } from "next";
 import React from "react";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 const imageData = rawImageData as ImageCardType[];
 
@@ -51,6 +53,16 @@ const Page = ({ params }: PageProps) => {
 		<PageContainer>
 			<CenterDiv>
 				<FadeIn className="space-y-4">
+					<Link
+						href="/gallery"
+						className="group flex items-center gap-2 text-primary"
+					>
+						<ArrowLeft
+							size={15}
+							className="group-hover:scale-[1.25] transition-transform duration-[250ms] ease-in-out"
+						/>
+						<p>Back to Gallery</p>
+					</Link>
 					<PageHeading>
 						<span>Project Details</span>
 						<p>{project.name}</p>
