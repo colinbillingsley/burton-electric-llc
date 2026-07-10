@@ -107,7 +107,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom row */}
-      <div className="flex items-center justify-between text-base font-medium text-muted-foreground border-t border-muted/10 mt-12 p-4">
+      <div className="flex flex-col sm:flex-row items-center gap-4 justify-between text-base text-center font-medium text-muted-foreground border-t border-muted/10 mt-12 p-4">
         <span>
           &copy; {new Date().getFullYear()} Burton Electric LLC. All rights
           reserved.

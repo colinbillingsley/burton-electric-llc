@@ -67,7 +67,7 @@ const RecentProjects = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h2 className="text-center flex flex-col gap-2 items-center w-full font-bold text-gray-900">
-              <span className="text-base md:text-xlxl">
+              <span className="text-base md:text-xl">
                 A look at some recent projects
               </span>
               <span className="text-4xl md:text-5xl">

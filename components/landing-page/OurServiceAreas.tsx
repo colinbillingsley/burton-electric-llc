@@ -18,12 +18,13 @@ const OurServiceAreas = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-2">
             <FadeIn>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-                Our <span className="text-primary">Service Areas</span>
+              <h2 className="text-center flex flex-col gap-2 items-center w-full font-bold text-gray-900 mb-8">
+                <span className="text-base md:text-xl">Our Service Areas</span>
+
+                <span className="text-4xl md:text-5xl">
+                  Get Quality and Expert Electrical Help
+                </span>
               </h2>
-              <h3 className="text-2xl font-bold">
-                Get Quality and Expert Electrical Help
-              </h3>
               <p className="text-base text-gray-600 max-w-3xl">
                 At Burton Electric LLC we provide services in the Nashville, TN
                 area as well as surrounding areas.

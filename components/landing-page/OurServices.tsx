@@ -54,7 +54,7 @@ const OurServices = () => {
       <CenterDiv className="space-y-12">
         <FadeIn>
           <h2 className="text-center flex flex-col gap-2 items-center w-full font-bold text-gray-900">
-            <span className="text-base md:text-xlxl">What we help with</span>
+            <span className="text-base md:text-xl">What we help with</span>
             <span className="text-4xl md:text-5xl">
               Practical electrical service for everyday needs.
             </span>
