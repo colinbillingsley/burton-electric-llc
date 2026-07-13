@@ -11,36 +11,29 @@ import CenterDiv from "@/components/CenterDiv";
 import { SlideInFromLeft } from "@/components/motion/SlideInFromLeft";
 
 export const metadata: Metadata = {
-	title: "About Us | Burton Electric LLC",
-	description:
-		"Burton Electric LLC is the top-rated electrical services company servicing Nashville, Brentwood, and Franklin.",
-	icons: {
-		icon: icon,
-	},
-	keywords: [...baseKeywords],
+  title: "About Us | Burton Electric LLC",
+  description:
+    "Burton Electric LLC is the top-rated electrical services company servicing Nashville, Brentwood, and Franklin.",
+  icons: {
+    icon: icon,
+  },
+  keywords: [...baseKeywords],
 };
 
 const pages = () => {
-	return (
-		<PageContainer>
-			<SlideInFromLeft amount={0}>
-				<CenterDiv>
-					<PageHeading>
-						<p>About</p>
-						<span>Burton Electric LLC</span>
-					</PageHeading>
-				</CenterDiv>
+  return (
+    <PageContainer>
+      <SlideInFromLeft amount={0}>
+        <AboutUs />
 
-				<AboutUs />
+        <OurMission />
 
-				<OurMission />
+        <OurServices />
 
-				<OurServices />
-
-				<WhyChooseUs />
-			</SlideInFromLeft>
-		</PageContainer>
-	);
+        <WhyChooseUs />
+      </SlideInFromLeft>
+    </PageContainer>
+  );
 };
 
 export default pages;
