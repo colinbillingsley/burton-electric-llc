@@ -2,17 +2,22 @@ import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 
 const H1 = ({
-	children,
-	className,
+  children,
+  className,
 }: {
-	children: ReactNode;
-	className?: string;
+  children: ReactNode;
+  className?: string;
 }) => {
-	return (
-		<h1 className={cn(`text-white text-3xl md:text-5xl font-bold`, className)}>
-			{children}
-		</h1>
-	);
+  return (
+    <h1
+      className={cn(
+        `font-mont text-white text-3xl md:text-5xl font-bold`,
+        className,
+      )}
+    >
+      {children}
+    </h1>
+  );
 };
 
 export default H1;

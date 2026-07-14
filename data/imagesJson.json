@@ -1,5 +1,56 @@
 [
   {
+    "featuredUrl": "/station-pizzeria/IMG3.jpg",
+    "name": "Station Pizzeria",
+    "desc": "Station Pizzeria is a modern, family-friendly pizzeria known for its handcrafted pizzas and welcoming dining atmosphere.",
+    "category": "Restaurant",
+    "location": "Franklin, TN",
+    "year": "2026",
+    "alt": "Image of the Station Pizzeria restaurant in Franklin, TN.",
+    "url": "/gallery/station-pizzeria",
+    "imgs": [
+      { "id": 1, "url": "/station-pizzeria/IMG1.jpg" },
+      { "id": 2, "url": "/station-pizzeria/IMG2.jpg" },
+      { "id": 3, "url": "/station-pizzeria/IMG3.jpg" },
+      { "id": 4, "url": "/station-pizzeria/IMG4.jpg" },
+      {
+        "id": 5,
+        "url": "/station-pizzeria/IMG5.jpg",
+        "imagePosition": "object-[50%_20%]"
+      }
+    ]
+  },
+  {
+    "featuredUrl": "/charmers/IMG5.jpg",
+    "imagePosition": "object-[50%_10%]",
+    "name": "Charmers",
+    "desc": "Charmers is a stylish neighborhood restaurant and bar in Nashville's Germantown district, known for its inviting atmosphere, creative cocktails, and elevated dining experience.",
+    "category": "Restaurant",
+    "location": "Nashville, TN",
+    "year": "2026",
+    "alt": "Image of the Charmers restaurant in Nachville, TN.",
+    "url": "/gallery/charmers",
+    "imgs": [
+      { "id": 1, "url": "/charmers/IMG1.jpg" },
+      { "id": 2, "url": "/charmers/IMG2.jpg" },
+      {
+        "id": 3,
+        "url": "/charmers/IMG3.jpg",
+        "imagePosition": "object-[50%_20%]"
+      },
+      {
+        "id": 4,
+        "url": "/charmers/IMG4.jpg",
+        "imagePosition": "object-[50%_10%]"
+      },
+      {
+        "id": 5,
+        "url": "/charmers/IMG5.jpg",
+        "imagePosition": "object-[50%_10%]"
+      }
+    ]
+  },
+  {
     "featuredUrl": "/fifth-third-mt-juliet/IMG1.jpg",
     "name": "Fifth Third Bank - Mt. Juliet",
     "desc": "A modern bank branch in Mt. Juliet, TN, featuring sleek design elements, customer-friendly spaces, and advanced technology for an enhanced banking experience.",

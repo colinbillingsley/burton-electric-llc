@@ -10,39 +10,39 @@ import ComResServices from "./components/ComResServices";
 import ContactUs from "@/components/ContactUs";
 
 export const metadata: Metadata = {
-	title:
-		"Electrical Services Nashville, Franklin, Brentwood | Burton Electric LLC",
-	description:
-		"Burton Electric LLC's expert electricians provide effective, efficient electrical services in Nashville, Brentwood and Franklin",
-	icons: {
-		icon: icon,
-	},
-	keywords: [...baseKeywords],
+  title:
+    "Electrical Services Nashville, Franklin, Brentwood | Burton Electric LLC",
+  description:
+    "Burton Electric LLC's expert electricians provide effective, efficient electrical services in Nashville, Brentwood and Franklin",
+  icons: {
+    icon: icon,
+  },
+  keywords: [...baseKeywords],
 };
 
 const page = () => {
-	return (
-		<PageContainer>
-			<FadeIn>
-				<CenterDiv className="space-y-4">
-					<PageHeading>
-						<p>Our Services</p>
-					</PageHeading>
-					<p className="text-muted-foreground max-w-2xl">
-						From residential repairs to complex commercial installations, Burton
-						Electric LLC offers expert electrical solutions tailored to your
-						needs.
-					</p>
-				</CenterDiv>
-			</FadeIn>
+  return (
+    <PageContainer>
+      <FadeIn>
+        <CenterDiv className="space-y-4">
+          <PageHeading>
+            <p>Our Services</p>
+          </PageHeading>
+          <p className="text-muted-foreground max-w-2xl">
+            From residential repairs to complex commercial installations, Burton
+            Electric LLC offers expert electrical solutions tailored to your
+            needs.
+          </p>
+        </CenterDiv>
+      </FadeIn>
 
-			<ComResServices />
+      <ComResServices />
 
-			<Services />
+      <Services />
 
-			<ContactUs />
-		</PageContainer>
-	);
+      <ContactUs />
+    </PageContainer>
+  );
 };
 
 export default page;
