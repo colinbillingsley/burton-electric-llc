@@ -41,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${poppins.variable} antialiased min-h-screen h-full w-full`}
       >
-        <TopHeader />
+        {/* <TopHeader /> */}
         <OgNavbar />
         {children}
         <Footer />

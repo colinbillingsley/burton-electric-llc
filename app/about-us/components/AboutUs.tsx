@@ -10,8 +10,8 @@ const AboutUs = () => {
   return (
     <Section className="py-18 lg:py-18">
       <CenterDiv className="grid lg:grid-cols-1 items-start justify-center gap-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center md:place-items-start">
-          <SlideInFromLeft className="space-y-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 place-items-center md:place-items-start">
+          <SlideInFromLeft className="w-full space-y-8">
             <h1 className="text-start flex flex-col gap-2 items-start w-full font-bold text-gray-900 mb-8">
               <span className="text-base md:text-xl">
                 About Burton Electric LLC
@@ -48,14 +48,15 @@ const AboutUs = () => {
               </p>
             </div>
           </SlideInFromLeft>
-          <SlideInFromRight>
-            <Image
-              src="/bna-airport/castle-6.jpg"
-              alt="image of 2 burton electrical vans on a jobsite"
-              width={500}
-              height={500}
-              className="object-contain rounded-xl shadow-lg"
-            />
+          <SlideInFromRight className="w-full">
+            <div className="relative aspect-[5/5] xl:aspect-[4/5] max-h-[500px] w-full">
+              <Image
+                src="/bna-airport/castle-6.jpg"
+                alt="image of 2 Burton Electric vans on a jobsite"
+                fill
+                className="object-cover object-[50%_75%] xl:object-[50%_100%] rounded-xl shadow-lg"
+              />
+            </div>
           </SlideInFromRight>
         </div>
       </CenterDiv>

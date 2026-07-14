@@ -41,13 +41,14 @@ const page = () => {
       <Section my="sm">
         <CenterDiv>
           <StaggeredList
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
             amount={0}
           >
             {imageData.map((img, index) => (
               <ImageCard
                 key={index}
                 featuredUrl={img.featuredUrl}
+                imagePosition={img.imagePosition}
                 name={img.name}
                 desc={img.desc}
                 category={img.category}

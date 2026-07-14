@@ -11,6 +11,24 @@ type ProjectImageType = { src: string; title: string; description: string }[];
 
 const projectImages: ProjectImageType = [
   {
+    src: "/station-pizzeria/IMG3.jpg",
+    title: "Station Pizzeria",
+    description:
+      "A modern, family-friendly pizzeria offering handcrafted pizzas, fresh ingredients, and a welcoming atmosphere for the Franklin, TN community.",
+  },
+  {
+    src: "/charmers/IMG5.jpg",
+    title: "Charmers",
+    description:
+      "A Nashville restaurant offering a stylish, welcoming atmosphere with elevated food, creative drinks, and a memorable dining experience.",
+  },
+  {
+    src: "/fifth-third-mt-juliet/IMG1.jpg",
+    title: "Fifth Third Bank",
+    description:
+      "A trusted financial institution providing banking, lending, and investment services to individuals and businesses in the Mt. Juliet, TN community.",
+  },
+  {
     src: "/fogo-de-chao/IMG1.jpg",
     title: "Fogo De Chão",
     description: "Brazilian steakhouse located in downtown Nashville, TN",
@@ -71,7 +89,7 @@ const RecentProjects = () => {
                 A look at some recent projects
               </span>
               <span className="text-4xl md:text-5xl">
-                Vast experiences in different types of commercial work.
+                Experiences in all kinds of commercial work.
               </span>
             </h2>
           </div>

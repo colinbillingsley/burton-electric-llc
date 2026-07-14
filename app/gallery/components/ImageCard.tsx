@@ -8,6 +8,7 @@ type ImageTypeWithoutImgs = Omit<ImageCardType, "imgs">;
 
 const ImageCard = ({
   featuredUrl,
+  imagePosition,
   name,
   desc,
   category,
@@ -19,15 +20,16 @@ const ImageCard = ({
   return (
     <Link
       href={url}
-      className="group flex flex-col bg-white shadow-lg rounded-md overflow-hidden h-full border-2 border-primary/10"
+      className="group flex flex-col bg-white shadow-md rounded-md overflow-hidden h-full border-2 border-primary/10 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
     >
       <div className="relative w-full h-[20rem] overflow-hidden">
         <Image
           src={featuredUrl}
           fill
-          className="object-cover object-center inset-0 group-hover:scale-105 transition-transform duration-300"
+          className={`object-cover ${imagePosition ?? "object-center"} inset-0 group-hover:scale-105 transition-transform duration-300`}
           alt={alt}
         />
+        <div className="inset-0 bg-black absolute group-hover:opacity-30 opacity-0 transition-opacity duration-300" />
       </div>
       <div className="p-6 flex flex-col gap-3 flex-1">
         <div className="flex items-center justify-between gap-8">
